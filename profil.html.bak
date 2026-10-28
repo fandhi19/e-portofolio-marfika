@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa PPG PJOK | Krisna Pratama Aulihar, S.Pd. - UNY</title>
+  
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =================================================================
+       1. TOPBAR (Contact Info & Angled Lime Social Strip)
+       ================================================================= -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-contact">
+        <a href="tel:+62859195374310" class="topbar-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+62 859-1953-74310</span>
+        </a>
+        <a href="mailto:krisna.ppg@uny.ac.id" class="topbar-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>krisna.ppg@uny.ac.id</span>
+        </a>
+        <div class="topbar-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Universitas Negeri Yogyakarta • D.I. Yogyakarta</span>
+        </div>
+      </div>
+
+      <div class="topbar-social-wrap">
+        <a href="javascript:void(0)" onclick="showToast('Facebook Krisna Pratama')" class="social-circle-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="javascript:void(0)" onclick="showToast('Twitter / X')" class="social-circle-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="javascript:void(0)" onclick="showToast('Instagram Krisna Pratama')" class="social-circle-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="javascript:void(0)" onclick="showToast('Kanal YouTube Pembelajaran PJOK')" class="social-circle-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="javascript:void(0)" onclick="showToast('LinkedIn Krisna Pratama')" class="social-circle-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       2. MAIN NAVBAR
+       ================================================================= -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Logo UNY" class="brand-logo-img" onerror="this.style.display='none'">
+        <div>
+          <span class="brand-title">Krisna Pratama, S.Pd.</span>
+          <span class="brand-subtitle">PPG Calon Guru PJOK UNY</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="profil.html" class="nav-link active">Profil</a></li>
+          
+          <!-- UTS Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle" role="button">
+              UTS <i class="fa-solid fa-chevron-down chevron-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="UTS/rancangan.html" class="dropdown-item"><i class="fa-solid fa-book-bookmark"></i> Rancangan</a></li>
+              <li><a href="UTS/media.html" class="dropdown-item"><i class="fa-solid fa-photo-film"></i> Media</a></li>
+              <li><a href="UTS/instrumen.html" class="dropdown-item"><i class="fa-solid fa-clipboard-check"></i> Instrumen</a></li>
+              <li><a href="UTS/video.html" class="dropdown-item"><i class="fa-solid fa-circle-play"></i> Video</a></li>
+            </ul>
+          </li>
+
+          <!-- UAS Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle" role="button">
+              UAS <i class="fa-solid fa-chevron-down chevron-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="UAS/rancangan.html" class="dropdown-item"><i class="fa-solid fa-book-bookmark"></i> Rancangan</a></li>
+              <li><a href="UAS/media.html" class="dropdown-item"><i class="fa-solid fa-photo-film"></i> Media</a></li>
+              <li><a href="UAS/instrumen.html" class="dropdown-item"><i class="fa-solid fa-clipboard-check"></i> Instrumen</a></li>
+              <li><a href="UAS/video.html" class="dropdown-item"><i class="fa-solid fa-circle-play"></i> Video</a></li>
+            </ul>
+          </li>
+
+          <li><a href="non-mengajar.html" class="nav-link">Non-Mengajar</a></li>
+          <li><a href="dokumentasi.html" class="nav-link">Dokumentasi</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-outline-dark btn-sm">
+          <i class="fa-solid fa-arrow-left"></i> Beranda
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================================================
+       3. SUBPAGE HERO HEADER
+       ================================================================= -->
+  <section class="subpage-hero-agency">
+    <div class="container">
+      <div class="badge-pill-group">
+        <span class="twin-dot-icon">
+          <span></span><span></span>
+        </span>
+        <span>BIODATA & PROFIL MAHASISWA PPG</span>
+      </div>
+
+      <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); color: var(--color-primary-dark); margin-bottom: 0.8rem;">
+        Profil & Dedikasi Pedagogik
+      </h1>
+      <p style="max-width: 720px; font-size: 1.05rem; line-height: 1.6; color: var(--color-text-muted);">
+        Mengenal lebih dekat Krisna Pratama Aulihar, S.Pd., mahasiswa Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi PJOK Universitas Negeri Yogyakarta.
+      </p>
+
+      <div class="subpage-breadcrumb">
+        <a href="index.html">Beranda</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span style="color: var(--color-primary-dark); font-weight: 700;">Profil Mahasiswa</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       4. MAIN PROFILE CARD
+       ================================================================= -->
+  <main>
+    <div class="container">
+      <div class="profile-agency-card">
+        <!-- Photo & Action -->
+        <div style="text-align: center;">
+          <div class="profile-agency-avatar">
+            <img src="IMG/krisna.jpg" alt="Krisna Pratama Aulihar, S.Pd." onerror="this.onerror=null; this.src='Pas Foto.JPG';">
+          </div>
+
+          <div class="badge-pill-group" style="justify-content: center; margin-bottom: 1.25rem;">
+            <span class="twin-dot-icon">
+              <span></span><span></span>
+            </span>
+            <span>Status: PPL Terbimbing</span>
+          </div>
+
+          <button class="btn btn-primary-dark btn-sm" style="width: 100%;" onclick="showToast('Curriculum Vitae Krisna Pratama siap diunduh!')">
+            <i class="fa-solid fa-file-pdf"></i> Unduh CV Lengkap
+          </button>
+        </div>
+
+        <!-- Information Details -->
+        <div>
+          <div class="badge-pill-group" style="margin-bottom: 0.5rem;">
+            <span class="twin-dot-icon">
+              <span></span><span></span>
+            </span>
+            <span>Mahasiswa PPG Calon Guru Gelombang 1</span>
+          </div>
+
+          <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--color-primary-dark); margin-bottom: 0.4rem;">
+            Krisna Pratama Aulihar, S.Pd.
+          </h2>
+          <p style="color: var(--color-accent-lime-hover); font-weight: 700; font-size: 1rem; margin-bottom: 1.25rem;">
+            Guru Pendidikan Jasmani, Olahraga, dan Kesehatan (PJOK) • Calon Guru Profesional
+          </p>
+
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text-muted);">
+            Lulusan S1 Pendidikan Kepelatihan Olahraga (PKO) Fakultas Ilmu Keolahragaan dan Kesehatan (FIKK) Universitas Negeri Yogyakarta yang saat ini sedang menempuh Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi PJOK. Memiliki keahlian dan lisensi resmi kepelatihan pada cabang olahraga Futsal, Pencak Silat, serta Pelatih Kondisi Fisik (Strength & Conditioning). Berdedikasi menghadirkan pembelajaran olahraga yang humanis, inklusif, berdiferensiasi, dan memanfaatkan teknologi TPACK di SMA N 3 Yogyakarta.
+          </p>
+
+          <!-- Bio Grid -->
+          <div class="profile-bio-grid">
+            <div class="bio-card-item">
+              <div class="bio-label-text">Perguruan Tinggi LPTK</div>
+              <div class="bio-value-text">Universitas Negeri Yogyakarta (UNY)</div>
+            </div>
+            <div class="bio-card-item">
+              <div class="bio-label-text">Pendidikan Terakhir</div>
+              <div class="bio-value-text">S1 Pendidikan Kepelatihan Olahraga (FIKK UNY)</div>
+            </div>
+            <div class="bio-card-item">
+              <div class="bio-label-text">Sekolah Latihan PPL</div>
+              <div class="bio-value-text">SMA N 3 Yogyakarta</div>
+            </div>
+            <div class="bio-card-item">
+              <div class="bio-label-text">Fokus & Lisensi Pelatih</div>
+              <div class="bio-value-text">Futsal, Pencak Silat, & Kondisi Fisik</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================================================
+         5. SECTION FILOSOFI MENGAJAR
+         ================================================================= -->
+    <section style="padding: 5rem 0 4rem; background: #FFFFFF;">
+      <div class="container">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto 3.5rem;">
+          <div class="badge-pill-group" style="justify-content: center;">
+            <span class="twin-dot-icon">
+              <span></span><span></span>
+            </span>
+            <span>NILAI & DEDIKASI PEDAGOGIK</span>
+          </div>
+          <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--color-primary-dark); margin-bottom: 0.8rem;">
+            Filosofi Mengajar Guru PJOK
+          </h2>
+          <p style="color: var(--color-text-muted);">
+            Fondasi dan paradigma berpikir dalam membimbing tumbuh kembang fisik, mental, dan emosional peserta didik.
+          </p>
+        </div>
+
+        <div class="cards-agency-grid">
+          <!-- Card 1 -->
+          <div class="card-agency">
+            <div class="card-agency-header">
+              <div class="card-agency-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <span class="tag-pill" style="background: rgba(18,56,45,0.06); color: var(--color-primary-dark);">Physical Literacy</span>
+            </div>
+            <div class="card-agency-body">
+              <h3 class="card-agency-title">Mendidik Melalui Gerak</h3>
+              <p class="card-agency-desc">
+                Pendidikan jasmani bukan semata-mata mencetak atlet prestasi, melainkan media holistik untuk mengembangkan kebugaran jasmani, kemampuan koordinasi motorik, dan kebiasaan hidup aktif sepanjang hayat (active lifestyle for lifetime).
+              </p>
+              <div class="card-agency-spec">
+                <div class="card-agency-spec-title">Penerapan di Lapangan:</div>
+                <ul>
+                  <li>Pemanasan rekreatif berbasis permainan gerak</li>
+                  <li>Monitoring intensitas melalui tes denyut nadi berkala</li>
+                  <li>Pemberian pemahaman manfaat gerak bagi kesehatan organ tubuh</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card-agency">
+            <div class="card-agency-header">
+              <div class="card-agency-icon">
+                <i class="fa-solid fa-hands-holding-child"></i>
+              </div>
+              <span class="tag-pill" style="background: rgba(184,224,35,0.2); color: var(--color-primary-dark);">Diferensiasi</span>
+            </div>
+            <div class="card-agency-body">
+              <h3 class="card-agency-title">Inklusif & Berdiferensiasi</h3>
+              <p class="card-agency-desc">
+                Setiap peserta didik memiliki kesiapan fisik dan modalitas gerak yang beraneka ragam. Modifikasi peraturan, ukuran bola, dan target capaian gerak menjamin seluruh siswa merasakan kegembiraan dan pengalaman sukses saat berolahraga.
+              </p>
+              <div class="card-agency-spec">
+                <div class="card-agency-spec-title">Penerapan di Lapangan:</div>
+                <ul>
+                  <li>Variasi penggunaan bola busa ramah pemula dan bola standar</li>
+                  <li>Penyesuaian tinggi net dan jarak servis bertahap</li>
+                  <li>Umpan balik personal tanpa membandingkan antar siswa</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card-agency">
+            <div class="card-agency-header">
+              <div class="card-agency-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+              <span class="tag-pill" style="background: rgba(18,56,45,0.06); color: var(--color-primary-dark);">Karakter Luhur</span>
+            </div>
+            <div class="card-agency-body">
+              <h3 class="card-agency-title">Penguatan Karakter Pancasila</h3>
+              <p class="card-agency-desc">
+                Lapangan olahraga adalah laboratorium moral: kejujuran mengakui sentuhan bola keluar, sportivitas saat menang maupun kalah, kerjasama gotong royong, dan ketangguhan mental diasah secara langsung melalui aksi nyata.
+              </p>
+              <div class="card-agency-spec">
+                <div class="card-agency-spec-title">Penerapan di Lapangan:</div>
+                <ul>
+                  <li>Refleksi emosi dan kejujuran di akhir tiap sesi permainan</li>
+                  <li>Pergantian peran kapten tim secara bergilir untuk kepemimpinan</li>
+                  <li>Tradisi saling berjabat tangan dan apresiasi lawan tanding</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. SECTION RIWAYAT PENDIDIKAN & LISENSI
+         ================================================================= -->
+    <section style="padding: 5rem 0; background: var(--color-bg-subtle); border-top: 1px solid var(--color-border-light);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+          
+          <!-- Column 1: Riwayat Pendidikan -->
+          <div>
+            <div class="badge-pill-group">
+              <span class="twin-dot-icon">
+                <span></span><span></span>
+              </span>
+              <span>JEJAK AKADEMIK</span>
+            </div>
+            <h3 style="font-size: 2rem; color: var(--color-primary-dark); margin-bottom: 2rem;">
+              Riwayat Pendidikan
+            </h3>
+
+            <div class="timeline-agency-wrap">
+              <div class="timeline-agency-item">
+                <span class="tag-pill" style="background: rgba(184, 224, 35, 0.25); color: var(--color-primary-dark); font-weight: 800;">
+                  2025 - Sekarang
+                </span>
+                <h4 style="font-size: 1.15rem; color: var(--color-primary-dark); margin-top: 0.6rem; margin-bottom: 0.25rem;">
+                  Program Pendidikan Profesi Guru (PPG) Calon Guru
+                </h4>
+                <div style="color: var(--color-accent-lime-hover); font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem;">
+                  Universitas Negeri Yogyakarta (UNY)
+                </div>
+                <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Mendalami perangkat ajar Kurikulum Merdeka, studi kasus pedagogik PJOK, serta Praktik Pengalaman Lapangan (PPL) Terbimbing dan Mandiri di sekolah mitra.
+                </p>
+              </div>
+
+              <div class="timeline-agency-item">
+                <span class="tag-pill" style="background: rgba(18, 56, 45, 0.08); color: var(--color-primary-dark); font-weight: 800;">
+                  2020 - 2024
+                </span>
+                <h4 style="font-size: 1.15rem; color: var(--color-primary-dark); margin-top: 0.6rem; margin-bottom: 0.25rem;">
+                  Sarjana Pendidikan (S.Pd.) - Pendidikan Kepelatihan Olahraga (PKO)
+                </h4>
+                <div style="color: var(--color-accent-lime-hover); font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem;">
+                  Fakultas Ilmu Keolahragaan & Kesehatan (FIKK) UNY
+                </div>
+                <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Lulus dengan predikat Pujian (Cum Laude). Fokus keilmuan metodologi kepelatihan olahraga, periodisasi latihan kondisi fisik (strength & conditioning), biomekanika gerak, serta analisis performa atlet Futsal dan Pencak Silat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Sertifikasi & Lisensi -->
+          <div>
+            <div class="badge-pill-group">
+              <span class="twin-dot-icon">
+                <span></span><span></span>
+              </span>
+              <span>KOMPETENSI RESMI</span>
+            </div>
+            <h3 style="font-size: 2rem; color: var(--color-primary-dark); margin-bottom: 2rem;">
+              Sertifikasi & Lisensi
+            </h3>
+
+            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+              <div class="card-agency" style="padding: 1.5rem; flex-direction: row; align-items: center; gap: 1.25rem;">
+                <div class="card-agency-icon" style="flex-shrink: 0;">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div>
+                  <h4 style="font-size: 1.05rem; color: var(--color-primary-dark); margin-bottom: 0.25rem;">
+                    Sertifikat Pelatihan Kurikulum Merdeka & TPACK
+                  </h4>
+                  <p style="font-size: 0.84rem; color: var(--color-text-muted); margin-bottom: 0.4rem;">
+                    Direktorat Jenderal Guru dan Tenaga Kependidikan & Universitas Negeri Yogyakarta
+                  </p>
+                  <span class="tag-pill" style="background: rgba(184, 224, 35, 0.2); color: var(--color-primary-dark);">Tahun 2025 • Terverifikasi</span>
+                </div>
+              </div>
+
+              <div class="card-agency" style="padding: 1.5rem; flex-direction: row; align-items: center; gap: 1.25rem;">
+                <div class="card-agency-icon" style="flex-shrink: 0;">
+                  <i class="fa-solid fa-futbol"></i>
+                </div>
+                <div>
+                  <h4 style="font-size: 1.05rem; color: var(--color-primary-dark); margin-bottom: 0.25rem;">
+                    Lisensi Pelatih Futsal Nasional
+                  </h4>
+                  <p style="font-size: 0.84rem; color: var(--color-text-muted); margin-bottom: 0.4rem;">
+                    Federasi Futsal Indonesia (FFI) & PSSI • Lisensi Kepelatihan Resmi
+                  </p>
+                  <span class="tag-pill" style="background: rgba(184, 224, 35, 0.2); color: var(--color-primary-dark);">Pelatih Futsal Berlisensi</span>
+                </div>
+              </div>
+
+              <div class="card-agency" style="padding: 1.5rem; flex-direction: row; align-items: center; gap: 1.25rem;">
+                <div class="card-agency-icon" style="flex-shrink: 0;">
+                  <i class="fa-solid fa-hand-fist"></i>
+                </div>
+                <div>
+                  <h4 style="font-size: 1.05rem; color: var(--color-primary-dark); margin-bottom: 0.25rem;">
+                    Lisensi Pelatih Pencak Silat
+                  </h4>
+                  <p style="font-size: 0.84rem; color: var(--color-text-muted); margin-bottom: 0.4rem;">
+                    Ikatan Pencak Silat Indonesia (IPSI) • Sertifikasi Kepelatihan Silat
+                  </p>
+                  <span class="tag-pill" style="background: rgba(184, 224, 35, 0.2); color: var(--color-primary-dark);">Pelatih Silat Berlisensi</span>
+                </div>
+              </div>
+
+              <div class="card-agency" style="padding: 1.5rem; flex-direction: row; align-items: center; gap: 1.25rem;">
+                <div class="card-agency-icon" style="flex-shrink: 0;">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div>
+                  <h4 style="font-size: 1.05rem; color: var(--color-primary-dark); margin-bottom: 0.25rem;">
+                    Lisensi Pelatih Fisik (Strength & Conditioning Coach)
+                  </h4>
+                  <p style="font-size: 0.84rem; color: var(--color-text-muted); margin-bottom: 0.4rem;">
+                    Asosiasi Pelatih Fisik Indonesia (APFI) & FIKK Universitas Negeri Yogyakarta
+                  </p>
+                  <span class="tag-pill" style="background: rgba(184, 224, 35, 0.2); color: var(--color-primary-dark);">Pelatih Kondisi Fisik Berlisensi</span>
+                </div>
+              </div>
+
+              <div class="card-agency" style="padding: 1.5rem; flex-direction: row; align-items: center; gap: 1.25rem;">
+                <div class="card-agency-icon" style="flex-shrink: 0;">
+                  <i class="fa-solid fa-kit-medical"></i>
+                </div>
+                <div>
+                  <h4 style="font-size: 1.05rem; color: var(--color-primary-dark); margin-bottom: 0.25rem;">
+                    Pelatihan Penanganan Pertama Cedera Olahraga (P3K Lapangan)
+                  </h4>
+                  <p style="font-size: 0.84rem; color: var(--color-text-muted); margin-bottom: 0.4rem;">
+                    Laboratorium Kesehatan & Fisiologi Olahraga Terapan FIKK UNY
+                  </p>
+                  <span class="tag-pill" style="background: rgba(184, 224, 35, 0.2); color: var(--color-primary-dark);">Kompetensi Medis Lapangan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================================
+       7. AGENCY FOOTER
+       ================================================================= -->
+  <footer class="footer-agency">
+    <div class="container">
+      <div class="footer-agency-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-agency-col">
+          <div class="footer-agency-brand" style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1rem;">
+            <img src="logo.png" alt="Logo UNY" class="footer-agency-logo-img" style="width: 46px; height: 46px; object-fit: contain; background: transparent; padding: 0; border: none; box-shadow: none; flex-shrink: 0;" onerror="this.style.display='none'">
+            <div class="footer-agency-brand-text">
+              <span class="title" style="display: block; font-size: 1.15rem; font-weight: 800; color: #ffffff;">Krisna Pratama, S.Pd.</span>
+              <span class="sub" style="display: block; font-size: 0.8rem; color: #94A3B8; font-weight: 600;">PPG Calon Guru PJOK UNY</span>
+            </div>
+          </div>
+          <p class="footer-agency-bio" style="color: #94A3B8; font-size: 0.88rem; line-height: 1.7;">
+            Portofolio resmi PPL Terbimbing Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi Pendidikan Jasmani, Olahraga, dan Kesehatan (PJOK) Universitas Negeri Yogyakarta di SMA N 3 Yogyakarta.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-agency-col">
+          <h4 class="footer-agency-col-title">Navigasi Portofolio</h4>
+          <ul class="footer-agency-links">
+            <li><a href="index.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Beranda Utama</a></li>
+            <li><a href="profil.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Profil Lengkap Mahasiswa</a></li>
+            <li><a href="UTS/rancangan.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Siklus 1 (UTS PPL)</a></li>
+            <li><a href="UAS/rancangan.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Siklus 2 (UAS PPL)</a></li>
+            <li><a href="non-mengajar.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Kegiatan Non-Mengajar</a></li>
+            <li><a href="dokumentasi.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Galeri Dokumentasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Perangkat PPL -->
+        <div class="footer-agency-col">
+          <h4 class="footer-agency-col-title">Perangkat Pembelajaran</h4>
+          <ul class="footer-agency-links">
+            <li><a href="UTS/rancangan.html"><i class="fa-solid fa-check" style="color:var(--color-accent-lime); font-size:0.75rem; margin-right:6px;"></i> Modul Ajar Siklus 1 & 2</a></li>
+            <li><a href="UTS/media.html"><i class="fa-solid fa-check" style="color:var(--color-accent-lime); font-size:0.75rem; margin-right:6px;"></i> Media Berbasis TPACK</a></li>
+            <li><a href="UTS/instrumen.html"><i class="fa-solid fa-check" style="color:var(--color-accent-lime); font-size:0.75rem; margin-right:6px;"></i> Instrumen Asesmen PJOK</a></li>
+            <li><a href="UTS/video.html"><i class="fa-solid fa-check" style="color:var(--color-accent-lime); font-size:0.75rem; margin-right:6px;"></i> Video Praktik Pembelajaran</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak & Alamat -->
+        <div class="footer-agency-col">
+          <h4 class="footer-agency-col-title">LPTK & Kontak Resmi</h4>
+          <p style="font-size: 0.88rem; color: #94A3B8; margin-bottom: 0.75rem;">
+            <i class="fa-solid fa-location-dot" style="color: var(--color-accent-lime); margin-right: 6px;"></i> Kampus FIKK, Universitas Negeri Yogyakarta, Jl. Colombo No. 1, Sleman, D.I. Yogyakarta
+          </p>
+          <p style="font-size: 0.88rem; color: #94A3B8; margin-bottom: 1.25rem;">
+            <i class="fa-solid fa-envelope" style="color: var(--color-accent-lime); margin-right: 6px;"></i> krisna.ppg@uny.ac.id
+          </p>
+          <div style="display: flex; gap: 0.6rem;">
+            <a href="javascript:void(0)" onclick="showToast('YouTube')" class="social-circle-btn"><i class="fa-brands fa-youtube"></i></a>
+            <a href="javascript:void(0)" onclick="showToast('Instagram')" class="social-circle-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="showToast('LinkedIn')" class="social-circle-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-strip">
+        <div>
+          &copy; 2026 <strong>Krisna Pratama Aulihar, S.Pd.</strong> All Rights Reserved • PPG Calon Guru PJOK Universitas Negeri Yogyakarta.
+        </div>
+        <div>
+          Tema Desain: Modern Clean Green & Lime Agency Style
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

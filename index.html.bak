@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Portofolio PPL Terbimbing | Krisna Pratama Aulihar, S.Pd. - PPG PJOK UNY</title>
+  
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Modern Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =================================================================
+       1. TOPBAR (Contact Info & Angled Lime Social Strip - Reference Match)
+       ================================================================= -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-contact">
+        <a href="tel:+62859195374310" class="topbar-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+62 859-1953-74310</span>
+        </a>
+        <a href="mailto:krisna.ppg@uny.ac.id" class="topbar-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>krisna.ppg@uny.ac.id</span>
+        </a> 
+        <div class="topbar-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Universitas Negeri Yogyakarta • D.I. Yogyakarta</span>
+        </div>
+      </div>
+
+      <div class="topbar-social-wrap">
+        <a href="javascript:void(0)" onclick="showToast('Facebook Krisna Pratama')" class="social-circle-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="javascript:void(0)" onclick="showToast('Twitter / X')" class="social-circle-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="javascript:void(0)" onclick="showToast('Instagram Krisna Pratama')" class="social-circle-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="javascript:void(0)" onclick="showToast('Kanal YouTube Pembelajaran PJOK')" class="social-circle-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="javascript:void(0)" onclick="showToast('LinkedIn Krisna Pratama')" class="social-circle-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       2. MAIN NAVBAR (Clean White Header with Dropdowns)
+       ================================================================= -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Logo UNY" class="brand-logo-img" onerror="this.style.display='none'">
+        <div>
+          <span class="brand-title">Krisna Pratama, S.Pd.</span>
+          <span class="brand-subtitle">PPG Calon Guru PJOK UNY</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Beranda</a></li>
+          <li><a href="profil.html" class="nav-link">Profil</a></li>
+          
+          <!-- UTS Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle" role="button">
+              UTS <i class="fa-solid fa-chevron-down chevron-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="UTS/rancangan.html" class="dropdown-item"><i class="fa-solid fa-book-bookmark"></i> Rancangan</a></li>
+              <li><a href="UTS/media.html" class="dropdown-item"><i class="fa-solid fa-photo-film"></i> Media</a></li>
+              <li><a href="UTS/instrumen.html" class="dropdown-item"><i class="fa-solid fa-clipboard-check"></i> Instrumen</a></li>
+              <li><a href="UTS/video.html" class="dropdown-item"><i class="fa-solid fa-circle-play"></i> Video</a></li>
+            </ul>
+          </li>
+
+          <!-- UAS Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle" role="button">
+              UAS <i class="fa-solid fa-chevron-down chevron-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="UAS/rancangan.html" class="dropdown-item"><i class="fa-solid fa-book-bookmark"></i> Rancangan</a></li>
+              <li><a href="UAS/media.html" class="dropdown-item"><i class="fa-solid fa-photo-film"></i> Media</a></li>
+              <li><a href="UAS/instrumen.html" class="dropdown-item"><i class="fa-solid fa-clipboard-check"></i> Instrumen</a></li>
+              <li><a href="UAS/video.html" class="dropdown-item"><i class="fa-solid fa-circle-play"></i> Video</a></li>
+            </ul>
+          </li>
+
+          <li><a href="non-mengajar.html" class="nav-link">Non-Mengajar</a></li>
+          <li><a href="dokumentasi.html" class="nav-link">Dokumentasi</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary-dark btn-sm" onclick="showToast('Mengunduh Berkas Lengkap Portofolio PPL (.ZIP)...')">
+          <i class="fa-solid fa-download"></i> Unduh E-Porto
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =================================================================
+         3. HERO SECTION (Exact Reference Composition: Left Typography + Right Collage)
+         ================================================================= -->
+    <section id="beranda" class="hero-agency">
+      <div class="container">
+        <div class="hero-agency-grid">
+          
+          <!-- Left Text Content -->
+          <div class="hero-agency-content">
+            <div class="badge-pill-group">
+              <span class="twin-dot-icon">
+                <span></span><span></span>
+              </span>
+              <span>PPL Terbimbing • SMA N 3 Yogyakarta • PPG PJOK UNY</span>
+            </div>
+
+            <h1 class="hero-agency-title">
+              Mewujudkan Inovasi Pembelajaran <span class="lime-highlight">PJOK Berdiferensiasi</span>
+            </h1>
+
+            <p class="hero-agency-desc">
+              Portofolio digital resmi <strong>Krisna Pratama Aulihar, S.Pd.</strong> Mahasiswa PPG Calon Guru PJOK UNY — Lulusan <strong>S1 Pendidikan Kepelatihan Olahraga (FIKK UNY)</strong> dengan lisensi resmi kepelatihan pada cabang <strong>Futsal</strong>, <strong>Pencak Silat</strong>, dan <strong>Pelatih Kondisi Fisik</strong> (Strength & Conditioning). Melaksanakan PPL Terbimbing di <strong>SMA N 3 Yogyakarta</strong>.
+            </p>
+
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+              <span class="tag-pill" style="background: rgba(184, 224, 35, 0.25); color: var(--color-primary-dark); font-weight: 700;"><i class="fa-solid fa-futbol" style="margin-right: 4px;"></i> Pelatih Futsal Berlisensi</span>
+              <span class="tag-pill" style="background: rgba(18, 56, 45, 0.08); color: var(--color-primary-dark); font-weight: 700;"><i class="fa-solid fa-hand-fist" style="margin-right: 4px;"></i> Pelatih Silat Berlisensi</span>
+              <span class="tag-pill" style="background: rgba(184, 224, 35, 0.25); color: var(--color-primary-dark); font-weight: 700;"><i class="fa-solid fa-dumbbell" style="margin-right: 4px;"></i> Pelatih Kondisi Fisik</span>
+            </div>
+
+            <div class="hero-agency-actions">
+              <a href="#artefak" class="btn btn-with-arrow">
+                <span>Eksplorasi Portofolio</span>
+                <span class="arrow-circle"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+              <a href="#lokasi-lptr" class="btn-link-simple">
+                <span>Sekolah Mitra & Profil</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Asymmetric Rounded Photo Collage (Reference Match) -->
+          <div class="hero-collage-wrapper">
+            <div class="hero-collage-grid">
+              
+              <!-- Box 1: Small Rounded Photo -->
+              <div class="collage-box">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Praktik Lapangan Olahraga" onerror="this.src='https://placehold.co/600x400/12382D/FFFFFF?text=PJOK+Lapangan'">
+              </div>
+
+              <!-- Box 2: Tall Asymmetric Image featuring Krisna's Photo! -->
+              <div class="collage-box collage-box-tall">
+                <img src="IMG/krisna.jpg" alt="Krisna Pratama Aulihar, S.Pd." onerror="this.src='Pas Foto.JPG'">
+              </div>
+
+              <!-- Box 3: Bottom Rounded Photo -->
+              <div class="collage-box collage-box-bottom">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80" alt="Aktivitas Kebugaran Siswa" onerror="this.src='https://placehold.co/600x400/12382D/FFFFFF?text=Kebugaran+Jasmani'">
+              </div>
+
+            </div>
+
+            <!-- Floating Circular "HIRE ME" Badge (Reference Match) -->
+            <a href="profil.html" class="floating-circle-badge" title="Profil Lengkap Guru PJOK">
+              <div class="badge-center-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </a>
+
+            <!-- Sparkle Elements -->
+            <div class="sparkle-icon" style="top: -10px; right: 20px;">✦</div>
+            <div class="sparkle-icon" style="bottom: 15px; left: -10px; font-size: 1.4rem;">✦</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. MARQUEE TICKER (Exact Reference Full-Width Dark Green Ribbon)
+         ================================================================= -->
+    <div class="marquee-ribbon">
+      <div class="marquee-content">
+        <span class="marquee-item">INOVASI PEMBELAJARAN PJOK <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">KURIKULUM MERDEKA <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">TPACK BERBASIS DIGITAL <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">ASESMEN OTENTIK 3 RANAH <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">GERAKAN SEKOLAH SEHAT <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">PEMBINAAN OLAHRAGA SISWA <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">REFLEKSI SIKLUS MODEL 4F <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">PEMBELAJARAN BERDIFERENSIASI <span class="marquee-star">✳</span></span>
+
+        <!-- Duplicated for seamless continuous scroll -->
+        <span class="marquee-item">INOVASI PEMBELAJARAN PJOK <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">KURIKULUM MERDEKA <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">TPACK BERBASIS DIGITAL <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">ASESMEN OTENTIK 3 RANAH <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">GERAKAN SEKOLAH SEHAT <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">PEMBINAAN OLAHRAGA SISWA <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">REFLEKSI SIKLUS MODEL 4F <span class="marquee-star">✳</span></span>
+        <span class="marquee-item">PEMBELAJARAN BERDIFERENSIASI <span class="marquee-star">✳</span></span>
+      </div>
+    </div>
+
+    <!-- =================================================================
+         5. SECTION 2: ABOUT / SEKOLAH MITRA & PROFIL (Reference Match: Progress Bars & Stats)
+         ================================================================= -->
+    <section id="lokasi-lptr" class="about-agency-section">
+      <div class="container">
+        
+        <div class="about-agency-grid">
+          <!-- Left Collage -->
+          <div class="about-collage-left">
+            <div class="about-image-main">
+              <img src="IMG/IMG_3039_web.jpg" alt="SMA N 3 Yogyakarta" onerror="this.src='IMG/IMG_3039.jpg'">
+            </div>
+            <div class="about-image-secondary">
+              <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=700&q=80" alt="Diskusi Kolaboratif PPL" onerror="this.src='https://placehold.co/700x350/12382D/FFFFFF?text=Supervisi+PPL'">
+            </div>
+
+            <!-- Floating Badge -->
+            <a href="profil.html" class="floating-circle-badge" style="top: 55%; left: 88%;" title="Tentang Guru PJOK">
+              <div class="badge-center-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Right Content & Skill Bars -->
+          <div class="about-agency-content">
+            <div class="badge-pill-group">
+              <span class="twin-dot-icon">
+                <span></span><span></span>
+              </span>
+              <span>Sekolah Mitra PPL</span>
+            </div>
+
+            <h2>Sinergi Akademik Kampus LPTK UNY & SMA N 3 Yogyakarta</h2>
+
+            <p>
+              Pelaksanaan PPL Terbimbing berpusat di <strong>SMA N 3 Yogyakarta</strong> di bawah bimbingan Guru Pamong PJOK <em>Drs. Bambang Wijanarko, M.Pd.</em> dan Dosen Pembimbing Lapangan FIKK UNY <em>Dr. Sugiyanto, M.Or.</em> Mengedepankan integrasi teknologi pedagogik TPACK dan penguatan kebugaran jasmani siswa.
+            </p>
+
+            <!-- Skill Progress Bars (Reference Match with Lime Knobs) -->
+            <div class="skill-bars-list">
+              <!-- Bar 1 -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-head">
+                  <span class="skill-bar-label">Perangkat Ajar Kurikulum Merdeka</span>
+                  <span class="skill-bar-pct">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="95%" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <!-- Bar 2 -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-head">
+                  <span class="skill-bar-label">Pelaksanaan Praktik Terbimbing Lapangan</span>
+                  <span class="skill-bar-pct">100%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="100%" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <!-- Bar 3 -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-head">
+                  <span class="skill-bar-label">Integrasi Media Digital TPACK & E-LKPD</span>
+                  <span class="skill-bar-pct">92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="92%" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <!-- Bar 4 -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-head">
+                  <span class="skill-bar-label">Ketercapaian Asesmen Otentik 3 Ranah</span>
+                  <span class="skill-bar-pct">98%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="98%" style="width: 0%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+              <a href="profil.html" class="btn btn-with-arrow">
+                <span>Detail Profil Mahasiswa</span>
+                <span class="arrow-circle"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+              <button class="btn btn-outline-dark" onclick="showToast('Alamat: SMA N 3 Yogyakarta, Jl. Yos Sudarso No. 7, Kotabaru, Kota Yogyakarta')">
+                <i class="fa-solid fa-map-location-dot"></i> Peta Lokasi SMA N 3 Yogyakarta
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Stats Counter Strip (Reference bottom match: 3k+, 200+, 350+, 16+) -->
+        <div class="stats-counter-strip">
+          
+          <div class="stat-item-agency">
+            <div>
+              <div class="stat-num-agency">36+</div>
+              <div class="stat-label-agency">Jam Praktik Terbimbing</div>
+            </div>
+          </div>
+
+          <div class="stat-separator-twin">
+            <span></span><span></span>
+          </div>
+
+          <div class="stat-item-agency">
+            <div>
+              <div class="stat-num-agency">2</div>
+              <div class="stat-label-agency">Siklus PPL (UTS & UAS)</div>
+            </div>
+          </div>
+
+          <div class="stat-separator-twin">
+            <span></span><span></span>
+          </div>
+
+          <div class="stat-item-agency">
+            <div>
+              <div class="stat-num-agency">120+</div>
+              <div class="stat-label-agency">Siswa Binaan PJOK</div>
+            </div>
+          </div>
+
+          <div class="stat-separator-twin">
+            <span></span><span></span>
+          </div>
+
+          <div class="stat-item-agency">
+            <div>
+              <div class="stat-num-agency">A</div>
+              <div class="stat-label-agency">Akreditasi Unggul SMA N 3 Yogyakarta</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. SECTION 3: DOKUMEN & ARTEFAK UTAMA (Reference Match: Dark Green Section with Lime Card)
+         ================================================================= -->
+    <section id="artefak" class="services-dark-section">
+      <div class="container">
+        
+        <div class="services-header-row">
+          <div>
+            <div class="badge-pill-group light">
+              <span class="twin-dot-icon">
+                <span></span><span></span>
+              </span>
+              <span>Dokumen & Artefak Utama</span>
+            </div>
+            <h2 class="services-title">Perangkat Pembelajaran PPL Terbimbing</h2>
+          </div>
+
+          <div>
+            <a href="UTS/rancangan.html" class="btn btn-outline-white">
+              <span>Lihat Semua Dokumen</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3-Column Services Grid (Exact Reference Match) -->
+        <div class="services-agency-grid">
+          
+          <!-- Card 1: Standard Dark Card -->
+          <div class="service-dark-card">
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=600&q=80" alt="Modul Bola Voli" onerror="this.src='https://placehold.co/600x350/0d2820/FFFFFF?text=Modul+Bola+Voli'">
+            </div>
+            <h4 class="service-card-title">Modul Ajar Bola Voli (UTS)</h4>
+            <p class="service-card-desc">
+              Perangkat ajar passing bawah dan atas model Problem Based Learning berbantuan bola busa modifikasi untuk pembelajaran gerak berdiferensiasi.
+            </p>
+            <a href="UTS/rancangan.html" class="service-card-link">
+              <span>Pelajari Selengkapnya</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 2: FEATURED VIBRANT LIME CARD (Exact Center Card in Reference!) -->
+          <div class="service-featured-lime-card">
+            <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; color: #12382D;">
+              FEATURED ARTIFACT • SIKLUS 2
+            </div>
+            <h4 class="service-card-title">Circuit Training Kebugaran (UAS)</h4>
+            <p class="service-card-desc">
+              Modul ajar 5 pos sirkuit kebugaran jasmani terintegrasi penghitungan Training Heart Rate (THR) dan E-LKPD barcode interaktif.
+            </p>
+            <a href="UAS/rancangan.html" class="service-card-link" style="margin-top: 1rem;">
+              <span>Akses Modul UAS</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="service-featured-media-bottom">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Circuit Training Kebugaran" onerror="this.src='https://placehold.co/600x300/12382D/FFFFFF?text=Circuit+Training'">
+            </div>
+          </div>
+
+          <!-- Card 3: Standard Dark Card -->
+          <div class="service-dark-card">
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Media TPACK" onerror="this.src='https://placehold.co/600x350/0d2820/FFFFFF?text=Media+TPACK'">
+            </div>
+            <h4 class="service-card-title">Media & TPACK Digital</h4>
+            <p class="service-card-desc">
+              Pemanfaatan E-LKPD berbasis QR Code di tiang net, video gerakan lambat Kinovea, dan audio interval timer pengatur rotasi sirkuit.
+            </p>
+            <a href="UTS/media.html" class="service-card-link">
+              <span>Pelajari Selengkapnya</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 4: Standard Dark Card -->
+          <div class="service-dark-card">
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80" alt="Instrumen Penilaian" onerror="this.src='https://placehold.co/600x350/0d2820/FFFFFF?text=Rubrik+Penilaian'">
+            </div>
+            <h4 class="service-card-title">Instrumen Penilaian 3 Ranah</h4>
+            <p class="service-card-desc">
+              Rubrik unjuk kerja gerak psikomotorik, bank soal pemahaman taktik kognitif HOTS, dan lembar observasi Profil Pelajar Pancasila.
+            </p>
+            <a href="UTS/instrumen.html" class="service-card-link">
+              <span>Pelajari Selengkapnya</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 5: Standard Dark Card -->
+          <div class="service-dark-card">
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=600&q=80" alt="Video Praktik Mengajar" onerror="this.src='https://placehold.co/600x350/0d2820/FFFFFF?text=Video+Praktik'">
+            </div>
+            <h4 class="service-card-title">Video Pembelajaran UKin</h4>
+            <p class="service-card-desc">
+              Rekaman video praktik mengajar lapangan berdurasi 15-20 menit sesuai pedoman Uji Kinerja (UKin) PPG Calon Guru Kemendikbudristek.
+            </p>
+            <a href="UTS/video.html" class="service-card-link">
+              <span>Pelajari Selengkapnya</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 6: Standard Dark Card -->
+          <div class="service-dark-card">
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80" alt="Jurnal Refleksi 4F" onerror="this.src='https://placehold.co/600x350/0d2820/FFFFFF?text=Jurnal+Refleksi'">
+            </div>
+            <h4 class="service-card-title">Jurnal Refleksi Model 4F</h4>
+            <p class="service-card-desc">
+              Dokumentasi introspeksi berkala Facts, Feelings, Findings, Future serta laporan akhir pelaksanaan PPL yang disahkan DPL & Guru Pamong.
+            </p>
+            <a href="javascript:void(0)" onclick="showToast('Jurnal Refleksi 4F dibuka di modal')" class="service-card-link">
+              <span>Pelajari Selengkapnya</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7. SECTION 4: DOKUMENTASI KEGIATAN PPL (Clean Light Card Grid with Zoom)
+         ================================================================= -->
+    <section id="dokumentasi-kegiatan" class="doc-section-agency">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge-pill-group">
+            <span class="twin-dot-icon">
+              <span></span><span></span>
+            </span>
+            <span>Galeri Bukti Otentik</span>
+          </div>
+          <h2 class="section-title">Dokumentasi Kegiatan PPL Terbimbing</h2>
+          <p class="section-subtitle">
+            Koleksi foto kegiatan mengajar di lapangan olahraga, pembinaan kesiswaan, kebiasaan hidup sehat, serta asistensi bersama DPL UNY dan Guru Pamong.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-pills-row">
+          <button class="filter-pill-btn active" data-filter="all">Semua Foto</button>
+          <button class="filter-pill-btn" data-filter="mengajar">Praktik Lapangan</button>
+          <button class="filter-pill-btn" data-filter="non-mengajar">Kegiatan Non-Mengajar</button>
+          <button class="filter-pill-btn" data-filter="bimbingan">Bimbingan & Refleksi</button>
+        </div>
+
+        <!-- 6 Gallery Cards with Lightbox Trigger -->
+        <div class="gallery-grid-agency">
+          
+          <!-- Foto 1 -->
+          <div class="gallery-card-agency" data-category="mengajar" onclick="openPhotoModal('IMG/IMG_3039_web.jpg', 'Foto Tim Mahasiswa PPL PJOK di Depan SMA N 3 Yogyakarta', 'Praktik Lapangan', 'Krisna Pratama, S.Pd. bersama rekan mahasiswa PPL PPG Calon Guru PJOK Universitas Negeri Yogyakarta berpose di depan gedung bersejarah SMA N 3 Yogyakarta seusai pelaksanaan aktivitas olahraga lapangan.', 'Depan Gedung Cagar Budaya & Tiang Bendera SMA N 3 Yogyakarta', 'PPL PJOK UNY')">
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Praktik Lapangan</span>
+              <img src="IMG/IMG_3039_web.jpg" alt="Foto Tim Mahasiswa PPL PJOK di SMA N 3 Yogyakarta" onerror="this.src='IMG/IMG_3039.jpg'">
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Kampus Padmanaba • Tiang Bendera</div>
+              <h4 class="gallery-agency-title">Foto Tim Mahasiswa PPL PJOK di SMA N 3 Yogyakarta</h4>
+              <p class="gallery-agency-desc">Krisna Pratama bersama rekan mahasiswa PPL mengenakan kaos olahraga di depan gedung cagar budaya.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">PPL PJOK UNY</span>
+                <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-dark);"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 2 -->
+          <div class="gallery-card-agency" data-category="mengajar" onclick="openPhotoModal('IMG/IMG_2573_web.jpg', 'Foto Resmi Almamater PPL PPG Calon Guru di Pohon Beringin Ikonik', 'Praktik Lapangan', 'Foto bersama seluruh mahasiswa PPL Terbimbing PPG Calon Guru UNY mengenakan jas almamater resmi di bawah pohon beringin legendaris SMA N 3 Yogyakarta yang melambangkan pengayoman dan keteduhan budi pekerti pendidik.', 'Halaman Tengah & Pohon Beringin SMA N 3 Yogyakarta', 'PPL Terbimbing')">
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Praktik Lapangan</span>
+              <img src="IMG/IMG_2573_web.jpg" alt="Foto Bersama Almamater di Pohon Beringin SMA N 3 Yogyakarta" onerror="this.src='IMG/IMG_2573.jpg'">
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Kampus Padmanaba • Almamater Resmi UNY</div>
+              <h4 class="gallery-agency-title">Foto Bersama Almamater di Pohon Beringin Ikonik</h4>
+              <p class="gallery-agency-desc">Seluruh mahasiswa PPL PPG Calon Guru berjas almamater resmi UNY mengabadikan momentum kebersamaan di bawah pohon beringin bersejarah.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">PPL Terbimbing</span>
+                <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-dark);"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 3 -->
+          <div class="gallery-card-agency" data-category="bimbingan" onclick="openPhotoModal('IMG/Bimbingan Guru Pamong.jpeg', 'Bimbingan & Refleksi Pedagogis Bersama Guru Pamong PJOK', 'Bimbingan & Refleksi', 'Sesi telaah klinis, penelaahan modul ajar, rubrik asesmen unjuk kerja, serta refleksi proses mengajar bersama Guru Pamong PJOK dan pimpinan SMA N 3 Yogyakarta di ruang pertemuan bersejarah.', 'Ruang Pertemuan & Penghargaan SMA N 3 Yogyakarta', 'Bimbingan Pamong')">
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Bimbingan & Refleksi</span>
+              <img src="IMG/Bimbingan Guru Pamong.jpeg" alt="Bimbingan Guru Pamong PJOK SMA N 3 Yogyakarta">
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Ruang Rapat Heritage • Evaluasi Mengajar</div>
+              <h4 class="gallery-agency-title">Bimbingan & Refleksi Bersama Guru Pamong PJOK</h4>
+              <p class="gallery-agency-desc">Diskusi telaah modul ajar, perbaikan sintaks diferensiasi di lapangan, dan penguatan kompetensi pedagogik calon guru PJOK.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Bimbingan Pamong</span>
+                <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-dark);"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 4 -->
+          <div class="gallery-card-agency" data-category="bimbingan" onclick="openPhotoModal('IMG/Kunjungan DPL.jpeg', 'Supervisi Klinis & Monitoring Kunjungan DPL FIKK UNY', 'Bimbingan & Refleksi', 'Kunjungan resmi Dosen Pembimbing Lapangan (DPL) Fakultas Ilmu Keolahragaan dan Kesehatan (FIKK) Universitas Negeri Yogyakarta untuk melakukan observasi pembelajaran, evaluasi kinerja calon guru, dan koordinasi dengan pihak sekolah mitra.', 'Selasar Gedung Pembelajaran SMA N 3 Yogyakarta', 'Kunjungan DPL')">
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Bimbingan & Refleksi</span>
+              <img src="IMG/Kunjungan DPL.jpeg" alt="Kunjungan DPL FIKK UNY ke SMA N 3 Yogyakarta">
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">LPTK UNY • Monitoring Lapangan</div>
+              <h4 class="gallery-agency-title">Supervisi Klinis & Monitoring Kunjungan DPL UNY</h4>
+              <p class="gallery-agency-desc">Monitoring pelaksanaan PPL Terbimbing oleh Dosen Pembimbing Lapangan FIKK UNY bersama mahasiswa praktikan dan jajaran guru PJOK.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Monitoring LPTK UNY</span>
+                <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-dark);"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 5 -->
+          <div class="gallery-card-agency" data-category="non-mengajar" onclick="openPhotoModal('IMG/Piket 3S.jpeg', 'Piket Pembiasaan Budaya 3S (Senyum, Salam, Sapa)', 'Kegiatan Non-Mengajar', 'Krisna Pratama melaksanakan tugas piket pagi di pintu masuk sekolah, menyambut kedatangan peserta didik dengan jabat tangan takzim, senyuman hangat, dan sapaan ramah guna membangun atmosfer sekolah yang aman, nyaman, dan berbudaya sopan santun.', 'Lobi & Pintu Masuk Utama SMA N 3 Yogyakarta', 'Budaya Sekolah')">
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill" style="background:#B8E023; color:#12382D;">Non-Mengajar</span>
+              <img src="IMG/Piket 3S.jpeg" alt="Piket 3S Pagi Hari di SMA N 3 Yogyakarta">
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Pagi Hari • Penanaman Karakter 3S</div>
+              <h4 class="gallery-agency-title">Piket Pembiasaan Budaya 3S (Senyum, Salam, Sapa)</h4>
+              <p class="gallery-agency-desc">Menyambut kedatangan siswa di lobi sekolah dengan jabat tangan santun dan senyum ramah mengawali hari belajar.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Profil Pelajar Pancasila</span>
+                <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-dark);"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 6 -->
+          <div class="gallery-card-agency" data-category="non-mengajar" onclick="openPhotoModal('IMG/Piket 3S 2.jpeg', 'Penyambutan Budaya Tradisional Kamis Pahing di Gerbang Padmanaba', 'Kegiatan Non-Mengajar', 'Krisna Pratama bersama rekan guru dan mahasiswa PPL bertugas di gerbang utama Padmanaba menyambut peserta didik yang mengenakan busana tradisional Jawa (Surjan dan Jarik Batik) setiap Kamis Pahing, menegakkan tata tertib dan menginternalisasi kearifan lokal Daerah Istimewa Yogyakarta.', 'Gerbang Utama Padmanaba SMA N 3 Yogyakarta', 'Kearifan Lokal')">
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill" style="background:#B8E023; color:#12382D;">Non-Mengajar</span>
+              <img src="IMG/Piket 3S 2.jpeg" alt="Piket Busana Tradisional Kamis di SMA N 3 Yogyakarta">
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Kamis Pahing • Busana Adat Tradisional</div>
+              <h4 class="gallery-agency-title">Piket Penyambutan Siswa Berbusana Adat Tradisional</h4>
+              <p class="gallery-agency-desc">Bertugas di pintu gerbang utama menyambut siswa berbusana surjan dan jarik batik, melestarikan budaya adiluhung Yogyakarta.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Kearifan Lokal Padmanaba</span>
+                <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-dark);"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Call To Action Button to Full Gallery -->
+        <div style="text-align: center;">
+          <a href="dokumentasi.html" class="btn btn-primary-dark" style="padding: 0.95rem 2.4rem; font-size: 1rem;">
+            <span>Lihat Seluruh Galeri Dokumentasi Lengkap</span>
+            <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Modal Viewer (Modul Ajar, Rubrik & Video) -->
+  <div id="global-modal" class="modal-overlay">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Tutup Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div style="margin-bottom: 0.5rem;">
+        <span id="modal-category" class="tag-pill-light" style="background:#12382D; color:#B8E023; font-weight:700;"></span>
+      </div>
+      <h3 id="modal-title" style="font-size: 1.45rem; color: #12382D; margin-bottom: 0.4rem; font-weight:800;"></h3>
+      <div id="modal-meta" style="font-size: 0.82rem; color: #64748B; margin-bottom: 1.25rem;"></div>
+      <div id="modal-body" class="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- Photo Lightbox Modal -->
+  <div id="photo-modal" class="modal-overlay">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="photo-modal-close" aria-label="Tutup Pratinjau">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span id="photo-badge" class="tag-pill-light" style="background:#12382D; color:#B8E023; margin-bottom:0.75rem; display:inline-block; font-weight:700;"></span>
+      <h3 id="photo-title" style="font-size:1.4rem; color:#12382D; margin-bottom:0.5rem; font-weight:800;"></h3>
+      <div id="photo-loc" style="font-size:0.85rem; color:#12382D; font-weight:600; margin-bottom:1rem;"></div>
+      <div id="photo-desc" style="color:#475569; font-size:0.95rem; line-height:1.7; background:#F8F9F5; padding:1.25rem; border-radius:12px; border-left:4px solid #B8E023; margin-bottom:1.25rem;"></div>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <span style="font-size:0.8rem; color:#64748B;">Arsip Digital PPL Terbimbing • PPG PJOK UNY</span>
+        <button class="btn btn-primary-dark btn-sm" onclick="showToast('Tautan dokumentasi disalin!')">
+          <i class="fa-solid fa-share-nodes"></i> Bagikan
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       8. FOOTER (Deep Forest Green with Lime Accents - Reference Match)
+       ================================================================= -->
+  <footer class="footer-agency">
+    <div class="container">
+      <div class="footer-agency-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-agency-col">
+          <div class="footer-agency-brand" style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1rem;">
+            <img src="logo.png" alt="Logo UNY" class="footer-agency-logo-img" style="width: 46px; height: 46px; object-fit: contain; background: transparent; padding: 0; border: none; box-shadow: none; flex-shrink: 0;" onerror="this.style.display='none'">
+            <div class="footer-agency-brand-text">
+              <span class="title" style="display: block; font-size: 1.15rem; font-weight: 800; color: #ffffff;">Krisna Pratama, S.Pd.</span>
+              <span class="sub" style="display: block; font-size: 0.8rem; color: #94A3B8; font-weight: 600;">PPG Calon Guru PJOK UNY</span>
+            </div>
+          </div>
+          <p class="footer-agency-bio" style="color: #94A3B8; font-size: 0.88rem; line-height: 1.7;">
+            Portofolio resmi PPL Terbimbing Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi Pendidikan Jasmani, Olahraga, dan Kesehatan (PJOK) Universitas Negeri Yogyakarta di SMA N 3 Yogyakarta.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-agency-col">
+          <h4 class="footer-agency-col-title">Navigasi Portofolio</h4>
+          <ul class="footer-agency-links">
+            <li><a href="index.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Beranda Utama</a></li>
+            <li><a href="profil.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Profil Lengkap Mahasiswa</a></li>
+            <li><a href="UTS/rancangan.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Siklus 1 (UTS PPL)</a></li>
+            <li><a href="UAS/rancangan.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Siklus 2 (UAS PPL)</a></li>
+            <li><a href="non-mengajar.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Kegiatan Non-Mengajar</a></li>
+            <li><a href="dokumentasi.html"><i class="fa-solid fa-arrow-right" style="font-size:0.75rem; margin-right:6px;"></i> Galeri Dokumentasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Perangkat PPL -->
+        <div class="footer-agency-col">
+          <h4 class="footer-agency-col-title">Perangkat Pembelajaran</h4>
+          <ul class="footer-agency-links">
+            <li><a href="UTS/rancangan.html"><i class="fa-solid fa-check" style="color:var(--color-accent-lime); font-size:0.75rem; margin-right:6px;"></i> Modul Ajar Siklus 1 & 2</a></li>
+            <li><a href="UTS/media.html"><i class="fa-solid fa-check" style="color:var(--color-accent-lime); font-size:0.75rem; margin-right:6px;"></i> Media Berbasis TPACK</a></li>
+            <li><a href="UTS/instrumen.html"><i class="fa-solid fa-check" style="color:var(--color-accent-lime); font-size:0.75rem; margin-right:6px;"></i> Instrumen Asesmen PJOK</a></li>
+            <li><a href="UTS/video.html"><i class="fa-solid fa-check" style="color:var(--color-accent-lime); font-size:0.75rem; margin-right:6px;"></i> Video Praktik Pembelajaran</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak & Alamat -->
+        <div class="footer-agency-col">
+          <h4 class="footer-agency-col-title">LPTK & Kontak Resmi</h4>
+          <p style="font-size: 0.88rem; color: #94A3B8; margin-bottom: 0.75rem;">
+            <i class="fa-solid fa-location-dot" style="color: var(--color-accent-lime); margin-right: 6px;"></i> Kampus FIKK, Universitas Negeri Yogyakarta, Jl. Colombo No. 1, Sleman, D.I. Yogyakarta
+          </p>
+          <p style="font-size: 0.88rem; color: #94A3B8; margin-bottom: 1.25rem;">
+            <i class="fa-solid fa-envelope" style="color: var(--color-accent-lime); margin-right: 6px;"></i> krisna.ppg@uny.ac.id
+          </p>
+          <div style="display: flex; gap: 0.6rem;">
+            <a href="javascript:void(0)" onclick="showToast('YouTube')" class="social-circle-btn"><i class="fa-brands fa-youtube"></i></a>
+            <a href="javascript:void(0)" onclick="showToast('Instagram')" class="social-circle-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="showToast('LinkedIn')" class="social-circle-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-strip">
+        <div>
+          &copy; 2026 <strong>Krisna Pratama Aulihar, S.Pd.</strong> All Rights Reserved • PPG Calon Guru PJOK Universitas Negeri Yogyakarta.
+        </div>
+        <div>
+          Tema Desain: Modern Clean Green & Lime Agency Style
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Photo Lightbox modal handler
+    const photoModal = document.getElementById('photo-modal');
+    const photoClose = document.getElementById('photo-modal-close');
+    const photoTitle = document.getElementById('photo-title');
+    const photoBadge = document.getElementById('photo-badge');
+    const photoLoc = document.getElementById('photo-loc');
+    const photoDesc = document.getElementById('photo-desc');
+
+    window.openPhotoModal = function(imgSrc, title, category, desc, location, label) {
+      const modalImg = document.getElementById('photo-modal-img');
+      const modalLink = document.getElementById('photo-modal-link');
+      if (modalImg) modalImg.src = imgSrc;
+      if (modalLink) modalLink.href = imgSrc;
+      if (!photoModal) return;
+      photoTitle.textContent = title;
+      photoBadge.textContent = `${category} • ${label}`;
+      photoLoc.innerHTML = `<i class="fa-solid fa-location-dot" style="margin-right:6px; color:#12382D;"></i> Lokasi: ${location}`;
+      photoDesc.textContent = desc;
+
+      photoModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    if (photoClose) {
+      photoClose.addEventListener('click', () => {
+        photoModal.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+
+    if (photoModal) {
+      photoModal.addEventListener('click', (e) => {
+        if (e.target === photoModal) {
+          photoModal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

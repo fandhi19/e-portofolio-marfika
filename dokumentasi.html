@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Dokumentasi PPL Terbimbing | Marfika Sayekti, S.Pd. - UNY</title>
+
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/studio-theme.css?v=2.1" />
+    <style>
+      /* Lightbox Modal Guaranteed Inline Styles */
+      .modal-studio-overlay,
+      .modal-overlay-studio {
+        position: fixed !important;
+        inset: 0 !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        background: rgba(15, 23, 42, 0.88) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        z-index: 999999 !important;
+        display: none !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 1.5rem !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        transition:
+          opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+          visibility 0.3s ease !important;
+      }
+      .modal-studio-overlay.active,
+      .modal-overlay-studio.active {
+        display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+      }
+      .modal-photo-window {
+        background: #ffffff !important;
+        border-radius: var(--radius-xl, 24px) !important;
+        max-width: 820px !important;
+        width: 100% !important;
+        max-height: 92vh !important;
+        overflow: hidden !important;
+        box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5) !important;
+        position: relative !important;
+        transform: translateY(20px) scale(0.96) !important;
+        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      }
+      .modal-studio-overlay.active .modal-photo-window,
+      .modal-overlay-studio.active .modal-photo-window {
+        transform: translateY(0) scale(1) !important;
+      }
+      .modal-photo-content {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+      }
+      .modal-photo-img-wrap {
+        width: 100% !important;
+        max-height: 480px !important;
+        background: #0b1120 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+      }
+      .modal-photo-img-wrap img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 480px !important;
+        object-fit: contain !important;
+        display: block !important;
+      }
+      .modal-photo-info {
+        padding: 1.6rem 2.2rem !important;
+        background: #ffffff !important;
+        border-top: 1px solid var(--color-border-card, #e2e8f0) !important;
+      }
+      .modal-photo-loc {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        font-size: 0.82rem !important;
+        font-weight: 700 !important;
+        color: #d97706 !important;
+        margin-bottom: 0.4rem !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.03em !important;
+      }
+      .modal-close-btn {
+        position: absolute !important;
+        top: 1.1rem !important;
+        right: 1.1rem !important;
+        width: 38px !important;
+        height: 38px !important;
+        border-radius: 50% !important;
+        background: rgba(15, 23, 42, 0.75) !important;
+        color: #ffffff !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 1rem !important;
+        cursor: pointer !important;
+        z-index: 10 !important;
+        transition: all 0.2s ease !important;
+      }
+      .modal-close-btn:hover {
+        background: #ef4444 !important;
+        color: #ffffff !important;
+        transform: scale(1.08) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- =================================================================
+       1. TOPBAR (Studio Theme)
+       ================================================================= -->
+    <!-- =================================================================
+       1. TOPBAR (Studio Theme)
+       ================================================================= -->
+    <div class="topbar-studio">
+      <div class="container topbar-studio-inner">
+        <div class="topbar-left">
+          <i class="fa-solid fa-graduation-cap lead-icon"></i>
+          <span>PPL Terbimbing PPG Calon Guru PJOK UNY • SMP Negeri 12 Yogyakarta</span>
+        </div>
+
+        <div class="topbar-right">
+          <a href="mailto:marfika.ppg@uny.ac.id" class="topbar-contact-item">
+            <i class="fa-regular fa-envelope"></i>
+            <span>marfika.ppg@uny.ac.id</span>
+          </a>
+          <a href="tel:+62859195374310" class="topbar-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+62 859-1953-74310</span>
+          </a>
+
+          <div class="topbar-socials">
+            <a href="javascript:void(0)" onclick="showToast('Instagram Marfika Sayekti')" class="topbar-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="showToast('Kanal YouTube Pembelajaran PJOK')" class="topbar-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="javascript:void(0)" onclick="showToast('LinkedIn Marfika Sayekti')" class="topbar-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================================================
+       2. MAIN NAVBAR (Clean Studio Header + Script Logo & Sun Doodle)
+       ================================================================= -->
+    <header class="navbar-studio">
+      <div class="container navbar-studio-inner">
+        <!-- Brand Logo: Handwritten "Marfika" with radiant Sun Doodle -->
+        <a href="index.html" class="brand-studio">
+          <div class="brand-studio-text">
+            <span class="brand-studio-logo">
+              Marfika Sayekti
+              <!-- Sun Doodle SVG with Rays -->
+              <svg class="sun-logo-doodle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="6" fill="#FBBF24" stroke="#F59E0B" stroke-width="2" />
+                <line x1="16" y1="4" x2="16" y2="7" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="16" y1="25" x2="16" y2="28" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="4" y1="16" x2="7" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="25" y1="16" x2="28" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="7.5" y1="7.5" x2="9.6" y2="9.6" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="22.4" y1="22.4" x2="24.5" y2="24.5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="7.5" y1="24.5" x2="9.6" y2="22.4" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="22.4" y1="9.6" x2="24.5" y2="7.5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="brand-studio-sub">PPG CALON GURU PJOK • SMP NEGERI 12 YOGYAKARTA</span>
+          </div>
+        </a>
+
+        <!-- Navigation Links: 6 Menu Items Required -->
+        <nav>
+          <ul class="nav-menu-studio">
+            <!-- 1. Beranda -->
+            <li><a href="index.html" class="nav-link-studio">Beranda</a></li>
+
+            <!-- 2. Profil -->
+            <li><a href="profil.html" class="nav-link-studio">Profil</a></li>
+
+            <!-- 3. UTS Dropdown -->
+            <li class="nav-studio-dropdown">
+              <a href="UTS/rancangan.html" class="nav-link-studio"> UTS <i class="fa-solid fa-chevron-down" style="font-size: 0.68rem; margin-left: 2px"></i> </a>
+              <ul class="dropdown-studio-menu">
+                <li>
+                  <a href="UTS/rancangan.html" class="dropdown-studio-item"> <i class="fa-solid fa-file-pen"></i> Rancangan Pembelajaran </a>
+                </li>
+                <li>
+                  <a href="UTS/media.html" class="dropdown-studio-item"> <i class="fa-solid fa-photo-film"></i> Media Pembelajaran </a>
+                </li>
+                <li>
+                  <a href="UTS/materi.html" class="dropdown-studio-item"> <i class="fa-solid fa-book-open-reader"></i> Materi Pembelajaran </a>
+                </li>
+                <li>
+                  <a href="UTS/instrumen.html" class="dropdown-studio-item"> <i class="fa-solid fa-clipboard-check"></i> Instrumen Pembelajaran </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- 4. UAS Dropdown -->
+            <li class="nav-studio-dropdown">
+              <a href="UAS/rancangan.html" class="nav-link-studio"> UAS <i class="fa-solid fa-chevron-down" style="font-size: 0.68rem; margin-left: 2px"></i> </a>
+              <ul class="dropdown-studio-menu">
+                <li>
+                  <a href="UAS/rancangan.html" class="dropdown-studio-item"> <i class="fa-solid fa-file-circle-check"></i> Rancangan Pembelajaran </a>
+                </li>
+                <li>
+                  <a href="UAS/media.html" class="dropdown-studio-item"> <i class="fa-solid fa-laptop-code"></i> Media Pembelajaran </a>
+                </li>
+                <li>
+                  <a href="UAS/materi.html" class="dropdown-studio-item"> <i class="fa-solid fa-book-bookmark"></i> Materi Pembelajaran </a>
+                </li>
+                <li>
+                  <a href="UAS/instrumen.html" class="dropdown-studio-item"> <i class="fa-solid fa-list-check"></i> Instrumen Pembelajaran </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- 5. Kegiatan Non-Mengajar -->
+            <li><a href="non-mengajar.html" class="nav-link-studio">Kegiatan Non-Mengajar</a></li>
+
+            <!-- 6. Dokumentasi -->
+            <li><a href="dokumentasi.html" class="nav-link-studio active">Dokumentasi</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Action CTA: Golden-Yellow Pill Button -->
+        <div style="display: flex; align-items: center; gap: 0.75rem">
+          <a href="profil.html#cv" class="btn-nav-connect" onclick="showToast('Unduh CV Guru Digital...')">
+            <span>Unduh CV Guru</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <button class="mobile-studio-toggle" aria-label="Buka Menu Navigasi">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =================================================================
+       3. SUBPAGE HERO HEADER (Studio Theme)
+       ================================================================= -->
+    <section class="subpage-studio-hero">
+      <div class="container">
+        <div class="hero-studio-badge" style="margin-bottom: 1rem">
+          <span class="badge-dot"></span>
+          <span>GALERI KEGIATAN &amp; SOROTAN VISUAL</span>
+        </div>
+
+        <h1 class="subpage-hero-title">
+          Dokumentasi PPL
+          <span class="script-highlight" style="font-family: var(--font-script); color: var(--color-primary-blue); font-weight: 700; margin-left: 6px">
+            Terbimbing
+            <svg class="sun-doodle-hero" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 36px; vertical-align: middle; margin-left: 6px">
+              <circle cx="22" cy="22" r="9" fill="#FBBF24" stroke="#F59E0B" stroke-width="2.5" />
+              <line x1="22" y1="4" x2="22" y2="8" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="22" y1="36" x2="22" y2="40" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="4" y1="22" x2="8" y2="22" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="36" y1="22" x2="40" y2="22" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </span>
+        </h1>
+
+                <p class="subpage-hero-desc">
+          Galeri visual otentik pelaksanaan Praktik Pengalaman Lapangan (PPL) Terbimbing dan Mandiri mahasiswa PPG Calon Guru PJOK Universitas Negeri Yogyakarta di SMP Negeri 12 Yogyakarta, mencakup bimbingan pedagogik Guru Pamong, pembiasaan budaya 5S, jalan sehat kebugaran warga sekolah, aksi peduli lingkungan Tugu Jogja, pelestarian adat tradisi Kamis Pon, pengawasan asesmen akademik ASTS, hingga pendampingan karnaval budaya.
+        </p>
+
+        <div class="studio-breadcrumb">
+          <a href="index.html">Beranda</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span style="color: var(--color-midnight); font-weight: 700">Galeri Dokumentasi</span>
+        </div>
+      </div>
+    </section>
+
+        <!-- =================================================================
+       4. GALLERY GRID WITH FILTER TABS (Studio Theme)
+       ================================================================= -->
+    <main style="background: var(--color-bg-ivory); padding: 4rem 0 5.5rem">
+      <div class="container">
+        <!-- Filter Button Tabs -->
+        <div class="gallery-agency-filter">
+          <button class="filter-pill-btn active" data-filter="all">Semua Dokumentasi (8)</button>
+          <button class="filter-pill-btn" data-filter="non-mengajar">Kegiatan Non-Mengajar (4)</button>
+          <button class="filter-pill-btn" data-filter="budaya">Kebudayaan &amp; Kearifan Lokal (2)</button>
+          <button class="filter-pill-btn" data-filter="supervisi">Supervisi &amp; Bimbingan (2)</button>
+        </div>
+
+        <!-- Gallery Grid: 8 Authentic Cards (Sesuai File IMG/) -->
+        <div class="gallery-agency-grid">
+
+          <!-- Foto 1: Bimbingan Bersama Guru Pamong (Supervisi) -->
+          <div
+            class="gallery-card-agency"
+            data-category="supervisi"
+            onclick="
+              openStudioPhoto(
+                'IMG/Bimbingan Guru Pamong.jpeg',
+                'Bimbingan & Refleksi Pedagogis Bersama Guru Pamong PJOK',
+                'Dokumentasi pelaksanaan bimbingan klinis dan refleksi pedagogis berkala antara mahasiswa PPL PPG Calon Guru PJOK Marfika Sayekti, S.Pd. bersama Guru Pamong PJOK di SMP Negeri 12 Yogyakarta. Pembahasan mencakup penyempurnaan rancangan modul ajar Kurikulum Merdeka berbasis diferensiasi gerak, evaluasi hasil asesmen belajar siswa, serta penguatan kompetensi pedagogik calon guru di lapangan.',
+                'Ruang Rapat Guru & Pimpinan SMP Negeri 12 Yogyakarta'
+              )
+            "
+          >
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Supervisi &amp; Bimbingan</span>
+              <img src="IMG/Bimbingan Guru Pamong.jpeg" alt="Bimbingan Guru Pamong PJOK SMP Negeri 12 Yogyakarta" loading="lazy" />
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">SMP Negeri 12 Yogyakarta • Bimbingan Pedagogik</div>
+              <h4 class="gallery-agency-title">Bimbingan &amp; Refleksi Bersama Guru Pamong PJOK</h4>
+              <p class="gallery-agency-desc">Sesi telaah klinis modul ajar Kurikulum Merdeka, perbaikan rubrik asesmen unjuk kerja, serta refleksi evaluasi mengajar bersama Guru Pamong PJOK.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Bimbingan Pamong</span>
+                <span style="font-size: 0.82rem; font-weight: 800; color: var(--color-primary-blue)"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 2: Jalan Sehat HUT SMP N 12 Yogyakarta (Non-Mengajar) -->
+          <div
+            class="gallery-card-agency"
+            data-category="non-mengajar"
+            onclick="
+              openStudioPhoto(
+                'IMG/Jalan Sehat HUT SMP N 12 Yogyakarta.jpeg',
+                'Jalan Sehat Kebugaran Warga Sekolah (HUT SMPN 12 Yogyakarta)',
+                'Dokumentasi keikutsertaan aktif mahasiswa PPL PJOK Marfika Sayekti, S.Pd. dalam mendampingi dan mengawal kegiatan Jalan Sehat Kebugaran Jasmani massal memperingati HUT SMP Negeri 12 Yogyakarta. Diikuti oleh dewan guru, tenaga kependidikan, serta seluruh peserta didik melintasi rute edukatif Bumijo, Jetis, Yogyakarta.',
+                'Halaman SMP Negeri 12 Yogyakarta & Rute Bumijo'
+              )
+            "
+          >
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Kegiatan Non-Mengajar</span>
+              <img src="IMG/Jalan Sehat HUT SMP N 12 Yogyakarta.jpeg" alt="Jalan Sehat HUT SMP N 12 Yogyakarta" loading="lazy" />
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Rute Bumijo Jetis • Kebugaran Jasmani Massal</div>
+              <h4 class="gallery-agency-title">Jalan Sehat Kebugaran Warga Sekolah (HUT SMPN 12)</h4>
+              <p class="gallery-agency-desc">Pendampingan jalan sehat massal memperingati HUT SMP Negeri 12 Yogyakarta bersama dewan guru dan siswa melintasi rute Bumijo.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">HUT SMPN 12 Yogyakarta</span>
+                <span style="font-size: 0.82rem; font-weight: 800; color: var(--color-primary-blue)"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 3: Aksi Gotong Royong Kebersihan Tugu Yogyakarta (Non-Mengajar) -->
+          <div
+            class="gallery-card-agency"
+            data-category="non-mengajar"
+            onclick="
+              openStudioPhoto(
+                'IMG/Kebersihan Tugu Jogja.jpeg',
+                'Aksi Gotong Royong Kebersihan Lingkungan Tugu Yogyakarta',
+                'Dokumentasi aksi nyata mahasiswa PPL PJOK UNY bersama warga sekolah SMP Negeri 12 Yogyakarta dalam kegiatan bakti sosial kebersihan lingkungan di kawasan cagar budaya Tugu Pal Putih Yogyakarta, menanamkan dimensi Bergotong Royong dan Peduli Lingkungan Profil Pelajar Pancasila.',
+                'Kawasan Cagar Budaya Tugu Pal Putih Yogyakarta'
+              )
+            "
+          >
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Kegiatan Non-Mengajar</span>
+              <img src="IMG/Kebersihan Tugu Jogja.jpeg" alt="Aksi Kebersihan Tugu Jogja" loading="lazy" />
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Kawasan Tugu Pal Putih • Bakti Sosial Lingkungan</div>
+              <h4 class="gallery-agency-title">Aksi Peduli Lingkungan &amp; Kebersihan Tugu Yogyakarta</h4>
+              <p class="gallery-agency-desc">Partisipasi gotong royong aksi bersih lingkungan di ikon cagar budaya Tugu Yogyakarta, menginternalisasi Profil Pelajar Pancasila.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Aksi Lingkungan &amp; Pancasila</span>
+                <span style="font-size: 0.82rem; font-weight: 800; color: var(--color-primary-blue)"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 4: Piket Pembiasaan 5S di Gerbang Sekolah (Non-Mengajar) -->
+          <div
+            class="gallery-card-agency"
+            data-category="non-mengajar"
+            onclick="
+              openStudioPhoto(
+                'IMG/Kegiatan 5S.jpeg',
+                'Piket Pembiasaan Budaya 5S (Senyum, Salam, Sapa, Sopan, Santun)',
+                'Dokumentasi penugasan rutin piket pagi mahasiswa PPL PJOK Marfika Sayekti, S.Pd. di gerbang utama SMP Negeri 12 Yogyakarta. Menyambut kedatangan peserta didik dengan budaya 5S (Senyum, Salam, Sapa, Sopan, Santun), pemeriksaan kerapian seragam, serta mewujudkan iklim sekolah yang aman, nyaman, dan ramah anak.',
+                'Gerbang Utama & Lobi SMP Negeri 12 Yogyakarta'
+              )
+            "
+          >
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Kegiatan Non-Mengajar</span>
+              <img src="IMG/Kegiatan 5S.jpeg" alt="Pembiasaan Budaya 5S di SMP Negeri 12 Yogyakarta" loading="lazy" />
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Gerbang Utama • Penanaman Karakter Pagi Hari</div>
+              <h4 class="gallery-agency-title">Piket Pembiasaan Budaya 5S di Gerbang Sekolah</h4>
+              <p class="gallery-agency-desc">Menyambut kedatangan siswa dengan senyuman ramah dan salam santun di gerbang sekolah, mengawali hari belajar dengan budaya positif.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Pembiasaan Budaya 5S</span>
+                <span style="font-size: 0.82rem; font-weight: 800; color: var(--color-primary-blue)"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 5: Pengawasan ASTS (Non-Mengajar) -->
+          <div
+            class="gallery-card-agency"
+            data-category="non-mengajar"
+            onclick="
+              openStudioPhoto(
+                'IMG/Kegiatan ASTS.jpeg',
+                'Pengawasan Asesmen Sumatif Tengah Semester (ASTS) Gasal',
+                'Dokumentasi penugasan resmi pengawasan ruang ujian Asesmen Sumatif Tengah Semester (ASTS) Gasal di kelas IX SMP Negeri 12 Yogyakarta oleh mahasiswa PPL PJOK Marfika Sayekti, S.Pd., memastikan ketertiban, ketenangan, serta menjunjung tinggi nilai kejujuran dan integritas akademik peserta didik.',
+                'Ruang Ujian Kelas IX SMP Negeri 12 Yogyakarta'
+              )
+            "
+          >
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Kegiatan Non-Mengajar</span>
+              <img src="IMG/Kegiatan ASTS.jpeg" alt="Pengawasan Asesmen ASTS di SMP Negeri 12 Yogyakarta" loading="lazy" />
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Ruang Kelas IX • Integritas Asesmen Akademik</div>
+              <h4 class="gallery-agency-title">Pengawasan Asesmen Sumatif Tengah Semester (ASTS)</h4>
+              <p class="gallery-agency-desc">Tugas resmi mengawasi ruang ujian ASTS Gasal di kelas IX menjamin pelaksanaan asesmen yang tertib, tenang, dan berintegritas tinggi.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Integritas ASTS Gasal</span>
+                <span style="font-size: 0.82rem; font-weight: 800; color: var(--color-primary-blue)"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 6: Kegiatan PKJ Kamis Pon Busana Jawa (Kebudayaan) -->
+          <div
+            class="gallery-card-agency"
+            data-category="budaya"
+            onclick="
+              openStudioPhoto(
+                'IMG/Kegiatan PKJ (Kamis Pon).jpeg',
+                'Pembiasaan Budaya Tradisional Kamis Pon (Pekan Kebudayaan Jawa)',
+                'Dokumentasi pelaksanaan Pekan Kebudayaan Jawa (PKJ) setiap hari Kamis Pon di lingkungan SMP Negeri 12 Yogyakarta. Mahasiswa PPL PJOK Marfika Sayekti, S.Pd. bersama dewan guru dan siswa mengenakan busana tradisional Jawa gagrak Ngayogyakarta serta berbahasa Jawa krama alus untuk melestarikan kearifan lokal.',
+                'Kampus SMP Negeri 12 Yogyakarta'
+              )
+            "
+          >
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Kebudayaan &amp; Kearifan Lokal</span>
+              <img src="IMG/Kegiatan PKJ (Kamis Pon).jpeg" alt="Pembiasaan Budaya Kamis Pon PKJ SMP Negeri 12 Yogyakarta" loading="lazy" />
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Kamis Pon • Busana Adat Gagrak Ngayogyakarta</div>
+              <h4 class="gallery-agency-title">Pembiasaan Budaya Tradisional Kamis Pon (PKJ)</h4>
+              <p class="gallery-agency-desc">Mengenakan busana adat Jawa gagrak Ngayogyakarta dan berbahasa krama alus setiap Kamis Pon demi merawat kearifan lokal DIY.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Kearifan Lokal Kamis Pon</span>
+                <span style="font-size: 0.82rem; font-weight: 800; color: var(--color-primary-blue)"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 7: Persiapan Karnaval HUT Kota Yogyakarta (Kebudayaan) -->
+          <div
+            class="gallery-card-agency"
+            data-category="budaya"
+            onclick="
+              openStudioPhoto(
+                'IMG/Persiapan Karnaval Kota Yogyakarta.jpeg',
+                'Pendampingan Persiapan Kontingen Karnaval Budaya Siswa',
+                'Dokumentasi pendampingan persiapan kontingen karnaval budaya SMP Negeri 12 Yogyakarta dalam rangka Peringatan HUT Kota Yogyakarta ke-268. Mahasiswa PPL PJOK Marfika Sayekti, S.Pd. membantu penataan kostum adat tari tradisional, atribut defile budaya, serta gladi kekompakan gerak di aula sekolah.',
+                'Aula & Lapangan SMP Negeri 12 Yogyakarta'
+              )
+            "
+          >
+            <div class="gallery-agency-thumb">
+              <span class="gallery-tag-pill">Kebudayaan &amp; Kearifan Lokal</span>
+              <img src="IMG/Persiapan Karnaval Kota Yogyakarta.jpeg" alt="Persiapan Karnaval Budaya Kota Yogyakarta" loading="lazy" />
+              <div class="gallery-zoom-overlay">
+                <div class="gallery-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              </div>
+            </div>
+            <div class="gallery-agency-body">
+              <div class="gallery-agency-meta">Aula Sekolah • Semarak HUT Kota Yogyakarta Ke-268</div>
+              <h4 class="gallery-agency-title">Pendampingan Kontingen Karnaval Budaya Siswa</h4>
+              <p class="gallery-agency-desc">Mendampingi persiapan kostum seni, formasi defile, dan gladi resik kontingen siswa SMP Negeri 12 Yogyakarta menyambut HUT Kota Jogja.</p>
+              <div class="gallery-agency-foot">
+                <span class="tag-pill-light">Karnaval HUT Kota Jogja</span>
+                <span style="font-size: 0.82rem; font-weight: 800; color: var(--color-primary-blue)"><i class="fa-solid fa-expand"></i> Perbesar Foto</span>
+              </div>
+            </div>
+          </div>  
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- =================================================================
+       5. PHOTO LIGHTBOX MODAL (Studio Theme)
+       ================================================================= -->
+    <div id="photo-lightbox-modal" class="modal-studio-overlay modal-overlay-studio" style="display: none">
+      <div class="modal-studio-window modal-window-studio modal-photo-window">
+        <button id="photo-lightbox-close" class="modal-close-btn modal-close-studio" aria-label="Tutup Pratinjau"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-photo-content">
+          <div class="modal-photo-img-wrap">
+            <img id="photo-lightbox-img" src="" alt="Dokumentasi PPL PJOK UNY" />
+          </div>
+          <div class="modal-photo-info">
+            <span id="photo-lightbox-loc" class="modal-photo-loc"><i class="fa-solid fa-location-dot"></i> SMP Negeri 12 Yogyakarta</span>
+            <h3 id="photo-lightbox-title" style="font-size: 1.35rem; color: var(--color-midnight); font-weight: 800; margin-bottom: 0.5rem; line-height: 1.35">Judul Foto</h3>
+            <p id="photo-lightbox-desc" style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.65">Deskripsi dokumentasi kegiatan PPL.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================================================
+       6. CTA BANNER (Diskusi Pembelajaran & Kolaborasi)
+       ================================================================= -->
+    <section id="diskusi" class="section-cta-studio">
+      <div class="container">
+        <div class="cta-studio-container">
+          <!-- Left Angled Yellow Sticky Note -->
+          <div class="cta-sticky-note-wrapper">
+            <div class="cta-yellow-sticky-note">
+              <div class="sticky-note-text">
+                Mendidik<br />
+                dengan hati,<br />
+                menginspirasi!
+              </div>
+              <div class="sticky-note-icons">
+                <i class="fa-solid fa-sun" style="color: #d97706; font-size: 1.1rem"></i>
+                <i class="fa-solid fa-heart" style="color: #2563eb; font-size: 1.05rem"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form Area -->
+          <div class="cta-form-area">
+            <h2>ADA PERTANYAAN ATAU DISKUSI PEMBELAJARAN?</h2>
+            <p>Saya siap berdiskusi terkait implementasi Kurikulum Merdeka, diferensiasi gerak PJOK, maupun program kepelatihan siswa!</p>
+
+            <form id="cta-project-form" class="cta-inline-form">
+              <input type="text" id="cta-name" class="cta-input-studio" placeholder="Nama Lengkap" required />
+              <input type="email" id="cta-email" class="cta-input-studio" placeholder="Email / No. WhatsApp" required />
+              <input type="text" id="cta-message" class="cta-input-studio" placeholder="Pesan / Topik Diskusi" required />
+              <button type="submit" class="btn-cta-submit">
+                <span>Kirim Pesan</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+       7. MIDNIGHT NAVY FOOTER
+       ================================================================= -->
+    <footer class="footer-midnight-studio">
+      <div class="container">
+        <div class="footer-studio-grid">
+          <!-- Col 1: Brand Info -->
+          <div>
+            <a href="index.html" class="footer-brand-logo">
+              Marfika Sayekti
+              <svg class="sun-logo-doodle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="6" fill="#FBBF24" stroke="#F59E0B" stroke-width="2" />
+                <line x1="16" y1="4" x2="16" y2="7" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="16" y1="25" x2="16" y2="28" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="4" y1="16" x2="7" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+                <line x1="25" y1="16" x2="28" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </a>
+            <p class="footer-brand-desc">
+              Portofolio resmi PPL Terbimbing Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi PJOK Universitas Negeri Yogyakarta di SMP Negeri 12 Yogyakarta — Mendidik dengan integritas dan bergerak menginspirasi.
+            </p>
+            <div class="footer-social-circles">
+              <a href="javascript:void(0)" onclick="showStudioToast('Facebook')" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="javascript:void(0)" onclick="showStudioToast('Instagram @marfikasayekti')" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="javascript:void(0)" onclick="showStudioToast('YouTube Pembelajaran PJOK')" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="javascript:void(0)" onclick="showStudioToast('LinkedIn Marfika Sayekti')" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- Col 2: NAVIGASI -->
+          <div>
+            <h4 class="footer-col-title">NAVIGASI</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link-item">Beranda Utama</a></li>
+              <li><a href="profil.html" class="footer-link-item">Profil Mahasiswa</a></li>
+              <li><a href="UTS/rancangan.html" class="footer-link-item">Siklus 1 (UTS PPL)</a></li>
+              <li><a href="UAS/rancangan.html" class="footer-link-item">Siklus 2, 3 &amp; 4 (UAS PPL)</a></li>
+              <li><a href="non-mengajar.html" class="footer-link-item">Kegiatan Non-Mengajar</a></li>
+              <li><a href="dokumentasi.html" class="footer-link-item">Galeri Dokumentasi</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: PERANGKAT AJAR -->
+          <div>
+            <h4 class="footer-col-title">PERANGKAT AJAR</h4>
+            <ul class="footer-links-list">
+              <li><a href="UTS/rancangan.html" class="footer-link-item">Modul Kebugaran (UTS)</a></li>
+              <li><a href="UAS/rancangan.html" class="footer-link-item">Modul Voli, Basket, Bulutangkis (UAS)</a></li>
+              <li><a href="UTS/media.html" class="footer-link-item">Media Ajar TPACK &amp; QR Code</a></li>
+              <li><a href="UAS/materi.html" class="footer-link-item">Buku Saku Olahraga Siswa</a></li>
+              <li><a href="UTS/instrumen.html" class="footer-link-item">Instrumen Asesmen 3 Ranah</a></li>
+              <li><a href="UTS/video.html" class="footer-link-item">Video Praktik UKin / PPL</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: KONTAK RESMI & LPTK -->
+          <div>
+            <h4 class="footer-col-title">KONTAK &amp; LPTK</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-entry">
+                <i class="fa-regular fa-envelope"></i>
+                <span>marfika.ppg@uny.ac.id<br /><small style="color: #64748b">Surel Resmi Mahasiswa PPG</small></span>
+              </li>
+              <li class="footer-contact-entry">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>SMP Negeri 12 Yogyakarta<br /><small style="color: #64748b">Jl. Tentara Pelajar No. 9, Bumijo, Jetis, Yogyakarta</small></span>
+              </li>
+              <li class="footer-contact-entry">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>FIKK Universitas Negeri Yogyakarta<br /><small style="color: #64748b">Jl. Colombo No. 1, Sleman, DIY</small></span>
+              </li>
+              <li class="footer-contact-entry">
+                <i class="fa-solid fa-phone"></i>
+                <span>+62 859-1953-74310<br /><small style="color: #64748b">Kontak WhatsApp Aktif</small></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-bar">
+          <div>&copy; 2026 <strong>Marfika Sayekti, S.Pd.</strong> All Rights Reserved &bull; PPG Calon Guru PJOK Universitas Negeri Yogyakarta di SMP Negeri 12 Yogyakarta</div>
+          <div class="footer-bottom-links">
+            <a href="profil.html">Profil Mahasiswa</a>
+            <a href="dokumentasi.html">Galeri PPL</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/studio.js"></script>
+  </body>
+</html>

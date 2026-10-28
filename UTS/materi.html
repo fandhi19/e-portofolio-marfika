@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS - Materi Pembelajaran PJOK | Marfika Sayekti, S.Pd. - UNY</title>
+  
+  <link rel="icon" type="image/png" href="../logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/studio-theme.css?v=2.1">
+</head>
+<body>
+
+  <!-- =================================================================
+       1. TOPBAR (Studio Theme)
+       ================================================================= -->
+    <!-- =================================================================
+       1. TOPBAR (Studio Theme)
+       ================================================================= -->
+  <div class="topbar-studio">
+    <div class="container topbar-studio-inner">
+      <div class="topbar-left">
+        <i class="fa-solid fa-graduation-cap lead-icon"></i>
+        <span>PPL Terbimbing PPG Calon Guru PJOK UNY • SMP Negeri 12 Yogyakarta</span>
+      </div>
+
+      <div class="topbar-right">
+        <a href="mailto:marfika.ppg@uny.ac.id" class="topbar-contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>marfika.ppg@uny.ac.id</span>
+        </a>
+        <a href="tel:+62859195374310" class="topbar-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+62 859-1953-74310</span>
+        </a>
+
+        <div class="topbar-socials">
+          <a href="javascript:void(0)" onclick="showToast('Instagram Marfika Sayekti')" class="topbar-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="javascript:void(0)" onclick="showToast('Kanal YouTube Pembelajaran PJOK')" class="topbar-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="javascript:void(0)" onclick="showToast('LinkedIn Marfika Sayekti')" class="topbar-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       2. MAIN NAVBAR (Clean Studio Header + Script Logo & Sun Doodle)
+       ================================================================= -->
+  <header class="navbar-studio">
+    <div class="container navbar-studio-inner">
+      
+      <!-- Brand Logo: Handwritten "Marfika" with radiant Sun Doodle -->
+      <a href="../index.html" class="brand-studio">
+        <div class="brand-studio-text">
+          <span class="brand-studio-logo">
+            Marfika Sayekti
+            <!-- Sun Doodle SVG with Rays -->
+            <svg class="sun-logo-doodle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="6" fill="#FBBF24" stroke="#F59E0B" stroke-width="2"/>
+              <line x1="16" y1="4" x2="16" y2="7" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="16" y1="25" x2="16" y2="28" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="4" y1="16" x2="7" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="25" y1="16" x2="28" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="7.5" y1="7.5" x2="9.6" y2="9.6" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="22.4" y1="22.4" x2="24.5" y2="24.5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="7.5" y1="24.5" x2="9.6" y2="22.4" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="22.4" y1="9.6" x2="24.5" y2="7.5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-studio-sub">PPG CALON GURU PJOK • SMP NEGERI 12 YOGYAKARTA</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links: 6 Menu Items Required -->
+      <nav>
+        <ul class="nav-menu-studio">
+          <!-- 1. Beranda -->
+          <li><a href="../index.html" class="nav-link-studio">Beranda</a></li>
+
+          <!-- 2. Profil -->
+          <li><a href="../profil.html" class="nav-link-studio">Profil</a></li>
+
+          <!-- 3. UTS Dropdown -->
+          <li class="nav-studio-dropdown">
+            <a href="rancangan.html" class="nav-link-studio active">
+              UTS <i class="fa-solid fa-chevron-down" style="font-size:0.68rem; margin-left:2px;"></i>
+            </a>
+            <ul class="dropdown-studio-menu">
+              <li>
+                <a href="rancangan.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-file-pen"></i> Rancangan Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="media.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-photo-film"></i> Media Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="materi.html" class="dropdown-studio-item active">
+                  <i class="fa-solid fa-book-open-reader"></i> Materi Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="instrumen.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-clipboard-check"></i> Instrumen Pembelajaran
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 4. UAS Dropdown -->
+          <li class="nav-studio-dropdown">
+            <a href="../UAS/rancangan.html" class="nav-link-studio">
+              UAS <i class="fa-solid fa-chevron-down" style="font-size:0.68rem; margin-left:2px;"></i>
+            </a>
+            <ul class="dropdown-studio-menu">
+              <li>
+                <a href="../UAS/rancangan.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-file-circle-check"></i> Rancangan Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="../UAS/media.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-laptop-code"></i> Media Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="../UAS/materi.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-book-bookmark"></i> Materi Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="../UAS/instrumen.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-list-check"></i> Instrumen Pembelajaran
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 5. Kegiatan Non-Mengajar -->
+          <li><a href="../non-mengajar.html" class="nav-link-studio">Kegiatan Non-Mengajar</a></li>
+
+          <!-- 6. Dokumentasi -->
+          <li><a href="../dokumentasi.html" class="nav-link-studio">Dokumentasi</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action CTA: Golden-Yellow Pill Button -->
+      <div style="display:flex; align-items:center; gap:0.75rem;">
+        <a href="../profil.html#cv" class="btn-nav-connect" onclick="showToast('Unduh CV Guru Digital...');">
+          <span>Unduh CV Guru</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+        <button class="mobile-studio-toggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =================================================================
+       3. SUBPAGE HERO HEADER (Studio Theme)
+       ================================================================= -->
+  <section class="subpage-studio-hero">
+    <div class="container">
+      <div class="hero-studio-badge" style="margin-bottom: 1rem;">
+        <span class="badge-dot"></span>
+        <span>UTS &bull; SIKLUS 1 PPL TERBIMBING</span>
+      </div>
+
+      <h1 class="subpage-hero-title">
+        Materi Pembelajaran
+        <span class="script-highlight" style="font-family: var(--font-script); color: var(--color-primary-blue); font-weight: 700; margin-left: 6px;">
+          Bahan Ajar
+          <svg class="sun-doodle-hero" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:36px; height:36px; vertical-align:middle; margin-left:6px;">
+            <circle cx="22" cy="22" r="9" fill="#FBBF24" stroke="#F59E0B" stroke-width="2.5"/>
+            <line x1="22" y1="4" x2="22" y2="8" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="22" y1="36" x2="22" y2="40" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="4" y1="22" x2="8" y2="22" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="36" y1="22" x2="40" y2="22" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </h1>
+
+      <p class="subpage-hero-desc">
+        Buku saku digital (<em>Handbook PJOK</em>) 22 halaman: <strong>"JAGO KEBUGARAN JASMANI — Sehat, Bugar, dan Berprestasi Setiap Hari"</strong> untuk peserta didik Fase D (Kelas IX SMP) di SMP Negeri 12 Yogyakarta. Membahas tuntas konsep kebugaran, 5 komponen fisik, prinsip latihan F.I.T.T., zona denyut nadi latihan, serta panduan sirkuit latihan 5 pos terprogram.
+      </p>
+
+      <div class="studio-breadcrumb">
+        <a href="../index.html">Beranda</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Siklus 1 (UTS)</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span style="color:var(--color-midnight); font-weight:700;">Materi Pembelajaran</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       4. MAIN CONTENT
+       ================================================================= -->
+  <main style="background: var(--color-bg-ivory); padding: 4.5rem 0 5.5rem;">
+    <div class="container">
+      
+      <!-- =============================================================
+           A. INTERACTIVE PDF VIEWER SECTION
+           ============================================================= -->
+      <section style="margin-bottom: 5rem;">
+        <div class="section-agency-head" style="margin-bottom: 2.5rem;">
+          <div class="badge-pill-group">
+            <span class="twin-dot-icon">
+              <span></span><span></span>
+            </span>
+            <span>MATERI PEMBELAJARAN &amp; HANDBOOK SIKLUS 1</span>
+          </div>
+          <h2 class="section-agency-title">
+            Pratinjau Buku Saku Digital (PDF)
+            <span class="wavy-squiggle-wrap" style="display:inline-block; vertical-align:middle; margin-left:8px;">
+              <svg class="wavy-squiggle-svg" viewBox="0 0 100 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:75px; height:12px;">
+                <path d="M3 8C15 2 25 14 38 8C50 2 62 14 74 8C86 2 95 12 97 9" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p class="section-agency-subtitle">
+            Telusuri langsung dokumen lengkap 22 halaman Handbook Kebugaran Jasmani SMP yang mencakup pengantar konsep, prinsip latihan F.I.T.T., 5 program latihan terstruktur, latihan mandiri, hingga glosarium istilah keolahragaan.
+          </p>
+        </div>
+
+        <!-- PDF Viewer Container Card -->
+        <div class="pdf-viewer-card">
+          <!-- Toolbar -->
+          <div class="pdf-viewer-toolbar">
+            <div class="pdf-toolbar-info">
+              <div class="pdf-toolbar-icon">
+                <i class="fa-solid fa-book-open-reader"></i>
+              </div>
+              <div>
+                <div class="pdf-toolbar-title">Bahan Ajar PJOK: Handbook Jago Kebugaran Jasmani SMP</div>
+                <div class="pdf-toolbar-sub">
+                  Buku Saku Komprehensif • Fase D / Kelas IX SMP • 22 Halaman Panduan Fisik
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-toolbar-actions">
+              <span class="tag-pill" style="background: rgba(251, 191, 36, 0.15); color: #F59E0B; font-weight: 700; border: 1px solid rgba(251, 191, 36, 0.4); padding: 6px 14px; font-size: 0.78rem; border-radius: var(--radius-pill);">
+                <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i> Terverifikasi LPTK UNY
+              </span>
+              <a href="../Dokumen/Materi Siklus 1.pdf" download="Bahan_Ajar_PJOK_Siklus1_MarfikaSayekti.pdf" class="btn btn-primary-lime btn-sm">
+                <i class="fa-solid fa-file-arrow-down"></i> Unduh Handbook PDF (682 KB)
+              </a>
+              <a href="../Dokumen/Materi Siklus 1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm" style="border-color: rgba(255,255,255,0.4); color: #FFFFFF;">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Layar Penuh
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Frame -->
+          <div class="pdf-frame-wrapper">
+            <iframe 
+              src="../Dokumen/Materi Siklus 1.pdf#toolbar=1&navpanes=0&scrollbar=1" 
+              title="Bahan Ajar Siklus 1 Marfika Sayekti"
+              loading="lazy">
+              <p style="padding: 2rem; color: #FFFFFF; text-align: center;">
+                Peramban Anda tidak mendukung tampilan PDF langsung. Silakan 
+                <a href="../Dokumen/Materi Siklus 1.pdf" target="_blank" style="color: var(--color-accent-lime); font-weight: bold; text-decoration: underline;">
+                  Klik di sini untuk mengunduh atau membuka Bahan Ajar Siklus 1 (.PDF)
+                </a>.
+              </p>
+            </iframe>
+          </div>
+
+          <!-- Footer Metadata Bar -->
+          <div style="background: var(--color-bg-ivory); padding: 1.25rem 2rem; border-top: 1px solid var(--color-border-subtle); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 1.8rem; flex-wrap: wrap;">
+              <div style="font-size: 0.85rem; color: var(--color-text-muted);">
+                <i class="fa-solid fa-book" style="color: var(--color-primary-dark); margin-right: 6px;"></i>
+                <strong>Struktur:</strong> 3 Bab Inti + Latihan Mandiri + Glosarium (22 Halaman)
+              </div>
+              <div style="font-size: 0.85rem; color: var(--color-text-muted);">
+                <i class="fa-solid fa-heart-pulse" style="color: var(--color-primary-dark); margin-right: 6px;"></i>
+                <strong>Prinsip:</strong> Rumus F.I.T.T. &amp; Zona Denyut Nadi Latihan
+              </div>
+              <div style="font-size: 0.85rem; color: var(--color-text-muted);">
+                <i class="fa-solid fa-qrcode" style="color: var(--color-primary-dark); margin-right: 6px;"></i>
+                <strong>Fitur:</strong> Portal Digital QR Code &amp; Sirkuit 5 Pos
+              </div>
+            </div>
+            <div>
+              <a href="javascript:void(0)" onclick="showToast('Buku Saku Resmi PPG UNY 2026')" style="font-size: 0.82rem; color: var(--color-primary-dark); font-weight: 700; text-decoration: none;">
+                <i class="fa-solid fa-circle-check" style="color: var(--color-primary-blue); margin-right: 5px;"></i> Kurikulum Merdeka 2026
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================
+           B. COMPREHENSIVE ANALYSIS OF THE TEACHING MATERIAL
+           ============================================================= -->
+      <section>
+        <div class="section-agency-head" style="margin-bottom: 3.5rem;">
+          <div class="badge-pill-group">
+            <span class="twin-dot-icon">
+              <span></span><span></span>
+            </span>
+            <span>ANALISIS KOMPREHENSIF MATERI PEMBELAJARAN</span>
+          </div>
+          <h2 class="section-agency-title">
+            Analisis Akademik &amp; Refleksi Kritis Bahan Ajar
+            <span class="wavy-squiggle-wrap" style="display:inline-block; vertical-align:middle; margin-left:8px;">
+              <svg class="wavy-squiggle-svg" viewBox="0 0 100 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:75px; height:12px;">
+                <path d="M3 8C15 2 25 14 38 8C50 2 62 14 74 8C86 2 95 12 97 9" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p class="section-agency-subtitle">
+            Kajian pedagogik mendalam terhadap struktur materi buku saku, relevansi prinsip latihan F.I.T.T. bagi remaja SMP, kelebihan, keterbatasan implementasi, serta justifikasi teoritis ilmu keolahragaan.
+          </p>
+        </div>
+
+        <!-- =========================================================
+             1. KONTEKS DAN TUJUAN MATERI
+             ========================================================= -->
+        <article class="analysis-module-card">
+          <div class="analysis-module-header">
+            <div class="analysis-module-num">01</div>
+            <div>
+              <h3 class="analysis-module-title">Konteks dan Struktur Bahan Ajar</h3>
+              <p class="analysis-module-desc">
+                Tinjauan desain bahan ajar handbook 22 halaman berbasis Kurikulum Merdeka, pemanfaatan analogi kontekstual remaja, serta integrasi 5 komponen kebugaran jasmani.
+              </p>
+            </div>
+          </div>
+
+          <div class="analysis-content-body">
+            
+            <!-- Konteks Kebutuhan Bahan Ajar -->
+            <div style="margin-bottom: 2.5rem;">
+              <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-dark); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                <i class="fa-solid fa-book-bookmark" style="color: var(--color-primary-dark); font-size: 1.1rem;"></i>
+                A. Analisis Konteks Kebutuhan Handbook &amp; Karakteristik Peserta Didik
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.75; margin-bottom: 1.2rem;">
+                Peserta didik <strong>Fase D (Kelas IX SMP)</strong> di SMP Negeri 12 Yogyakarta sedang berada dalam fase transisi pubertas yang krusial, di mana pemahaman terhadap kesehatan fungsi organ tubuh mulai berkembang. Kebutuhan terhadap buku saku <em>Handbook Kebugaran Jasmani</em> ini dilandasi beberapa pertimbangan pedagogik utama:
+              </p>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border-left: 4px solid var(--color-primary-blue); border: 1px solid var(--color-border-card); box-shadow: var(--shadow-sm);">
+                  <strong style="display: block; color: var(--color-primary-dark); font-size: 0.95rem; margin-bottom: 0.4rem;">
+                    <i class="fa-solid fa-battery-three-quarters" style="margin-right: 6px; color: var(--color-primary-blue);"></i> Analogi Kontekstual Baterai Ponsel
+                  </strong>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Handbook menggunakan analogi baterai ponsel berkapasitas besar untuk menjelaskan kapasitas energi tubuh. Analogi yang akrab dengan keseharian remaja ini membuat konsep abstrak fisiologi kebugaran menjadi sangat mudah dipahami dan diingat.
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border-left: 4px solid #F59E0B; border: 1px solid var(--color-border-card); box-shadow: var(--shadow-sm);">
+                  <strong style="display: block; color: var(--color-primary-dark); font-size: 0.95rem; margin-bottom: 0.4rem;">
+                    <i class="fa-solid fa-calculator" style="margin-right: 6px; color: #F59E0B;"></i> Formula Latihan F.I.T.T. &amp; Denyut Nadi
+                  </strong>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Memberikan rumus ilmiah yang operasional bagi siswa: menghitung Denyut Nadi Maksimal (220 − Usia), menentukan zona latihan aerobik (60%–80% DNM), serta mengatur frekuensi (3–5x seminggu) dan waktu (30–60 menit).
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border-left: 4px solid #10B981; border: 1px solid var(--color-border-card); box-shadow: var(--shadow-sm);">
+                  <strong style="display: block; color: var(--color-primary-dark); font-size: 0.95rem; margin-bottom: 0.4rem;">
+                    <i class="fa-solid fa-triangle-exclamation" style="margin-right: 6px; color: #10B981;"></i> Panduan Batas Aman (Safety First)
+                  </strong>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Memuat halaman khusus *Kapan Harus Berhenti Latihan* (pusing berlebih, nyeri tajam sendi, mual, sesak napas tidak wajar), menanamkan kesadaran protektif agar latihan fisik tidak memicu cedera berlebihan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dekonstruksi Struktur Bab -->
+            <div>
+              <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-dark); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                <i class="fa-solid fa-list-check" style="color: var(--color-primary-dark); font-size: 1.1rem;"></i>
+                B. Dekonstruksi Struktur Materi Handbook 22 Halaman
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.4rem;">
+                Materi diorganisasikan secara hierarkis ke dalam tiga bab utama, modul latihan mandiri, dan perangkat pendukung:
+              </p>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.4rem;">
+                
+                <div style="background: #FFFFFF; border: 1.5px solid var(--color-border-card); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                  <div style="display:inline-block; background:var(--color-primary-blue-light); color:var(--color-primary-blue); font-size:0.74rem; font-weight:800; padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:0.75rem; letter-spacing:0.04em;">BAB I • PENGENALAN KONSEP</div>
+                  <h5 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">
+                    Definisi &amp; 4 Ciri Tubuh Bugar
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Membedakan aktivitas fisik biasa dengan latihan terprogram, membedakan sehat vs bugar, menguraikan manfaat fisiologis kebugaran bagi fokus belajar, serta 4 ciri tubuh bugar (daya tahan, kekuatan, kelentukan, pemulihan cepat).
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border: 1.5px solid var(--color-border-card); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                  <div style="display:inline-block; background:var(--color-primary-blue-light); color:var(--color-primary-blue); font-size:0.74rem; font-weight:800; padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:0.75rem; letter-spacing:0.04em;">BAB II • PRINSIP LATIHAN</div>
+                  <h5 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">
+                    5 Komponen &amp; Rumus F.I.T.T.
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Mengkaji 5 komponen kebugaran jasmani (daya tahan, kekuatan, kelentukan, kecepatan, kelincahan), rumus F.I.T.T. (Frequency, Intensity, Time, Type), dan panduan menghitung denyut nadi latihan per menit.
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border: 1.5px solid var(--color-border-card); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                  <div style="display:inline-block; background:var(--color-primary-blue-light); color:var(--color-primary-blue); font-size:0.74rem; font-weight:800; padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:0.75rem; letter-spacing:0.04em;">BAB III • PROGRAM LATIHAN</div>
+                  <h5 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">
+                    5 Program &amp; Sirkuit 5 Pos
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Panduan teknis latihan daya tahan kardiorespirasi (jogging/interval), kekuatan otot inti (plank/push-up), kelentukan sendi, kecepatan/kelincahan, serta modul sirkuit 5 pos yang siap dipraktikkan di sekolah atau rumah.
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border: 1.5px solid var(--color-border-card); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                  <div style="display:inline-block; background:var(--color-primary-blue-light); color:var(--color-primary-blue); font-size:0.74rem; font-weight:800; padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:0.75rem; letter-spacing:0.04em;">EVALUASI • PENDUKUNG</div>
+                  <h5 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">
+                    Latihan Mandiri &amp; Glosarium
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Menyediakan 4 soal rancangan program &amp; evaluasi kebugaran, jurnal denyut nadi mingguan, portal digital pemindaian QR Code teknik gerak, serta kamus istilah ilmiah keolahragaan (glosarium PJOK).
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- =========================================================
+             2. KELEBIHAN DAN KEKURANGAN MATERI
+             ========================================================= -->
+        <article class="analysis-module-card">
+          <div class="analysis-module-header">
+            <div class="analysis-module-num">02</div>
+            <div>
+              <h3 class="analysis-module-title">Kelebihan dan Kelemahan Bahan Ajar</h3>
+              <p class="analysis-module-desc">
+                Evaluasi kritis terhadap konten buku saku 22 halaman serta rekomendasi strategi operasional pembagian materi agar efisien dalam kurikulum PJOK SMP.
+              </p>
+            </div>
+          </div>
+
+          <div class="analysis-content-body">
+            
+            <div class="analysis-grid-2col">
+              
+              <!-- Kolom Kelebihan -->
+              <div class="analysis-box-item pro">
+                <div class="analysis-box-title" style="color: var(--color-primary-dark);">
+                  <i class="fa-solid fa-circle-check" style="color: #10B981; font-size: 1.3rem;"></i>
+                  Kelebihan &amp; Kekuatan Bahan Ajar (Strengths)
+                </div>
+                <ul class="analysis-list">
+                  <li>
+                    <i class="fa-solid fa-check-circle" style="color: #10B981;"></i>
+                    <div>
+                      <strong>Buku Saku Mandiri yang Komprehensif:</strong>
+                      Menyajikan materi secara tuntas dari landasan konseptual, prinsip ilmiah F.I.T.T., hingga program sirkuit 5 pos yang dapat dipraktikkan tanpa ketergantungan fasilitas mahal.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check-circle" style="color: #10B981;"></i>
+                    <div>
+                      <strong>Gaya Bahasa Dialogis &amp; Analogi Segar:</strong>
+                      Bahasa komunikatif yang menghindari istilah kaku dan menggunakan analogi baterai ponsel berhasil menjembatani teori fisiologi ke dalam daya tangkap remaja usia 14–15 tahun.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check-circle" style="color: #10B981;"></i>
+                    <div>
+                      <strong>Integrasi Portal Digital QR Code:</strong>
+                      Fitur QR Code memfasilitasi pembelajaran *blended learning*, di mana siswa dapat memindai tautan video demonstrasi postur gerak secara mandiri.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check-circle" style="color: #10B981;"></i>
+                    <div>
+                      <strong>Fokus pada Kebiasaan Hidup Aktif Sepanjang Hayat:</strong>
+                      Handbook tidak berorientasi pada pencetakan atlet elit, melainkan pembiasaan gerak rutin (*active lifestyle*) untuk menjaga stamina dan konsentrasi belajar.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Kolom Kekurangan -->
+              <div class="analysis-box-item con">
+                <div class="analysis-box-title" style="color: #B45309;">
+                  <i class="fa-solid fa-triangle-exclamation" style="color: #F59E0B; font-size: 1.3rem;"></i>
+                  Kelemahan &amp; Tantangan Penerapan (Limitations)
+                </div>
+                <ul class="analysis-list">
+                  <li>
+                    <i class="fa-solid fa-circle-xmark" style="color: #F59E0B;"></i>
+                    <div>
+                      <strong>Ketebalan Dokumen (22 Halaman):</strong>
+                      Jumlah halaman yang cukup tebal berisiko membebani siswa jika diinstruksikan dibaca seluruhnya dalam 1 sesi tatap muka (3 JP).
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-xmark" style="color: #F59E0B;"></i>
+                    <div>
+                      <strong>Kepatuhan Pengisian Jurnal Latihan Mandiri:</strong>
+                      Tanpa pemantauan berkala dari guru dan orang tua, siswa cenderung menunda atau melewatkan pengisian tabel latihan fisik mandiri di rumah.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-xmark" style="color: #F59E0B;"></i>
+                    <div>
+                      <strong>Keterbatasan Perangkat Pemindai di Sekolah:</strong>
+                      Siswa yang tidak membawa smartphone ke sekolah tidak dapat langsung mengakses video peragaan dari kotak Portal Digital saat jam pelajaran di lapangan.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-xmark" style="color: #F59E0B;"></i>
+                    <div>
+                      <strong>Variasi Daya Dukung Alat di Rumah:</strong>
+                      Beberapa bentuk latihan kekuatan membutuhkan matras atau palang yang mungkin tidak dimiliki seluruh siswa di lingkungan tempat tinggalnya.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- Solusi dan Mitigasi -->
+            <div class="analysis-box-item solution">
+              <div class="analysis-box-title" style="color: var(--color-primary-dark); font-size: 1.2rem; border-bottom: 1px solid var(--color-border-card); padding-bottom: 0.75rem; margin-bottom: 1.25rem;">
+                <i class="fa-solid fa-lightbulb" style="color: var(--color-primary-blue); font-size: 1.3rem;"></i>
+                Solusi &amp; Rekomendasi Mitigasi Lapangan (Actionable Strategies)
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                <div>
+                  <h5 style="color: var(--color-primary-dark); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem;">
+                    1. Strategi Segmentasi Bab (Chunking Strategy)
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Memfokuskan Bab I dan Bab II untuk pendalaman konsep pada pertemuan tatap muka Siklus 1, sementara Bab III dan lembar latihan mandiri dialokasikan sebagai proyek portofolio sepanjang semester.
+                  </p>
+                </div>
+                <div>
+                  <h5 style="color: var(--color-primary-dark); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem;">
+                    2. Sistem Verifikasi Paraf Orang Tua &amp; Cek Berkala
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Menyisipkan kolom paraf orang tua pada lembar jurnal latihan mandiri mingguan serta melakukan pemeriksaan berkala setiap dua minggu oleh guru PJOK.
+                  </p>
+                </div>
+                <div>
+                  <h5 style="color: var(--color-primary-dark); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem;">
+                    3. Poster Fisik Sirkuit 5 Pos di Dinding Aula Sekolah
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Mencetak diagram sirkuit 5 pos dan rumus denyut nadi dalam format poster banner besar di aula SMP Negeri 12 Yogyakarta agar menjadi rujukan visual permanen tanpa gawai.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- =========================================================
+             3. KAJIAN TEORI
+             ========================================================= -->
+        <article class="analysis-module-card">
+          <div class="analysis-module-header">
+            <div class="analysis-module-num">03</div>
+            <div>
+              <h3 class="analysis-module-title">Kajian Teori &amp; Landasan Keilmuan Bahan Ajar</h3>
+              <p class="analysis-module-desc">
+                Justifikasi teoritis dari literatur teori belajar bermakna, prinsip adaptasi fisiologi olahraga, teori kemandirian belajar, dan model kebugaran berorientasi kesehatan.
+              </p>
+            </div>
+          </div>
+
+          <div class="analysis-content-body">
+            
+            <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.75; margin-bottom: 2rem;">
+              Desain materi handbook ini didukung secara kokoh oleh 5 pilar teori pendidikan keolahragaan dan psikologi perkembangan remaja:
+            </p>
+
+            <div class="theory-grid">
+              
+              <!-- Teori 1: Meaningful Learning Ausubel -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-lightbulb" style="margin-right: 5px;"></i> Teori Belajar Kognitif
+                </span>
+                <h4 class="theory-title">Teori Belajar Bermakna (David Ausubel, 1968)</h4>
+                <p class="theory-desc">
+                  Pembelajaran berlangsung efektif saat pengetahuan baru dikaitkan dengan struktur kognitif yang telah ada. Analogi baterai ponsel dan contoh kelelahan saat jam pelajaran terakhir berfungsi sebagai *anchoring ideas* yang menjadikan teori kebugaran bermakna nyata bagi siswa.
+                </p>
+              </div>
+
+              <!-- Teori 2: Fisiologi Latihan Bompa -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-dumbbell" style="margin-right: 5px;"></i> Fisiologi Latihan
+                </span>
+                <h4 class="theory-title">Prinsip Adaptasi Beban Lebih (Bompa &amp; Haff, 2009)</h4>
+                <p class="theory-desc">
+                  Rumus F.I.T.T. pada Bab II mengoperasionalkan hukum adaptasi fisiologis: *Overload* (beban latihan terukur), *Progression* (peningkatan bertahap), dan *Recovery* (waktu pemulihan), memastikan siswa melatih kebugaran tanpa risiko overtraining.
+                </p>
+              </div>
+
+              <!-- Teori 3: Self-Regulated Learning Zimmerman -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-user-gear" style="margin-right: 5px;"></i> Regulasi Diri
+                </span>
+                <h4 class="theory-title">Self-Regulated Learning Theory (Zimmerman, 2002)</h4>
+                <p class="theory-desc">
+                  Handbook melatih 3 fase metakognitif: **Perencanaan** (menetapkan target F.I.T.T.), **Pemantauan Kinerja** (mengecek denyut nadi saat latihan sirkuit), dan **Evaluasi Reflektif** (mengisi lembar refleksi mandiri).
+                </p>
+              </div>
+
+              <!-- Teori 4: Health-Related Fitness Corbin -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-heart" style="margin-right: 5px;"></i> Kebugaran Kesehatan
+                </span>
+                <h4 class="theory-title">Health-Related Physical Fitness Model (Corbin, 2014)</h4>
+                <p class="theory-desc">
+                  Menitikberatkan komponen kebugaran yang berhubungan langsung dengan derajat kesehatan preventif dan pencegahan penyakit metabolik (daya tahan jantung, kekuatan otot, kelentukan), bukan sekadar kebugaran keterampilan atletik sempit.
+                </p>
+              </div>
+
+              <!-- Teori 5: Profil Pelajar Pancasila -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-award" style="margin-right: 5px;"></i> Kurikulum Nasional
+                </span>
+                <h4 class="theory-title">Dimensi Profil Pelajar Pancasila (Kemendikbudristek)</h4>
+                <p class="theory-desc">
+                  Buku saku menginternalisasikan karakter **Mandiri** (disiplin menjalani latihan fisik terjadwal) dan **Bernalar Kritis** (menghitung denyut nadi latihan dan mengevaluasi status kebugaran pribadi secara rasional).
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =================================================================
+       5. CTA BANNER (Diskusi Pembelajaran & Kolaborasi)
+       ================================================================= -->
+  <section id="diskusi" class="section-cta-studio">
+    <div class="container">
+      <div class="cta-studio-container">
+        
+        <!-- Left Angled Yellow Sticky Note -->
+        <div class="cta-sticky-note-wrapper">
+          <div class="cta-yellow-sticky-note">
+            <div class="sticky-note-text">
+              Mendidik<br>
+              dengan hati,<br>
+              menginspirasi!
+            </div>
+            <div class="sticky-note-icons">
+              <i class="fa-solid fa-sun" style="color:#D97706; font-size:1.1rem;"></i>
+              <i class="fa-solid fa-heart" style="color:#2563EB; font-size:1.05rem;"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form Area -->
+        <div class="cta-form-area">
+          <h2>ADA PERTANYAAN ATAU DISKUSI PEMBELAJARAN?</h2>
+          <p>Saya siap berdiskusi terkait implementasi Kurikulum Merdeka, diferensiasi gerak PJOK, maupun program kepelatihan siswa!</p>
+
+          <form id="cta-project-form" class="cta-inline-form">
+            <input type="text" id="cta-name" class="cta-input-studio" placeholder="Nama Lengkap" required>
+            <input type="email" id="cta-email" class="cta-input-studio" placeholder="Email / No. WhatsApp" required>
+            <input type="text" id="cta-message" class="cta-input-studio" placeholder="Pesan / Topik Diskusi" required>
+            <button type="submit" class="btn-cta-submit">
+              <span>Kirim Pesan</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       6. MIDNIGHT NAVY FOOTER
+       ================================================================= -->
+    <footer class="footer-midnight-studio">
+    <div class="container">
+      <div class="footer-studio-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="../index.html" class="footer-brand-logo">
+            Marfika Sayekti
+            <svg class="sun-logo-doodle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="6" fill="#FBBF24" stroke="#F59E0B" stroke-width="2"/>
+              <line x1="16" y1="4" x2="16" y2="7" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="16" y1="25" x2="16" y2="28" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="4" y1="16" x2="7" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="25" y1="16" x2="28" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <p class="footer-brand-desc">
+            Portofolio resmi PPL Terbimbing Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi PJOK Universitas Negeri Yogyakarta di SMP Negeri 12 Yogyakarta — Mendidik dengan integritas dan bergerak menginspirasi.
+          </p>
+          <div class="footer-social-circles">
+            <a href="javascript:void(0)" onclick="showStudioToast('Facebook')" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="javascript:void(0)" onclick="showStudioToast('Instagram @marfikasayekti')" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="showStudioToast('YouTube Pembelajaran PJOK')" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="javascript:void(0)" onclick="showStudioToast('LinkedIn Marfika Sayekti')" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: NAVIGASI -->
+        <div>
+          <h4 class="footer-col-title">NAVIGASI</h4>
+          <ul class="footer-links-list">
+            <li><a href="../index.html" class="footer-link-item">Beranda Utama</a></li>
+            <li><a href="../profil.html" class="footer-link-item">Profil Mahasiswa</a></li>
+            <li><a href="../UTS/rancangan.html" class="footer-link-item">Siklus 1 (UTS PPL)</a></li>
+            <li><a href="../UAS/rancangan.html" class="footer-link-item">Siklus 2, 3 &amp; 4 (UAS PPL)</a></li>
+            <li><a href="../non-mengajar.html" class="footer-link-item">Kegiatan Non-Mengajar</a></li>
+            <li><a href="../dokumentasi.html" class="footer-link-item">Galeri Dokumentasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: PERANGKAT AJAR -->
+        <div>
+          <h4 class="footer-col-title">PERANGKAT AJAR</h4>
+          <ul class="footer-links-list">
+            <li><a href="../UTS/rancangan.html" class="footer-link-item">Modul Kebugaran (UTS)</a></li>
+            <li><a href="../UAS/rancangan.html" class="footer-link-item">Modul Voli, Basket, Bulutangkis (UAS)</a></li>
+            <li><a href="../UTS/media.html" class="footer-link-item">Media Ajar TPACK &amp; QR Code</a></li>
+            <li><a href="../UAS/materi.html" class="footer-link-item">Buku Saku Olahraga Siswa</a></li>
+            <li><a href="../UTS/instrumen.html" class="footer-link-item">Instrumen Asesmen 3 Ranah</a></li>
+            <li><a href="../UTS/video.html" class="footer-link-item">Video Praktik UKin / PPL</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: KONTAK RESMI & LPTK -->
+        <div>
+          <h4 class="footer-col-title">KONTAK &amp; LPTK</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-entry">
+              <i class="fa-regular fa-envelope"></i>
+              <span>marfika.ppg@uny.ac.id<br><small style="color:#64748B;">Surel Resmi Mahasiswa PPG</small></span>
+            </li>
+            <li class="footer-contact-entry">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>SMP Negeri 12 Yogyakarta<br><small style="color:#64748B;">Jl. Tentara Pelajar No. 9, Bumijo, Jetis, Yogyakarta</small></span>
+            </li>
+            <li class="footer-contact-entry">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>FIKK Universitas Negeri Yogyakarta<br><small style="color:#64748B;">Jl. Colombo No. 1, Sleman, DIY</small></span>
+            </li>
+            <li class="footer-contact-entry">
+              <i class="fa-solid fa-phone"></i>
+              <span>+62 859-1953-74310<br><small style="color:#64748B;">Kontak WhatsApp Aktif</small></span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 <strong>Marfika Sayekti, S.Pd.</strong> All Rights Reserved &bull; PPG Calon Guru PJOK Universitas Negeri Yogyakarta di SMP Negeri 12 Yogyakarta
+        </div>
+        <div class="footer-bottom-links">
+          <a href="../profil.html">Profil Mahasiswa</a>
+          <a href="../dokumentasi.html">Galeri PPL</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/studio.js"></script>
+</body>
+</html>

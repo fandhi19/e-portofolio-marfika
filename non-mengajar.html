@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kegiatan Non-Mengajar PPL | Marfika Sayekti, S.Pd. - UNY</title>
+  
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/studio-theme.css?v=2.1">
+
+<style>
+  /* Activity Showcase Custom Styling */
+  .activity-showcase-card {
+    background: #ffffff;
+    border: 1.5px solid var(--color-border-card);
+    border-radius: var(--radius-xl);
+    padding: 2.8rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 3.5rem;
+    transition: var(--transition-smooth);
+  }
+  .activity-showcase-card:hover {
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: var(--shadow-lg);
+  }
+  .activity-grid-split {
+    display: grid;
+    grid-template-columns: 1.05fr 1.35fr;
+    gap: 2.8rem;
+    align-items: start;
+  }
+  @media (max-width: 992px) {
+    .activity-grid-split {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  .activity-photo-wrap {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 2px solid var(--color-border-card);
+    background: #0F172A;
+    cursor: pointer;
+  }
+  .activity-photo-wrap img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .activity-photo-wrap:hover img {
+    transform: scale(1.04);
+  }
+  .activity-photo-badge {
+    position: absolute;
+    top: 1.1rem;
+    left: 1.1rem;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(8px);
+    color: #FBBF24;
+    font-size: 0.78rem;
+    font-weight: 800;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 2;
+  }
+  .activity-zoom-btn {
+    position: absolute;
+    bottom: 1.1rem;
+    right: 1.1rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #0F172A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    font-size: 1rem;
+    transition: var(--transition-fast);
+    z-index: 2;
+  }
+  .activity-photo-wrap:hover .activity-zoom-btn {
+    background: var(--color-primary-blue);
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+  .activity-caption-bar {
+    margin-top: 0.85rem;
+    padding: 0.85rem 1.25rem;
+    background: #F8FAFC;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border-card);
+    font-size: 0.82rem;
+    color: #64748B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .activity-meta-pill-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 1.2rem 0 1.5rem;
+  }
+  .activity-meta-pill {
+    background: #F1F5F9;
+    color: #334155;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #E2E8F0;
+  }
+  .activity-meta-pill i {
+    color: var(--color-primary-blue);
+  }
+  .activity-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+  .activity-stat-card {
+    background: #ffffff;
+    border: 1.5px solid var(--color-border-card);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+  }
+  .activity-stat-num {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--color-primary-blue);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+  .activity-stat-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  /* Lightbox Modal Guaranteed Inline Styles */
+  .modal-studio-overlay,
+  .modal-overlay-studio {
+    position: fixed !important;
+    inset: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(15, 23, 42, 0.88) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    z-index: 999999 !important;
+    display: none !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 1.5rem !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease !important;
+  }
+  .modal-studio-overlay.active,
+  .modal-overlay-studio.active {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+  .modal-photo-window {
+    background: #ffffff !important;
+    border-radius: var(--radius-xl, 24px) !important;
+    max-width: 820px !important;
+    width: 100% !important;
+    max-height: 92vh !important;
+    overflow: hidden !important;
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5) !important;
+    position: relative !important;
+    transform: translateY(20px) scale(0.96) !important;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  }
+  .modal-studio-overlay.active .modal-photo-window,
+  .modal-overlay-studio.active .modal-photo-window {
+    transform: translateY(0) scale(1) !important;
+  }
+  .modal-photo-content {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .modal-photo-img-wrap {
+    width: 100% !important;
+    max-height: 480px !important;
+    background: #0B1120 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+  .modal-photo-img-wrap img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 480px !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+  .modal-photo-info {
+    padding: 1.6rem 2.2rem !important;
+    background: #ffffff !important;
+    border-top: 1px solid var(--color-border-card, #E2E8F0) !important;
+  }
+  .modal-photo-loc {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    color: #D97706 !important;
+    margin-bottom: 0.4rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.03em !important;
+  }
+  .modal-close-btn {
+    position: absolute !important;
+    top: 1.1rem !important;
+    right: 1.1rem !important;
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    background: rgba(15, 23, 42, 0.75) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    z-index: 10 !important;
+    transition: all 0.2s ease !important;
+  }
+  .modal-close-btn:hover {
+    background: #EF4444 !important;
+    color: #ffffff !important;
+    transform: scale(1.08) !important;
+  }
+</style>
+</head>
+<body>
+
+  <!-- =================================================================
+       1. TOPBAR (Studio Theme)
+       ================================================================= -->
+    <!-- =================================================================
+       1. TOPBAR (Studio Theme)
+       ================================================================= -->
+  <div class="topbar-studio">
+    <div class="container topbar-studio-inner">
+      <div class="topbar-left">
+        <i class="fa-solid fa-graduation-cap lead-icon"></i>
+        <span>PPL Terbimbing PPG Calon Guru PJOK UNY • SMP Negeri 12 Yogyakarta</span>
+      </div>
+
+      <div class="topbar-right">
+        <a href="mailto:marfika.ppg@uny.ac.id" class="topbar-contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>marfika.ppg@uny.ac.id</span>
+        </a>
+        <a href="tel:+62859195374310" class="topbar-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+62 859-1953-74310</span>
+        </a>
+
+        <div class="topbar-socials">
+          <a href="javascript:void(0)" onclick="showToast('Instagram Marfika Sayekti')" class="topbar-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="javascript:void(0)" onclick="showToast('Kanal YouTube Pembelajaran PJOK')" class="topbar-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="javascript:void(0)" onclick="showToast('LinkedIn Marfika Sayekti')" class="topbar-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       2. MAIN NAVBAR (Clean Studio Header + Script Logo & Sun Doodle)
+       ================================================================= -->
+  <header class="navbar-studio">
+    <div class="container navbar-studio-inner">
+      
+      <!-- Brand Logo: Handwritten "Marfika" with radiant Sun Doodle -->
+      <a href="index.html" class="brand-studio">
+        <div class="brand-studio-text">
+          <span class="brand-studio-logo">
+            Marfika Sayekti
+            <!-- Sun Doodle SVG with Rays -->
+            <svg class="sun-logo-doodle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="6" fill="#FBBF24" stroke="#F59E0B" stroke-width="2"/>
+              <line x1="16" y1="4" x2="16" y2="7" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="16" y1="25" x2="16" y2="28" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="4" y1="16" x2="7" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="25" y1="16" x2="28" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="7.5" y1="7.5" x2="9.6" y2="9.6" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="22.4" y1="22.4" x2="24.5" y2="24.5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="7.5" y1="24.5" x2="9.6" y2="22.4" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="22.4" y1="9.6" x2="24.5" y2="7.5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-studio-sub">PPG CALON GURU PJOK • SMP NEGERI 12 YOGYAKARTA</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links: 6 Menu Items Required -->
+      <nav>
+        <ul class="nav-menu-studio">
+          <!-- 1. Beranda -->
+          <li><a href="index.html" class="nav-link-studio">Beranda</a></li>
+
+          <!-- 2. Profil -->
+          <li><a href="profil.html" class="nav-link-studio">Profil</a></li>
+
+          <!-- 3. UTS Dropdown -->
+          <li class="nav-studio-dropdown">
+            <a href="UTS/rancangan.html" class="nav-link-studio">
+              UTS <i class="fa-solid fa-chevron-down" style="font-size:0.68rem; margin-left:2px;"></i>
+            </a>
+            <ul class="dropdown-studio-menu">
+              <li>
+                <a href="UTS/rancangan.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-file-pen"></i> Rancangan Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="UTS/media.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-photo-film"></i> Media Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="UTS/materi.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-book-open-reader"></i> Materi Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="UTS/instrumen.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-clipboard-check"></i> Instrumen Pembelajaran
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 4. UAS Dropdown -->
+          <li class="nav-studio-dropdown">
+            <a href="UAS/rancangan.html" class="nav-link-studio">
+              UAS <i class="fa-solid fa-chevron-down" style="font-size:0.68rem; margin-left:2px;"></i>
+            </a>
+            <ul class="dropdown-studio-menu">
+              <li>
+                <a href="UAS/rancangan.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-file-circle-check"></i> Rancangan Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="UAS/media.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-laptop-code"></i> Media Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="UAS/materi.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-book-bookmark"></i> Materi Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="UAS/instrumen.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-list-check"></i> Instrumen Pembelajaran
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 5. Kegiatan Non-Mengajar -->
+          <li><a href="non-mengajar.html" class="nav-link-studio active">Kegiatan Non-Mengajar</a></li>
+
+          <!-- 6. Dokumentasi -->
+          <li><a href="dokumentasi.html" class="nav-link-studio">Dokumentasi</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action CTA: Golden-Yellow Pill Button -->
+      <div style="display:flex; align-items:center; gap:0.75rem;">
+        <a href="profil.html#cv" class="btn-nav-connect" onclick="showToast('Unduh CV Guru Digital...');">
+          <span>Unduh CV Guru</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+        <button class="mobile-studio-toggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =================================================================
+       3. SUBPAGE HERO HEADER (Studio Theme)
+       ================================================================= -->
+  <section class="subpage-studio-hero">
+    <div class="container">
+      <div class="hero-studio-badge" style="margin-bottom: 1rem;">
+        <span class="badge-dot"></span>
+        <span>PPL MANDIRI &bull; SMP NEGERI 12 YOGYAKARTA</span>
+      </div>
+
+      <h1 class="subpage-hero-title">
+        Kegiatan Non-Mengajar
+        <span class="script-highlight" style="font-family: var(--font-script); color: var(--color-primary-blue); font-weight: 700; margin-left: 6px;">
+          di Sekolah Mitra
+          <svg class="sun-doodle-hero" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:36px; height:36px; vertical-align:middle; margin-left:6px;">
+            <circle cx="22" cy="22" r="9" fill="#FBBF24" stroke="#F59E0B" stroke-width="2.5"/>
+            <line x1="22" y1="4" x2="22" y2="8" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="22" y1="36" x2="22" y2="40" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="4" y1="22" x2="8" y2="22" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="36" y1="22" x2="40" y2="22" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </h1>
+
+      <p class="subpage-hero-desc">
+        Dokumentasi komprehensif dan refleksi mendalam peran aktif <strong>Marfika Sayekti, S.Pd.</strong> dalam berbagai agenda kegiatan non-mengajar selama masa PPL Mandiri di SMP Negeri 12 Yogyakarta. Menampilkan empat pilar kontribusi nyata: <strong>Jalan Sehat Kebugaran Warga Sekolah</strong>, <strong>Pengawasan Asesmen Sumatif Tengah Semester (ASTS)</strong>, <strong>Karnaval Budaya Peringatan HUT Kota Yogyakarta</strong>, dan <strong>Pembiasaan Budaya 5S Pagi Hari</strong>.
+      </p>
+
+      <div class="studio-breadcrumb">
+        <a href="index.html">Beranda</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span style="color:var(--color-midnight); font-weight:700;">Kegiatan Non-Mengajar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       4. DETAIL ACTIVITIES GRID (Studio Theme Cards)
+       ================================================================= -->
+  <main style="background: var(--color-bg-ivory); padding: 4.5rem 0 5.5rem;">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-agency-head" style="margin-bottom: 3.5rem;">
+        <div class="badge-pill-group">
+          <span class="twin-dot-icon">
+            <span></span><span></span>
+          </span>
+          <span>DOKUMENTASI PROGRAM NON-MENGAJAR PPL MANDIRI</span>
+        </div>
+        <h2 class="section-agency-title">
+          Pengabdian &amp; Partisipasi Nyata di SMP Negeri 12 Yogyakarta
+          <span class="wavy-squiggle-wrap" style="display:inline-block; vertical-align:middle; margin-left:8px;">
+            <svg class="wavy-squiggle-svg" viewBox="0 0 100 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:75px; height:12px;">
+              <path d="M3 8C15 2 25 14 38 8C50 2 62 14 74 8C86 2 95 12 97 9" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </h2>
+        <p class="section-agency-subtitle">
+          Dokumentasi empat program non-mengajar otentik yang dilaksanakan oleh <strong>Marfika Sayekti, S.Pd.</strong> selama masa PPL Mandiri di SMP Negeri 12 Yogyakarta, menyinergikan pembinaan kebugaran jasmani, penegakan integritas asesmen, kebanggaan budaya kearifan lokal, serta pembudayaan karakter 5S.
+        </p>
+      </div>
+
+      <!-- Quick Summary Stats Bar -->
+      <div class="activity-stats-grid">
+        <div class="activity-stat-card">
+          <div class="activity-stat-num">4</div>
+          <div class="activity-stat-label">Pilar Kegiatan Non-Mengajar</div>
+        </div>
+        <div class="activity-stat-card">
+          <div class="activity-stat-num">100%</div>
+          <div class="activity-stat-label">Partisipasi Warga Sekolah</div>
+        </div>
+        <div class="activity-stat-card">
+          <div class="activity-stat-num">Fase D</div>
+          <div class="activity-stat-label">Peserta Didik Kelas VII - IX</div>
+        </div>
+        <div class="activity-stat-card">
+          <div class="activity-stat-num">PPL UNY</div>
+          <div class="activity-stat-label">Mitra SMPN 12 Yogyakarta</div>
+        </div>
+      </div>
+
+      <!-- =================================================================
+           CARD 1: JALAN SEHAT KEBUGARAN WARGA SEKOLAH
+           ================================================================= -->
+      <article class="activity-showcase-card">
+        <div class="activity-grid-split">
+          
+          <!-- Visual Column -->
+          <div class="activity-photo-side">
+            <div class="activity-photo-wrap" onclick="openStudioPhoto('IMG/Jalan Sehat HUT SMP N 12 Yogyakarta.jpeg', 'Jalan Sehat Kebugaran Warga Sekolah (HUT SMP Negeri 12 Yogyakarta)', 'Dokumentasi pelaksanaan jalan sehat kebugaran massal dalam rangka peringatan HUT SMP Negeri 12 Yogyakarta. Diikuti oleh seluruh dewan guru, tenaga kependidikan, peserta didik Fase D, dan mahasiswa PPL PPG Calon Guru PJOK UNY melintasi rute edukatif kawasan Bumijo, Jetis, Yogyakarta.', 'SMP Negeri 12 Yogyakarta & Rute Bumijo')">
+              <span class="activity-photo-badge">
+                <i class="fa-solid fa-person-walking"></i> Kebugaran Jasmani &amp; HUT Sekolah
+              </span>
+              <img src="IMG/Jalan Sehat HUT SMP N 12 Yogyakarta.jpeg" alt="Jalan Sehat HUT SMP N 12 Yogyakarta" loading="lazy">
+              <div class="activity-zoom-btn" title="Klik untuk memperbesar foto">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+            <div class="activity-caption-bar">
+              <span><i class="fa-solid fa-camera" style="color:var(--color-primary-blue); margin-right:6px;"></i> Foto Lapangan Riil PPL</span>
+              <span style="font-weight:700; color:#0F172A;"><i class="fa-solid fa-location-dot" style="color:#F59E0B; margin-right:4px;"></i> Halaman &amp; Kawasan Bumijo</span>
+            </div>
+          </div>
+
+          <!-- Content Column -->
+          <div class="activity-info-side">
+            <span class="tag-pill" style="background: rgba(37, 99, 235, 0.1); color: var(--color-primary-blue); font-weight: 800; font-size: 0.78rem; padding: 4px 12px; border-radius: 999px;">
+              01 &bull; KEBUGARAN WARGA SEKOLAH
+            </span>
+            <h3 style="font-size: 1.55rem; font-weight: 800; color: #0F172A; margin: 0.8rem 0 0.4rem; line-height: 1.3;">
+              Jalan Sehat Kebugaran Warga Sekolah
+            </h3>
+            <p style="font-size: 0.95rem; font-weight: 600; color: #B45309; margin-bottom: 0.8rem;">
+              Peringatan Hari Ulang Tahun (HUT) SMP Negeri 12 Yogyakarta &amp; Gerakan Sekolah Sehat (GSS)
+            </p>
+
+            <!-- Metadata Pills -->
+            <div class="activity-meta-pill-strip">
+              <span class="activity-meta-pill"><i class="fa-solid fa-calendar-days"></i> Peringatan HUT SMPN 12</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-route"></i> Rute 3,5 Km Kawasan Bumijo</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-users"></i> Siswa, Guru &amp; Staf TU</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-user-check"></i> Peran: Instruktur Pemanasan &amp; Marshal</span>
+            </div>
+
+            <!-- Detailed Explanation -->
+            <div style="font-size: 0.92rem; color: #334155; line-height: 1.8; margin-bottom: 1.5rem;">
+              <p style="margin-bottom: 0.85rem;">
+                Dalam rangka menyemarakkan peringatan Hari Ulang Tahun (HUT) SMP Negeri 12 Yogyakarta sekaligus mengimplementasikan pilar Sehat Fisik pada program <strong>Gerakan Sekolah Sehat (GSS)</strong> Kemendikbudristek, diselenggarakan agenda Jalan Sehat Kebugaran Warga Sekolah. Kegiatan ini dirancang sebagai wahana pendidikan luar ruang (*outdoor physical recreation*) yang menyinergikan pemeliharaan kapasitas kardiorespirasi peserta didik dengan penguatan rasa kekeluargaan antarseluruh elemen sekolah.
+              </p>
+              <p>
+                Sebagai mahasiswa PPL PPG Calon Guru PJOK, <strong>Marfika Sayekti, S.Pd.</strong> memegang peran strategis dalam tim operasional lapangan: memimpin sesi pemanasan dinamis berirama (*rhythmic dynamic warm-up*) bagi ratusan peserta di lapangan upacara sebelum pelepasan oleh Kepala Sekolah, menata formasi peleton barisan kelas agar tetap tertib di jalan raya, bertindak sebagai koordinator pengamanan rute (*traffic marshal*) di persimpangan rawan Jalan Tentara Pelajar, serta mengoordinasikan pendinginan (*cooling down*) dan pengundian doorprize kebugaran pasca-kegiatan.
+              </p>
+            </div>
+
+            <!-- Two-Column Operational Box -->
+            <div class="analysis-grid-2col" style="gap: 1.2rem; margin-bottom: 1.5rem;">
+              <div class="analysis-box-item pro" style="padding: 1.25rem;">
+                <div class="analysis-box-title" style="font-size: 0.92rem; margin-bottom: 0.6rem;">
+                  <i class="fa-solid fa-list-check"></i> Tahapan &amp; Tanggung Jawab Operasional
+                </div>
+                <ul style="padding-left: 1.1rem; font-size: 0.86rem; color: #475569; line-height: 1.7;">
+                  <li>Survei rute jalan sehat 3,5 km bersama tim kesiswaan &amp; kepolisian wilayah Jetis.</li>
+                  <li>Instruktur senam pemanasan statis-dinamis pencegah cedera sebelum jalan santai.</li>
+                  <li>Pengawalan ritme barisan (*pacing*) agar tidak terjadi penumpukan siswa di jalan.</li>
+                  <li>Koordinasi pos medis PMR sekolah dan distribusi hidrasi air mineral peserta.</li>
+                </ul>
+              </div>
+
+              <div class="analysis-box-item solution" style="padding: 1.25rem;">
+                <div class="analysis-box-title" style="font-size: 0.92rem; margin-bottom: 0.6rem;">
+                  <i class="fa-solid fa-seedling"></i> Capaian &amp; Penguatan Profil Pancasila
+                </div>
+                <ul style="padding-left: 1.1rem; font-size: 0.86rem; color: #475569; line-height: 1.7;">
+                  <li><strong>Bergotong Royong:</strong> Keakraban emosional tanpa sekat antara guru, staf, dan siswa.</li>
+                  <li><strong>Sehat Jasmani &amp; Rohani:</strong> Stimulasi daya tahan jantung-paru secara gembira (*joyful*).</li>
+                  <li><strong>Peduli Lingkungan:</strong> Pembudayaan operasi semut memungut sampah di sepanjang rute.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Reflection Quote Box -->
+            <div style="background: #FFFBEB; border: 1.5px dashed #F59E0B; border-radius: var(--radius-md); padding: 1.2rem; display: flex; gap: 1rem; align-items: flex-start;">
+              <i class="fa-solid fa-quote-left" style="font-size: 1.5rem; color: #F59E0B; flex-shrink: 0; margin-top: 2px;"></i>
+              <div>
+                <p style="font-family: var(--font-script); font-size: 1.18rem; color: #78350F; line-height: 1.45; margin-bottom: 0.2rem;">
+                  "Jalan sehat bukan sekadar melangkahkan kaki, tetapi sarana menyatukan energi kebersamaan warga SMP Negeri 12 Yogyakarta dalam harmoni hidup aktif dan sehat."
+                </p>
+                <small style="color: #92400E; font-weight: 700; font-size: 0.82rem;">
+                  &mdash; Catatan Reflektif PPL Mandiri: Marfika Sayekti, S.Pd.
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+      <!-- =================================================================
+           CARD 2: PENGAWASAN ASESMEN SUMATIF TENGAH SEMESTER (ASTS)
+           ================================================================= -->
+      <article class="activity-showcase-card">
+        <div class="activity-grid-split">
+          
+          <!-- Visual Column -->
+          <div class="activity-photo-side">
+            <div class="activity-photo-wrap" onclick="openStudioPhoto('IMG/Kegiatan ASTS.jpeg', 'Pengawasan Asesmen Sumatif Tengah Semester (ASTS)', 'Dokumentasi penugasan resmi mahasiswa PPL PPG PJOK UNY Marfika Sayekti, S.Pd. dalam mengawasi ruang ujian Asesmen Sumatif Tengah Semester (ASTS) Gasal di kelas IX SMP Negeri 12 Yogyakarta, menjamin pelaksanaan ujian yang tertib, tenang, jujur, dan berintegritas tinggi.', 'Ruang Ujian Kelas IX SMP Negeri 12 Yogyakarta')">
+              <span class="activity-photo-badge">
+                <i class="fa-solid fa-clipboard-check"></i> Integritas Asesmen Akademik
+              </span>
+              <img src="IMG/Kegiatan ASTS.jpeg" alt="Pengawasan Asesmen Sumatif Tengah Semester (ASTS)" loading="lazy">
+              <div class="activity-zoom-btn" title="Klik untuk memperbesar foto">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+            <div class="activity-caption-bar">
+              <span><i class="fa-solid fa-camera" style="color:var(--color-primary-blue); margin-right:6px;"></i> Foto Lapangan Riil PPL</span>
+              <span style="font-weight:700; color:#0F172A;"><i class="fa-solid fa-location-dot" style="color:#F59E0B; margin-right:4px;"></i> Ruang Ujian SMPN 12 Yogyakarta</span>
+            </div>
+          </div>
+
+          <!-- Content Column -->
+          <div class="activity-info-side">
+            <span class="tag-pill" style="background: rgba(245, 158, 11, 0.12); color: #B45309; font-weight: 800; font-size: 0.78rem; padding: 4px 12px; border-radius: 999px;">
+              02 &bull; INTEGRITAS AKADEMIK
+            </span>
+            <h3 style="font-size: 1.55rem; font-weight: 800; color: #0F172A; margin: 0.8rem 0 0.4rem; line-height: 1.3;">
+              Pengawasan Asesmen Sumatif Tengah Semester (ASTS)
+            </h3>
+            <p style="font-size: 0.95rem; font-weight: 600; color: var(--color-primary-blue); margin-bottom: 0.8rem;">
+              Penegakan Kejujuran, Tata Tertib, dan Evaluasi Kurikulum Merdeka Fase D
+            </p>
+
+            <!-- Metadata Pills -->
+            <div class="activity-meta-pill-strip">
+              <span class="activity-meta-pill"><i class="fa-solid fa-clock"></i> Sesi Ujian Pukul 07.30 - 12.00 WIB</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-door-open"></i> Ruang Kelas IX SMPN 12</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-user-graduate"></i> Peserta Didik Fase D</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-signature"></i> Peran: Pengawas Ruang Resmi &amp; Verifikator</span>
+            </div>
+
+            <!-- Detailed Explanation -->
+            <div style="font-size: 0.92rem; color: #334155; line-height: 1.8; margin-bottom: 1.5rem;">
+              <p style="margin-bottom: 0.85rem;">
+                Asesmen Sumatif Tengah Semester (ASTS) Gasal di SMP Negeri 12 Yogyakarta merupakan momentum evaluasi akademik krusial untuk mengukur ketercapaian tujuan pembelajaran peserta didik dalam Kurikulum Merdeka. Penyelenggaraan asesmen menuntut iklim ruangan yang sangat tertib, tenang, dan bebas dari segala bentuk kecurangan agar data hasil evaluasi belajar mencerminkan kompetensi otentik siswa.
+              </p>
+              <p>
+                <strong>Marfika Sayekti, S.Pd.</strong> mendapatkan amanah resmi dari panitia ujian sekolah sebagai Pengawas Ruang ASTS. Tugas manajerial mencakup pengambilan naskah soal tersegel dari sekretariat panitia, verifikasi presensi kehadiran peserta didik berdasarkan kartu ujian resmi, pembacaan tata tertib asesmen, pemantauan ketenangan kelas selama durasi pengerjaan, penanganan kendala teknis lembar jawab, hingga penghitungan berkas lembar jawab, penyusunan berita acara, dan penyerahan berkas secara tersegel ke panitia kurikulum sekolah.
+              </p>
+            </div>
+
+            <!-- Two-Column Operational Box -->
+            <div class="analysis-grid-2col" style="gap: 1.2rem; margin-bottom: 1.5rem;">
+              <div class="analysis-box-item pro" style="padding: 1.25rem;">
+                <div class="analysis-box-title" style="font-size: 0.92rem; margin-bottom: 0.6rem;">
+                  <i class="fa-solid fa-shield-halved"></i> Standar Operasional Prosedur Pengawasan
+                </div>
+                <ul style="padding-left: 1.1rem; font-size: 0.86rem; color: #475569; line-height: 1.7;">
+                  <li>Pemeriksaan tata letak kursi satu meja satu siswa dan pensterilan meja ujian.</li>
+                  <li>Pembukaan amplop naskah soal tersegel di depan siswa sebagai bukti integritas.</li>
+                  <li>Pengawasan aktif berkeliling (*silent roving*) yang menjaga ketenangan berpikir.</li>
+                  <li>Pencocokan jumlah lembar jawab dengan daftar presensi sebelum penutupan ruang.</li>
+                </ul>
+              </div>
+
+              <div class="analysis-box-item solution" style="padding: 1.25rem;">
+                <div class="analysis-box-title" style="font-size: 0.92rem; margin-bottom: 0.6rem;">
+                  <i class="fa-solid fa-graduation-cap"></i> Dampak Pedagogik &amp; Nilai Integritas
+                </div>
+                <ul style="padding-left: 1.1rem; font-size: 0.86rem; color: #475569; line-height: 1.7;">
+                  <li><strong>Integritas &amp; Kemandirian:</strong> Menanamkan budaya pantang menyontek pada siswa.</li>
+                  <li><strong>Akuntabilitas Evaluasi:</strong> Menjamin data hasil belajar akurat bagi guru pamong.</li>
+                  <li><strong>Kompetensi Manajerial:</strong> Memberikan pengalaman tata kelola asesmen formal sekolah.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Reflection Quote Box -->
+            <div style="background: #EFF6FF; border: 1.5px dashed var(--color-primary-blue); border-radius: var(--radius-md); padding: 1.2rem; display: flex; gap: 1rem; align-items: flex-start;">
+              <i class="fa-solid fa-quote-left" style="font-size: 1.5rem; color: var(--color-primary-blue); flex-shrink: 0; margin-top: 2px;"></i>
+              <div>
+                <p style="font-family: var(--font-script); font-size: 1.18rem; color: #1E3A8A; line-height: 1.45; margin-bottom: 0.2rem;">
+                  "Nilai akademik tertinggi bukanlah deretan angka sempurna di atas kertas, melainkan kejujuran jiwa yang terpatri saat siswa berjuang secara mandiri dan bermartabat."
+                </p>
+                <small style="color: #1E40AF; font-weight: 700; font-size: 0.82rem;">
+                  &mdash; Refleksi Pengawasan Asesmen: Marfika Sayekti, S.Pd.
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+      <!-- =================================================================
+           CARD 3: KARNAVAL BUDAYA PERINGATAN HUT KOTA YOGYAKARTA
+           ================================================================= -->
+      <article class="activity-showcase-card">
+        <div class="activity-grid-split">
+          
+          <!-- Visual Column -->
+          <div class="activity-photo-side">
+            <div class="activity-photo-wrap" onclick="openStudioPhoto('IMG/Persiapan Karnaval Kota Yogyakarta.jpeg', 'Persiapan Karnaval Budaya Peringatan HUT Kota Yogyakarta', 'Dokumentasi pendampingan persiapan kontingen karnaval budaya SMP Negeri 12 Yogyakarta dalam rangka HUT Kota Yogyakarta. Mahasiswa PPL PJOK Marfika Sayekti, S.Pd. membantu penataan kostum adat Jawa gagrak Ngayogyakarta, atribut budaya siswa, serta gladi formasi defile di aula sekolah.', 'Aula & Rute Karnaval Kota Yogyakarta')">
+              <span class="activity-photo-badge">
+                <i class="fa-solid fa-masks-theater"></i> Kebudayaan &amp; Kearifan Lokal
+              </span>
+              <img src="IMG/Persiapan Karnaval Kota Yogyakarta.jpeg" alt="Persiapan Karnaval Budaya Kota Yogyakarta" loading="lazy">
+              <div class="activity-zoom-btn" title="Klik untuk memperbesar foto">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+            <div class="activity-caption-bar">
+              <span><i class="fa-solid fa-camera" style="color:var(--color-primary-blue); margin-right:6px;"></i> Foto Lapangan Riil PPL</span>
+              <span style="font-weight:700; color:#0F172A;"><i class="fa-solid fa-location-dot" style="color:#F59E0B; margin-right:4px;"></i> Aula &amp; Jalur Pawai Kota Yogyakarta</span>
+            </div>
+          </div>
+
+          <!-- Content Column -->
+          <div class="activity-info-side">
+            <span class="tag-pill" style="background: rgba(16, 185, 129, 0.12); color: #047857; font-weight: 800; font-size: 0.78rem; padding: 4px 12px; border-radius: 999px;">
+              03 &bull; KEBUDAYAAN &amp; SENI
+            </span>
+            <h3 style="font-size: 1.55rem; font-weight: 800; color: #0F172A; margin: 0.8rem 0 0.4rem; line-height: 1.3;">
+              Karnaval Budaya Peringatan HUT Kota Yogyakarta
+            </h3>
+            <p style="font-size: 0.95rem; font-weight: 600; color: #047857; margin-bottom: 0.8rem;">
+              Pelestarian Seni Tradisi Jawa Gagrak Ngayogyakarta &amp; Penguatan Kreativitas Siswa
+            </p>
+
+            <!-- Metadata Pills -->
+            <div class="activity-meta-pill-strip">
+              <span class="activity-meta-pill"><i class="fa-solid fa-landmark"></i> HUT Kota Yogyakarta</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-shirt"></i> Busana Adat Tradisional Jawa</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-users"></i> Kontingen Siswa &amp; Guru SMPN 12</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-hand-holding-heart"></i> Peran: Pendamping Rias, Defile &amp; Pengawal Rute</span>
+            </div>
+
+            <!-- Detailed Explanation -->
+            <div style="font-size: 0.92rem; color: #334155; line-height: 1.8; margin-bottom: 1.5rem;">
+              <p style="margin-bottom: 0.85rem;">
+                Partisipasi SMP Negeri 12 Yogyakarta dalam pawai karnaval budaya semarak Hari Ulang Tahun (HUT) Kota Yogyakarta menjadi momentum emas pembelajaran kontekstual berbasis kearifan lokal (*indigenous cultural learning*). Kontingen sekolah menampilkan ragam busana adat tradisional Jawa gagrak Ngayogyakarta, ornamen seni kerajinan siswa, dan atraksi tari berirama yang mencerminkan luhurnya filosofi kebudayaan Yogyakarta sebagai kota pendidikan dan kebudayaan.
+              </p>
+              <p>
+                Keterlibatan <strong>Marfika Sayekti, S.Pd.</strong> mencakup pendampingan persiapan siswa sejak di aula sekolah: membantu merapikan busana adat (jarik, surjan, kebaya, dan blangkon), mengatur keselarasan langkah barisan defile (*cadence of movement*) saat latihan gladi kotor dan gladi bersih, mengawal kontingen selama melintasi rute pawai jalan protokol kota, memastikan hidrasi fisik siswa tetap terjaga di tengah cuaca terbuka, serta menjaga keselamatan barisan dari kepadatan penonton karnaval.
+              </p>
+            </div>
+
+            <!-- Two-Column Operational Box -->
+            <div class="analysis-grid-2col" style="gap: 1.2rem; margin-bottom: 1.5rem;">
+              <div class="analysis-box-item pro" style="padding: 1.25rem;">
+                <div class="analysis-box-title" style="font-size: 0.92rem; margin-bottom: 0.6rem;">
+                  <i class="fa-solid fa-palette"></i> Tahapan Persiapan &amp; Pendampingan Kontingen
+                </div>
+                <ul style="padding-left: 1.1rem; font-size: 0.86rem; color: #475569; line-height: 1.7;">
+                  <li>Penataan kostum tradisional dan kelengkapan aksesoris budaya di aula sekolah.</li>
+                  <li>Latihan koreografi barisan dan sikap tubuh tegap berbudaya (*unggah-ungguh*).</li>
+                  <li>Pengawalan barisan di sepanjang rute karnaval protokol kota Yogyakarta.</li>
+                  <li>Mitigasi kelelahan fisik siswa melalui penyediaan pos minum dan istirahat teratur.</li>
+                </ul>
+              </div>
+
+              <div class="analysis-box-item solution" style="padding: 1.25rem;">
+                <div class="analysis-box-title" style="font-size: 0.92rem; margin-bottom: 0.6rem;">
+                  <i class="fa-solid fa-heart"></i> Nilai Karakter &amp; Dampak Sosial
+                </div>
+                <ul style="padding-left: 1.1rem; font-size: 0.86rem; color: #475569; line-height: 1.7;">
+                  <li><strong>Berkebinekaan Global &amp; Cinta Budaya:</strong> Menjaga tradisi adiluhung Yogyakarta.</li>
+                  <li><strong>Kreativitas &amp; Percaya Diri:</strong> Kebanggaan tampil percaya diri di ruang publik.</li>
+                  <li><strong>Citra Sekolah Berprestasi:</strong> Memperkuat citra positif SMPN 12 di mata masyarakat.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Reflection Quote Box -->
+            <div style="background: #F0FDF4; border: 1.5px dashed #10B981; border-radius: var(--radius-md); padding: 1.2rem; display: flex; gap: 1rem; align-items: flex-start;">
+              <i class="fa-solid fa-quote-left" style="font-size: 1.5rem; color: #10B981; flex-shrink: 0; margin-top: 2px;"></i>
+              <div>
+                <p style="font-family: var(--font-script); font-size: 1.18rem; color: #064E3B; line-height: 1.45; margin-bottom: 0.2rem;">
+                  "Gerak langkah siswa berbusana adat bukan sekadar parade busana, melainkan ikrar kecintaan generasi muda pada warisan adiluhung Kota Yogyakarta."
+                </p>
+                <small style="color: #065F46; font-weight: 700; font-size: 0.82rem;">
+                  &mdash; Refleksi Budaya: Marfika Sayekti, S.Pd.
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+      <!-- =================================================================
+           CARD 4: PEMBIASAAN BUDAYA 5S (SENYUM, SALAM, SAPA, SOPAN, SANTUN)
+           ================================================================= -->
+      <article class="activity-showcase-card">
+        <div class="activity-grid-split">
+          
+          <!-- Visual Column -->
+          <div class="activity-photo-side">
+            <div class="activity-photo-wrap" onclick="openStudioPhoto('IMG/Kegiatan 5S.jpeg', 'Pembiasaan Budaya 5S (Senyum, Salam, Sapa, Sopan, Santun)', 'Dokumentasi piket penyambutan peserta didik di gerbang utama SMP Negeri 12 Yogyakarta setiap pagi hari oleh mahasiswa PPL PJOK Marfika Sayekti, S.Pd. bersama guru pamong. Menerapkan pembiasaan budaya 5S, pemeriksaan kerapian seragam, dan penciptaan lingkungan sekolah yang ramah anak.', 'Gerbang Utama SMP Negeri 12 Yogyakarta')">
+              <span class="activity-photo-badge">
+                <i class="fa-solid fa-handshake-angle"></i> Pembiasaan Budaya Karakter
+              </span>
+              <img src="IMG/Kegiatan 5S.jpeg" alt="Pembiasaan Budaya 5S SMP Negeri 12 Yogyakarta" loading="lazy">
+              <div class="activity-zoom-btn" title="Klik untuk memperbesar foto">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+            <div class="activity-caption-bar">
+              <span><i class="fa-solid fa-camera" style="color:var(--color-primary-blue); margin-right:6px;"></i> Foto Lapangan Riil PPL</span>
+              <span style="font-weight:700; color:#0F172A;"><i class="fa-solid fa-location-dot" style="color:#F59E0B; margin-right:4px;"></i> Gerbang Utama SMPN 12 Yogyakarta</span>
+            </div>
+          </div>
+
+          <!-- Content Column -->
+          <div class="activity-info-side">
+            <span class="tag-pill" style="background: rgba(147, 51, 234, 0.12); color: #7E22CE; font-weight: 800; font-size: 0.78rem; padding: 4px 12px; border-radius: 999px;">
+              04 &bull; PEMBIASAAN KARAKTER
+            </span>
+            <h3 style="font-size: 1.55rem; font-weight: 800; color: #0F172A; margin: 0.8rem 0 0.4rem; line-height: 1.3;">
+              Pembiasaan Budaya 5S (Senyum, Salam, Sapa, Sopan, Santun)
+            </h3>
+            <p style="font-size: 0.95rem; font-weight: 600; color: #7E22CE; margin-bottom: 0.8rem;">
+              Penyambutan Pagi Hari, Kedisiplinan Tata Tertib, &amp; Iklim Sekolah Ramah Anak
+            </p>
+
+            <!-- Metadata Pills -->
+            <div class="activity-meta-pill-strip">
+              <span class="activity-meta-pill"><i class="fa-solid fa-sun"></i> Rutin Pukul 06.30 - 07.15 WIB</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-school"></i> Gerbang Utama SMPN 12</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-users"></i> Seluruh Peserta Didik &amp; Guru</span>
+              <span class="activity-meta-pill"><i class="fa-solid fa-hands-holding-child"></i> Peran: Guru Piket Sambut Pagi &amp; Pembina 5S</span>
+            </div>
+
+            <!-- Detailed Explanation -->
+            <div style="font-size: 0.92rem; color: #334155; line-height: 1.8; margin-bottom: 1.5rem;">
+              <p style="margin-bottom: 0.85rem;">
+                Penyambutan peserta didik di pintu gerbang sekolah melalui pembiasaan <strong>5S (Senyum, Salam, Sapa, Sopan, dan Santun)</strong> merupakan program pembentukan iklim sekolah positif (*positive school climate*) yang dilaksanakan secara konsisten di SMP Negeri 12 Yogyakarta. Aktivitas ini dirancang untuk memastikan bahwa setiap peserta didik disambut dengan kehangatan psikologis sejak detik pertama memasuki lingkungan sekolah, meminimalisir kecemasan akademik, serta mencegah potensi perilaku perundungan (*anti-bullying*).
+              </p>
+              <p>
+                Sebagai bagian dari tim piket gerbang pagi, <strong>Marfika Sayekti, S.Pd.</strong> berdiri di pintu utama menyambut siswa dengan senyuman ramah dan salam takzim, mengamati kesiapan emosional siswa yang baru tiba, memeriksa ketertiban dan kerapian pemakaian atribut seragam sekolah (kelengkapan dasi, ikat pinggang, kaos kaki, dan sepatu hitam), serta memberikan nasihat persuasif-humanis bagi peserta didik yang terlambat tanpa mengabaikan aspek kedisiplinan dan rasa hormat terhadap waktu belajar.
+              </p>
+            </div>
+
+            <!-- Two-Column Operational Box -->
+            <div class="analysis-grid-2col" style="gap: 1.2rem; margin-bottom: 1.5rem;">
+              <div class="analysis-box-item pro" style="padding: 1.25rem;">
+                <div class="analysis-box-title" style="font-size: 0.92rem; margin-bottom: 0.6rem;">
+                  <i class="fa-solid fa-door-open"></i> Pelaksanaan Rutinitas Piket Pagi
+                </div>
+                <ul style="padding-left: 1.1rem; font-size: 0.86rem; color: #475569; line-height: 1.7;">
+                  <li>Penyambutan ramah siswa dan orang tua pengantar di gerbang utama pukul 06.30 WIB.</li>
+                  <li>Praktik salam takzim membungkuk dan bertutur kata santun khas Yogyakarta.</li>
+                  <li>Pemeriksaan kerapian seragam sekolah dan penegakan tata tertib berpakaian.</li>
+                  <li>Pencatatan presensi kedatangan tepat waktu sebelum bel masuk sekolah berbunyi.</li>
+                </ul>
+              </div>
+
+              <div class="analysis-box-item solution" style="padding: 1.25rem;">
+                <div class="analysis-box-title" style="font-size: 0.92rem; margin-bottom: 0.6rem;">
+                  <i class="fa-solid fa-heart-pulse"></i> Dampak Karakter &amp; Sekolah Ramah Anak
+                </div>
+                <ul style="padding-left: 1.1rem; font-size: 0.86rem; color: #475569; line-height: 1.7;">
+                  <li><strong>Berakhlak Mulia:</strong> Pembiasaan etika kesantunan dan respek siswa terhadap guru.</li>
+                  <li><strong>Sekolah Ramah Anak:</strong> Mengikis jarak psikologis antara pendidik dan murid.</li>
+                  <li><strong>Kesiapan Belajar:</strong> Membangkitkan rasa aman dan antusiasme belajar di kelas.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Reflection Quote Box -->
+            <div style="background: #FAF5FF; border: 1.5px dashed #9333EA; border-radius: var(--radius-md); padding: 1.2rem; display: flex; gap: 1rem; align-items: flex-start;">
+              <i class="fa-solid fa-quote-left" style="font-size: 1.5rem; color: #9333EA; flex-shrink: 0; margin-top: 2px;"></i>
+              <div>
+                <p style="font-family: var(--font-script); font-size: 1.18rem; color: #581C87; line-height: 1.45; margin-bottom: 0.2rem;">
+                  "Senyuman tulus di pintu gerbang adalah awal dari semua proses pembelajaran. Saat murid merasa diterima dan dihargai, mereka siap menyerap ilmu dengan hati terbuka."
+                </p>
+                <small style="color: #6B21A8; font-weight: 700; font-size: 0.82rem;">
+                  &mdash; Refleksi Pembiasaan Karakter: Marfika Sayekti, S.Pd.
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- =================================================================
+       PHOTO LIGHTBOX MODAL (Studio Theme)
+       ================================================================= -->
+  <div id="photo-lightbox-modal" class="modal-studio-overlay modal-overlay-studio" style="display: none;">
+    <div class="modal-studio-window modal-window-studio modal-photo-window">
+      <button id="photo-lightbox-close" class="modal-close-btn modal-close-studio" aria-label="Tutup Pratinjau"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-photo-content">
+        <div class="modal-photo-img-wrap">
+          <img id="photo-lightbox-img" src="" alt="Dokumentasi Non-Mengajar PPL PJOK UNY">
+        </div>
+        <div class="modal-photo-info">
+          <span id="photo-lightbox-loc" class="modal-photo-loc"><i class="fa-solid fa-location-dot"></i> SMP Negeri 12 Yogyakarta</span>
+          <h3 id="photo-lightbox-title" style="font-size:1.35rem; color:var(--color-midnight); font-weight:800; margin-bottom:0.5rem; line-height:1.35;">Judul Foto</h3>
+          <p id="photo-lightbox-desc" style="font-size:0.92rem; color:var(--color-text-muted); line-height:1.65;">Deskripsi dokumentasi kegiatan non-mengajar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- =================================================================
+       5. CTA BANNER (Diskusi Pembelajaran & Kolaborasi)
+       ================================================================= -->
+  <section id="diskusi" class="section-cta-studio">
+    <div class="container">
+      <div class="cta-studio-container">
+        
+        <!-- Left Angled Yellow Sticky Note -->
+        <div class="cta-sticky-note-wrapper">
+          <div class="cta-yellow-sticky-note">
+            <div class="sticky-note-text">
+              Mendidik<br>
+              dengan hati,<br>
+              menginspirasi!
+            </div>
+            <div class="sticky-note-icons">
+              <i class="fa-solid fa-sun" style="color:#D97706; font-size:1.1rem;"></i>
+              <i class="fa-solid fa-heart" style="color:#2563EB; font-size:1.05rem;"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form Area -->
+        <div class="cta-form-area">
+          <h2>ADA PERTANYAAN ATAU DISKUSI PEMBELAJARAN?</h2>
+          <p>Saya siap berdiskusi terkait implementasi Kurikulum Merdeka, diferensiasi gerak PJOK, maupun program kepelatihan siswa!</p>
+
+          <form id="cta-project-form" class="cta-inline-form">
+            <input type="text" id="cta-name" class="cta-input-studio" placeholder="Nama Lengkap" required>
+            <input type="email" id="cta-email" class="cta-input-studio" placeholder="Email / No. WhatsApp" required>
+            <input type="text" id="cta-message" class="cta-input-studio" placeholder="Pesan / Topik Diskusi" required>
+            <button type="submit" class="btn-cta-submit">
+              <span>Kirim Pesan</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       6. MIDNIGHT NAVY FOOTER
+       ================================================================= -->
+    <footer class="footer-midnight-studio">
+    <div class="container">
+      <div class="footer-studio-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="index.html" class="footer-brand-logo">
+            Marfika Sayekti
+            <svg class="sun-logo-doodle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="6" fill="#FBBF24" stroke="#F59E0B" stroke-width="2"/>
+              <line x1="16" y1="4" x2="16" y2="7" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="16" y1="25" x2="16" y2="28" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="4" y1="16" x2="7" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="25" y1="16" x2="28" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <p class="footer-brand-desc">
+            Portofolio resmi PPL Terbimbing Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi PJOK Universitas Negeri Yogyakarta di SMP Negeri 12 Yogyakarta — Mendidik dengan integritas dan bergerak menginspirasi.
+          </p>
+          <div class="footer-social-circles">
+            <a href="javascript:void(0)" onclick="showStudioToast('Facebook')" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="javascript:void(0)" onclick="showStudioToast('Instagram @marfikasayekti')" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="showStudioToast('YouTube Pembelajaran PJOK')" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="javascript:void(0)" onclick="showStudioToast('LinkedIn Marfika Sayekti')" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: NAVIGASI -->
+        <div>
+          <h4 class="footer-col-title">NAVIGASI</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link-item">Beranda Utama</a></li>
+            <li><a href="profil.html" class="footer-link-item">Profil Mahasiswa</a></li>
+            <li><a href="UTS/rancangan.html" class="footer-link-item">Siklus 1 (UTS PPL)</a></li>
+            <li><a href="UAS/rancangan.html" class="footer-link-item">Siklus 2, 3 &amp; 4 (UAS PPL)</a></li>
+            <li><a href="non-mengajar.html" class="footer-link-item">Kegiatan Non-Mengajar</a></li>
+            <li><a href="dokumentasi.html" class="footer-link-item">Galeri Dokumentasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: PERANGKAT AJAR -->
+        <div>
+          <h4 class="footer-col-title">PERANGKAT AJAR</h4>
+          <ul class="footer-links-list">
+            <li><a href="UTS/rancangan.html" class="footer-link-item">Modul Kebugaran (UTS)</a></li>
+            <li><a href="UAS/rancangan.html" class="footer-link-item">Modul Voli, Basket, Bulutangkis (UAS)</a></li>
+            <li><a href="UTS/media.html" class="footer-link-item">Media Ajar TPACK &amp; QR Code</a></li>
+            <li><a href="UAS/materi.html" class="footer-link-item">Buku Saku Olahraga Siswa</a></li>
+            <li><a href="UTS/instrumen.html" class="footer-link-item">Instrumen Asesmen 3 Ranah</a></li>
+            <li><a href="UTS/video.html" class="footer-link-item">Video Praktik UKin / PPL</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: KONTAK RESMI & LPTK -->
+        <div>
+          <h4 class="footer-col-title">KONTAK &amp; LPTK</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-entry">
+              <i class="fa-regular fa-envelope"></i>
+              <span>marfika.ppg@uny.ac.id<br><small style="color:#64748B;">Surel Resmi Mahasiswa PPG</small></span>
+            </li>
+            <li class="footer-contact-entry">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>SMP Negeri 12 Yogyakarta<br><small style="color:#64748B;">Jl. Tentara Pelajar No. 9, Bumijo, Jetis, Yogyakarta</small></span>
+            </li>
+            <li class="footer-contact-entry">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>FIKK Universitas Negeri Yogyakarta<br><small style="color:#64748B;">Jl. Colombo No. 1, Sleman, DIY</small></span>
+            </li>
+            <li class="footer-contact-entry">
+              <i class="fa-solid fa-phone"></i>
+              <span>+62 859-1953-74310<br><small style="color:#64748B;">Kontak WhatsApp Aktif</small></span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 <strong>Marfika Sayekti, S.Pd.</strong> All Rights Reserved &bull; PPG Calon Guru PJOK Universitas Negeri Yogyakarta di SMP Negeri 12 Yogyakarta
+        </div>
+        <div class="footer-bottom-links">
+          <a href="profil.html">Profil Mahasiswa</a>
+          <a href="dokumentasi.html">Galeri PPL</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/studio.js"></script>
+</body>
+</html>

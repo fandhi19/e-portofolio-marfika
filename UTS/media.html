@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS - Media Pembelajaran PJOK | Marfika Sayekti, S.Pd. - UNY</title>
+  
+  <link rel="icon" type="image/png" href="../logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/studio-theme.css?v=2.1">
+</head>
+<body>
+
+  <!-- =================================================================
+       1. TOPBAR (Studio Theme)
+       ================================================================= -->
+    <!-- =================================================================
+       1. TOPBAR (Studio Theme)
+       ================================================================= -->
+  <div class="topbar-studio">
+    <div class="container topbar-studio-inner">
+      <div class="topbar-left">
+        <i class="fa-solid fa-graduation-cap lead-icon"></i>
+        <span>PPL Terbimbing PPG Calon Guru PJOK UNY • SMP Negeri 12 Yogyakarta</span>
+      </div>
+
+      <div class="topbar-right">
+        <a href="mailto:marfika.ppg@uny.ac.id" class="topbar-contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>marfika.ppg@uny.ac.id</span>
+        </a>
+        <a href="tel:+62859195374310" class="topbar-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+62 859-1953-74310</span>
+        </a>
+
+        <div class="topbar-socials">
+          <a href="javascript:void(0)" onclick="showToast('Instagram Marfika Sayekti')" class="topbar-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="javascript:void(0)" onclick="showToast('Kanal YouTube Pembelajaran PJOK')" class="topbar-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="javascript:void(0)" onclick="showToast('LinkedIn Marfika Sayekti')" class="topbar-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       2. MAIN NAVBAR (Clean Studio Header + Script Logo & Sun Doodle)
+       ================================================================= -->
+  <header class="navbar-studio">
+    <div class="container navbar-studio-inner">
+      
+      <!-- Brand Logo: Handwritten "Marfika" with radiant Sun Doodle -->
+      <a href="../index.html" class="brand-studio">
+        <div class="brand-studio-text">
+          <span class="brand-studio-logo">
+            Marfika Sayekti
+            <!-- Sun Doodle SVG with Rays -->
+            <svg class="sun-logo-doodle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="6" fill="#FBBF24" stroke="#F59E0B" stroke-width="2"/>
+              <line x1="16" y1="4" x2="16" y2="7" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="16" y1="25" x2="16" y2="28" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="4" y1="16" x2="7" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="25" y1="16" x2="28" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="7.5" y1="7.5" x2="9.6" y2="9.6" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="22.4" y1="22.4" x2="24.5" y2="24.5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="7.5" y1="24.5" x2="9.6" y2="22.4" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="22.4" y1="9.6" x2="24.5" y2="7.5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-studio-sub">PPG CALON GURU PJOK • SMP NEGERI 12 YOGYAKARTA</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links: 6 Menu Items Required -->
+      <nav>
+        <ul class="nav-menu-studio">
+          <!-- 1. Beranda -->
+          <li><a href="../index.html" class="nav-link-studio">Beranda</a></li>
+
+          <!-- 2. Profil -->
+          <li><a href="../profil.html" class="nav-link-studio">Profil</a></li>
+
+          <!-- 3. UTS Dropdown -->
+          <li class="nav-studio-dropdown">
+            <a href="rancangan.html" class="nav-link-studio active">
+              UTS <i class="fa-solid fa-chevron-down" style="font-size:0.68rem; margin-left:2px;"></i>
+            </a>
+            <ul class="dropdown-studio-menu">
+              <li>
+                <a href="rancangan.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-file-pen"></i> Rancangan Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="media.html" class="dropdown-studio-item active">
+                  <i class="fa-solid fa-photo-film"></i> Media Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="materi.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-book-open-reader"></i> Materi Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="instrumen.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-clipboard-check"></i> Instrumen Pembelajaran
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 4. UAS Dropdown -->
+          <li class="nav-studio-dropdown">
+            <a href="../UAS/rancangan.html" class="nav-link-studio">
+              UAS <i class="fa-solid fa-chevron-down" style="font-size:0.68rem; margin-left:2px;"></i>
+            </a>
+            <ul class="dropdown-studio-menu">
+              <li>
+                <a href="../UAS/rancangan.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-file-circle-check"></i> Rancangan Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="../UAS/media.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-laptop-code"></i> Media Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="../UAS/materi.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-book-bookmark"></i> Materi Pembelajaran
+                </a>
+              </li>
+              <li>
+                <a href="../UAS/instrumen.html" class="dropdown-studio-item">
+                  <i class="fa-solid fa-list-check"></i> Instrumen Pembelajaran
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 5. Kegiatan Non-Mengajar -->
+          <li><a href="../non-mengajar.html" class="nav-link-studio">Kegiatan Non-Mengajar</a></li>
+
+          <!-- 6. Dokumentasi -->
+          <li><a href="../dokumentasi.html" class="nav-link-studio">Dokumentasi</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action CTA: Golden-Yellow Pill Button -->
+      <div style="display:flex; align-items:center; gap:0.75rem;">
+        <a href="../profil.html#cv" class="btn-nav-connect" onclick="showToast('Unduh CV Guru Digital...');">
+          <span>Unduh CV Guru</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+        <button class="mobile-studio-toggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =================================================================
+       3. SUBPAGE HERO HEADER (Studio Theme)
+       ================================================================= -->
+  <section class="subpage-studio-hero">
+    <div class="container">
+      <div class="hero-studio-badge" style="margin-bottom: 1rem;">
+        <span class="badge-dot"></span>
+        <span>UTS &bull; SIKLUS 1 PPL TERBIMBING</span>
+      </div>
+
+      <h1 class="subpage-hero-title">
+        Media Pembelajaran
+        <span class="script-highlight" style="font-family: var(--font-script); color: var(--color-primary-blue); font-weight: 700; margin-left: 6px;">
+          Visual & Digital
+          <svg class="sun-doodle-hero" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:36px; height:36px; vertical-align:middle; margin-left:6px;">
+            <circle cx="22" cy="22" r="9" fill="#FBBF24" stroke="#F59E0B" stroke-width="2.5"/>
+            <line x1="22" y1="4" x2="22" y2="8" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="22" y1="36" x2="22" y2="40" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="4" y1="22" x2="8" y2="22" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="36" y1="22" x2="40" y2="22" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </h1>
+
+      <p class="subpage-hero-desc">
+        Media pembelajaran visual presentasi digital 13 slide berformat interaktif Kurikulum Merdeka Fase D (Kelas IX SMP) untuk materi <strong>Kebugaran Jasmani: Beep Test — Panduan Praktis &amp; Evaluasi Daya Tahan Kardiorespirasi (VO2 Max)</strong> pada Siklus 1 PPL Terbimbing di SMP Negeri 12 Yogyakarta. Dilengkapi visualisasi lintasan 20 meter, tabel norma kebugaran usia 14–15 tahun (Putera &amp; Puteri), serta tips <em>pacing</em> dan hidrasi.
+      </p>
+
+      <div class="studio-breadcrumb">
+        <a href="../index.html">Beranda</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Siklus 1 (UTS)</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span style="color:var(--color-midnight); font-weight:700;">Media Pembelajaran</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       4. MAIN CONTENT
+       ================================================================= -->
+  <main style="background: var(--color-bg-ivory); padding: 4.5rem 0 5.5rem;">
+    <div class="container">
+      
+      <!-- =============================================================
+           A. INTERACTIVE PDF VIEWER SECTION
+           ============================================================= -->
+      <section style="margin-bottom: 5rem;">
+        <div class="section-agency-head" style="margin-bottom: 2rem;">
+          <div class="badge-pill-group">
+            <span class="twin-dot-icon">
+              <span></span><span></span>
+            </span>
+            <span>MEDIA PEMBELAJARAN DIGITAL SIKLUS 1</span>
+          </div>
+          <h2 class="section-agency-title">
+            Pratinjau Media Pembelajaran (PDF)
+            <span class="wavy-squiggle-wrap" style="display:inline-block; vertical-align:middle; margin-left:8px;">
+              <svg class="wavy-squiggle-svg" viewBox="0 0 100 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:75px; height:12px;">
+                <path d="M3 8C15 2 25 14 38 8C50 2 62 14 74 8C86 2 95 12 97 9" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p class="section-agency-subtitle">
+            Eksplorasi langsung 15 slide dokumen media ajar visual interaktif yang mencakup peta konsep, infografis 4 tahap gerak, protokol keselamatan, panduan asesmen berjenjang, hingga lembar kerja peserta didik (E-LKPD).
+          </p>
+        </div>
+
+        <!-- PDF Viewer Container Card -->
+        <div class="pdf-viewer-card">
+          <!-- Toolbar -->
+          <div class="pdf-viewer-toolbar">
+            <div class="pdf-toolbar-info">
+              <div class="pdf-toolbar-icon">
+                <i class="fa-solid fa-photo-film"></i>
+              </div>
+              <div>
+                <div class="pdf-toolbar-title">Media Ajar PJOK: Kebugaran Jasmani – Beep Test &amp; Evaluasi VO2 Max</div>
+                <div class="pdf-toolbar-sub">
+                  Penyusun: <strong>Marfika Sayekti, S.Pd.</strong> • SMP Negeri 12 Yogyakarta • Fase D / Kelas IX SMP • 13 Slide Presentasi Grafis
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-toolbar-actions">
+              <span class="tag-pill" style="background: rgba(251, 191, 36, 0.15); color: #F59E0B; font-weight: 700; border: 1px solid rgba(251, 191, 36, 0.4); padding: 6px 14px; font-size: 0.78rem; border-radius: var(--radius-pill);">
+                <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i> Terverifikasi LPTK UNY
+              </span>
+              <a href="../Dokumen/Media Siklus 1.pdf" download="Media_Pembelajaran_PJOK_Siklus1_MarfikaSayekti.pdf" class="btn btn-primary-lime btn-sm">
+                <i class="fa-solid fa-file-arrow-down"></i> Unduh Media PDF (589 KB)
+              </a>
+              <a href="../Dokumen/Media Siklus 1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm" style="border-color: rgba(255,255,255,0.4); color: #FFFFFF;">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Layar Penuh
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Frame -->
+          <div class="pdf-frame-wrapper">
+            <iframe 
+              src="../Dokumen/Media Siklus 1.pdf#toolbar=1&navpanes=0&scrollbar=1" 
+              title="Media Pembelajaran Siklus 1 Marfika Sayekti"
+              loading="lazy">
+              <p style="padding: 2rem; color: #FFFFFF; text-align: center;">
+                Peramban Anda tidak mendukung tampilan PDF langsung. Silakan 
+                <a href="../Dokumen/Media Siklus 1.pdf" target="_blank" style="color: var(--color-accent-lime); font-weight: bold; text-decoration: underline;">
+                  Klik di sini untuk mengunduh atau membuka Media Pembelajaran Siklus 1 (.PDF)
+                </a>.
+              </p>
+            </iframe>
+          </div>
+
+          <!-- Footer Metadata Bar -->
+          <div style="background: var(--color-bg-ivory); padding: 1.25rem 2rem; border-top: 1px solid var(--color-border-subtle); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 1.8rem; flex-wrap: wrap;">
+              <div style="font-size: 0.85rem; color: var(--color-text-muted);">
+                <i class="fa-solid fa-layer-group" style="color: var(--color-primary-dark); margin-right: 6px;"></i>
+                <strong>Format:</strong> 13 Slide Infografis &amp; Prosedur Lari 20M
+              </div>
+              <div style="font-size: 0.85rem; color: var(--color-text-muted);">
+                <i class="fa-solid fa-laptop-code" style="color: var(--color-primary-dark); margin-right: 6px;"></i>
+                <strong>Pendekatan:</strong> TPACK &amp; Dual Coding Theory
+              </div>
+              <div style="font-size: 0.85rem; color: var(--color-text-muted);">
+                <i class="fa-solid fa-chart-pie" style="color: var(--color-primary-dark); margin-right: 6px;"></i>
+                <strong>Materi Inti:</strong> Norma VO2 Max Putera/Puteri &amp; Tips Pacing
+              </div>
+            </div>
+            <div>
+              <a href="javascript:void(0)" onclick="showToast('Media Terintegrasi Kurikulum Merdeka 2026')" style="font-size: 0.82rem; color: var(--color-primary-dark); font-weight: 700; text-decoration: none;">
+                <i class="fa-solid fa-circle-check" style="color: var(--color-primary-blue); margin-right: 5px;"></i> Kurikulum Merdeka 2026
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================
+           B. COMPREHENSIVE ANALYSIS OF THE LEARNING MEDIA
+           ============================================================= -->
+      <section>
+        <div class="section-agency-head" style="margin-bottom: 3.5rem;">
+          <div class="badge-pill-group">
+            <span class="twin-dot-icon">
+              <span></span><span></span>
+            </span>
+            <span>ANALISIS KOMPREHENSIF MEDIA PEMBELAJARAN</span>
+          </div>
+          <h2 class="section-agency-title">
+            Analisis Akademik & Refleksi Kritis Media Pembelajaran
+            <span class="wavy-squiggle-wrap" style="display:inline-block; vertical-align:middle; margin-left:8px;">
+              <svg class="wavy-squiggle-svg" viewBox="0 0 100 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:75px; height:12px;">
+                <path d="M3 8C15 2 25 14 38 8C50 2 62 14 74 8C86 2 95 12 97 9" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p class="section-agency-subtitle">
+            Tinjauan mendalam terhadap relevansi desain media, efektivitas visual dalam akuisisi motorik, kelebihan, keterbatasan lapangan, serta justifikasi teoritis teknologi pendidikan jasmani.
+          </p>
+        </div>
+
+        <!-- =========================================================
+             1. KONTEKS DAN TUJUAN MEDIA
+             ========================================================= -->
+        <article class="analysis-module-card">
+          <div class="analysis-module-header">
+            <div class="analysis-module-num">01</div>
+            <div>
+              <h3 class="analysis-module-title">Konteks dan Tujuan Media Pembelajaran</h3>
+              <p class="analysis-module-desc">
+                Tinjauan urgensi penggunaan media visual-infografis dalam menerjemahkan aturan bertingkat Beep Test, pemahaman norma fisiologis VO2 Max, serta perumusan tujuan media berbasis 4 domain kompetensi.
+              </p>
+            </div>
+          </div>
+
+          <div class="analysis-content-body">
+            
+            <!-- Konteks Kebutuhan Media di Lapangan -->
+            <div style="margin-bottom: 2.5rem;">
+              <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-dark); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                <i class="fa-solid fa-chalkboard-user" style="color: var(--color-primary-dark); font-size: 1.1rem;"></i>
+                A. Analisis Konteks Kebutuhan Media &amp; Kondisi Lapangan PJOK
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.75; margin-bottom: 1.2rem;">
+                Materi tes kebugaran jasmani <strong>Beep Test (Multistage Fitness Test)</strong> memiliki kompleksitas aturan bertingkat (kenaikan level, balikan shuttle, interval nada beep yang memendek tiap 1 menit, dan toleransi 2 kali keterlambatan). Di lapangan SMP Negeri 12 Yogyakarta, kebutuhan terhadap media presentasi visual ini didasari faktor-faktor kritis:
+              </p>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border-left: 4px solid var(--color-primary-blue); border: 1px solid var(--color-border-card); box-shadow: var(--shadow-sm);">
+                  <strong style="display: block; color: var(--color-primary-dark); font-size: 0.95rem; margin-bottom: 0.4rem;">
+                    <i class="fa-solid fa-arrows-split-up-and-left" style="margin-right: 6px; color: var(--color-primary-blue);"></i> Visualisasi Jalur 20M &amp; Aturan Bertingkat
+                  </strong>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Siswa SMP memerlukan kejelasan visual terkait batas lintasan 20 meter, posisi kaki saat menjejak garis finis, dan prosedur memutar badan sebelum nada berikutnya. Media visual menghindarkan kebingungan prosedural di lapangan.
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border-left: 4px solid #F59E0B; border: 1px solid var(--color-border-card); box-shadow: var(--shadow-sm);">
+                  <strong style="display: block; color: var(--color-primary-dark); font-size: 0.95rem; margin-bottom: 0.4rem;">
+                    <i class="fa-solid fa-venus-mars" style="margin-right: 6px; color: #F59E0B;"></i> Diferensiasi Norma Gender Usia 14–15 Tahun
+                  </strong>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Slide media menyajikan tabel norma kebugaran terpisah untuk putera dan puteri (Sangat Baik, Baik, Cukup, Kurang). Visualisasi ini menumbuhkan rasa adil dan memotivasi siswi putri tanpa rasa terintimidasi oleh capaian siswa putra.
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.5rem; border-left: 4px solid #10B981; border: 1px solid var(--color-border-card); box-shadow: var(--shadow-sm);">
+                  <strong style="display: block; color: var(--color-primary-dark); font-size: 0.95rem; margin-bottom: 0.4rem;">
+                    <i class="fa-solid fa-shield-virus" style="margin-right: 6px; color: #10B981;"></i> Panduan Anti-Kesalahan &amp; Protokol Pacing
+                  </strong>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Media memuat infografis 3 kesalahan umum (terlalu cepat di level awal, salah pivot, melewatkan pemanasan) dan 3 tips sukses (pemanasan dinamis, teknik napas hidung-mulut, hidrasi) yang membekali siswa sebelum berlari.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dekonstruksi Tujuan Media -->
+            <div>
+              <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-dark); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                <i class="fa-solid fa-bullseye" style="color: var(--color-primary-dark); font-size: 1.1rem;"></i>
+                B. Dekonstruksi Tujuan Media Pembelajaran Berbasis 4 Domain
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.4rem;">
+                Media slide dirancang secara holistik untuk memenuhi empat pilar capaian instruksional dalam pembelajaran kebugaran jasmani:
+              </p>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.4rem;">
+                
+                <div style="background: #FFFFFF; border: 1.5px solid var(--color-border-card); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                  <div style="display:inline-block; background:var(--color-primary-blue-light); color:var(--color-primary-blue); font-size:0.74rem; font-weight:800; padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:0.75rem; letter-spacing:0.04em;">DOMAIN KOGNITIF VISUAL</div>
+                  <h5 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">
+                    Pemahaman Konsep Aerobik
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Memfasilitasi siswa memahami hubungan antara ketahanan organ jantung-paru dengan kapasitas konsumsi oksigen (VO2 Max) serta mekanisme pertambahan kecepatan setiap 1 menit.
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border: 1.5px solid var(--color-border-card); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                  <div style="display:inline-block; background:var(--color-primary-blue-light); color:var(--color-primary-blue); font-size:0.74rem; font-weight:800; padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:0.75rem; letter-spacing:0.04em;">DOMAIN PSIKOMOTORIK</div>
+                  <h5 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">
+                    Efisiensi Pivot &amp; Pacing
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Menuntun peserta didik mengatur irama langkah kaki yang stabil, menyentuh garis 20 meter tepat saat nada beep berbunyi, dan berbalik arah tanpa membuang energi secara sia-sia.
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border: 1.5px solid var(--color-border-card); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                  <div style="display:inline-block; background:var(--color-primary-blue-light); color:var(--color-primary-blue); font-size:0.74rem; font-weight:800; padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:0.75rem; letter-spacing:0.04em;">DOMAIN REGULASI DIRI</div>
+                  <h5 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">
+                    Manajemen Napas &amp; Hidrasi
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Membimbing siswa menerapkan teknik pernapasan ritmis (hirup hidung, hembuskan mulut), melakukan hidrasi teratur, serta mengenali sinyal tubuh untuk berhenti secara aman.
+                  </p>
+                </div>
+
+                <div style="background: #FFFFFF; border: 1.5px solid var(--color-border-card); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                  <div style="display:inline-block; background:var(--color-primary-blue-light); color:var(--color-primary-blue); font-size:0.74rem; font-weight:800; padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:0.75rem; letter-spacing:0.04em;">DOMAIN LITERASI ASESMEN</div>
+                  <h5 style="font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">
+                    Akurasi Pencatatan Scorer
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Membekali pasangan pencatat (*scorer*) agar mampu membaca tabel konversi level-shuttle secara presisi, mencatat skor secara jujur, dan menegakkan toleransi keterlambatan maksimal 2 kali.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- =========================================================
+             2. KELEBIHAN DAN KEKURANGAN MEDIA
+             ========================================================= -->
+        <article class="analysis-module-card">
+          <div class="analysis-module-header">
+            <div class="analysis-module-num">02</div>
+            <div>
+              <h3 class="analysis-module-title">Kelebihan dan Kelemahan Media Pembelajaran</h3>
+              <p class="analysis-module-desc">
+                Evaluasi komparatif terhadap efektivitas infografis 13 slide serta solusi mitigasi operasional untuk optimalisasi penyampaian media di lingkungan lapangan sekolah.
+              </p>
+            </div>
+          </div>
+
+          <div class="analysis-content-body">
+            
+            <div class="analysis-grid-2col">
+              
+              <!-- Kolom Kelebihan -->
+              <div class="analysis-box-item pro">
+                <div class="analysis-box-title" style="color: var(--color-primary-dark);">
+                  <i class="fa-solid fa-circle-check" style="color: #10B981; font-size: 1.3rem;"></i>
+                  Kelebihan &amp; Kekuatan Media (Strengths)
+                </div>
+                <ul class="analysis-list">
+                  <li>
+                    <i class="fa-solid fa-check-circle" style="color: #10B981;"></i>
+                    <div>
+                      <strong>Struktur 13 Slide Ringkas &amp; Padat Makna:</strong>
+                      Alur paparan tersusun secara hierarkis dari konsep kebugaran, pengenalan Beep Test, sarana prasarana, prosedur, tabel norma gender, hingga tips sukses tanpa redundansi teks.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check-circle" style="color: #10B981;"></i>
+                    <div>
+                      <strong>Tabel Norma Komparatif Gender Teruji:</strong>
+                      Menyajikan klasifikasi capaian level/shuttle khusus untuk usia 14–15 tahun (putera dan puteri), memberikan benchmark yang adil dan objektif bagi peserta didik SMP.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check-circle" style="color: #10B981;"></i>
+                    <div>
+                      <strong>Infografis Pencegahan Kesalahan (Error Mitigation):</strong>
+                      Slide 9 secara gamblang menyoroti kesalahan umum lari terlalu cepat di level awal dan teknik pembalikan badan yang keliru, menjadi panduan preventif yang efektif.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check-circle" style="color: #10B981;"></i>
+                    <div>
+                      <strong>Format Digital Ringan &amp; Aksesibilitas Tinggi:</strong>
+                      File PDF grafis berukuran optimal (589 KB) dapat diakses dengan cepat melalui gawai siswa, proyektor kelas, maupun papan pengumuman lapangan.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Kolom Kekurangan -->
+              <div class="analysis-box-item con">
+                <div class="analysis-box-title" style="color: #B45309;">
+                  <i class="fa-solid fa-triangle-exclamation" style="color: #F59E0B; font-size: 1.3rem;"></i>
+                  Kelemahan &amp; Keterbatasan Lapangan (Limitations)
+                </div>
+                <ul class="analysis-list">
+                  <li>
+                    <i class="fa-solid fa-circle-xmark" style="color: #F59E0B;"></i>
+                    <div>
+                      <strong>Ketiadaan Audio Nada Beep Terintegrasi:</strong>
+                      Sebagai dokumen slide PDF statis, media tidak dapat memutar rekaman bunyi audio beep secara langsung, sehingga guru harus menyiapkan file audio MP3 secara terpisah.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-xmark" style="color: #F59E0B;"></i>
+                    <div>
+                      <strong>Ketergantungan Fasilitas Display Awal:</strong>
+                      Membutuhkan perangkat penampil (proyektor aula / smart TV) di sesi awal sebelum siswa bergerak ke lapangan luar ruang.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-xmark" style="color: #F59E0B;"></i>
+                    <div>
+                      <strong>Keterbacaan di Lapangan Terik:</strong>
+                      Jika siswa melihat tabel norma melalui gawai di bawah sinar matahari langsung, pantulan cahaya (*glare*) dapat mengurangi kenyamanan membaca detail angka shuttle.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-xmark" style="color: #F59E0B;"></i>
+                    <div>
+                      <strong>Belum Dilengkapi Video Gerak Lambat Pivot:</strong>
+                      Slide hanya menampilkan diagram dan teks, belum menyertakan cuplikan animasi video gerak lambat teknik memutar badan di garis pembalik.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- Solusi dan Mitigasi -->
+            <div class="analysis-box-item solution">
+              <div class="analysis-box-title" style="color: var(--color-primary-dark); font-size: 1.2rem; border-bottom: 1px solid var(--color-border-card); padding-bottom: 0.75rem; margin-bottom: 1.25rem;">
+                <i class="fa-solid fa-lightbulb" style="color: var(--color-primary-blue); font-size: 1.3rem;"></i>
+                Solusi &amp; Rekomendasi Mitigasi Lapangan (Actionable Strategies)
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                <div>
+                  <h5 style="color: var(--color-primary-dark); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem;">
+                    1. Tayangan Teori Klasikal 15 Menit di Kelas
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Memaparkan ke-13 slide media secara runtut di ruang kelas ber-LCD sebelum ke lapangan, disertai pemutaran sampel audio beep Level 1 agar siswa mengenal nada panggil.
+                  </p>
+                </div>
+                <div>
+                  <h5 style="color: var(--color-primary-dark); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem;">
+                    2. Cetak Lembar Norma Mini pada Papan Clipboard Scorer
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Mencetak tabel norma halaman 7 dan 8 dalam ukuran ringkas laminasi dan menjepitkannya pada clipboard pasangan pencatat skor di pinggir lintasan 20 meter.
+                  </p>
+                </div>
+                <div>
+                  <h5 style="color: var(--color-primary-dark); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem;">
+                    3. Peragaan Langsung Teknik Pivot oleh Guru &amp; Model Siswa
+                  </h5>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                    Melengkapi penjelasan slide nomor 6 dengan demonstrasi fisik langsung teknik memutar badan di garis 20 meter oleh guru dan model siswa saat sesi pemanasan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- =========================================================
+             3. KAJIAN TEORI
+             ========================================================= -->
+        <article class="analysis-module-card">
+          <div class="analysis-module-header">
+            <div class="analysis-module-num">03</div>
+            <div>
+              <h3 class="analysis-module-title">Kajian Teori &amp; Landasan Keilmuan Media</h3>
+              <p class="analysis-module-desc">
+                Justifikasi teoritis dari literatur psikologi kognitif multimedia, teori pemrosesan ganda, pemodelan observasional, dan kerangka integrasi TPACK.
+              </p>
+            </div>
+          </div>
+
+          <div class="analysis-content-body">
+            
+            <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.75; margin-bottom: 2rem;">
+              Desain media visual presentasi Beep Test ini didukung oleh 5 pilar teori teknologi pembelajaran dan psikologi pendidikan jasmani terkemuka:
+            </p>
+
+            <div class="theory-grid">
+              
+              <!-- Teori 1: Cognitive Theory of Multimedia Learning -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-brain" style="margin-right: 5px;"></i> Desain Pesan Instruksional
+                </span>
+                <h4 class="theory-title">Cognitive Theory of Multimedia Learning (Mayer, 2001)</h4>
+                <p class="theory-desc">
+                  Media menerapkan prinsip koherensi, modalitas, dan segmentasi. Informasi disajikan dalam 13 slide bertahap yang memadukan bagan lintasan 20 meter dan teks ringkas, meminimalisir beban kognitif luar (*extraneous load*) saat siswa mempelajari aturan tes.
+                </p>
+              </div>
+
+              <!-- Teori 2: Dual Coding Theory -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-diagram-project" style="margin-right: 5px;"></i> Psikologi Kognitif
+                </span>
+                <h4 class="theory-title">Dual Coding Theory (Allan Paivio, 1986)</h4>
+                <p class="theory-desc">
+                  Otak memproses stimulus verbal (penjelasan guru &amp; nada audio beep) dan stimulus visual (infografis norma capaian) melalui dua saluran terpisah. Integrasi keduanya mempercepat terbentuknya peta mental (*mental schema*) tentang pacing lari 20 meter.
+                </p>
+              </div>
+
+              <!-- Teori 3: Teori Pemodelan Observasional -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-eye" style="margin-right: 5px;"></i> Teori Belajar Sosial
+                </span>
+                <h4 class="theory-title">Observational Learning Theory (Bandura, 1977)</h4>
+                <p class="theory-desc">
+                  Siswa membentuk representasi kognitif tentang teknik lari efisien melalui visualisasi tahapan gerak dan kesalahan umum pada slide 9. Pemodelan visual ini menjadi acuan korektif bagi siswa saat mempraktikkan lari di lintasan.
+                </p>
+              </div>
+
+              <!-- Teori 4: Fisiologi Norma Kebugaran Remaja -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-heart-pulse" style="margin-right: 5px;"></i> Fisiologi Kebugaran
+                </span>
+                <h4 class="theory-title">Standar Norma Kebugaran Remaja (ACSM, 2018)</h4>
+                <p class="theory-desc">
+                  Tabel norma pada slide 7 didasarkan pada standar American College of Sports Medicine untuk remaja usia 14–15 tahun. Diferensiasi ambang batas level antara putera (&gt;Level 9/9) dan puteri (&gt;Level 7/6) mencerminkan keadilan biologis masa pubertas.
+                </p>
+              </div>
+
+              <!-- Teori 5: TPACK Framework -->
+              <div class="theory-card">
+                <span class="theory-badge">
+                  <i class="fa-solid fa-laptop-code" style="margin-right: 5px;"></i> Inovasi Pembelajaran Digital
+                </span>
+                <h4 class="theory-title">Kerangka Kerja TPACK (Mishra &amp; Koehler, 2006)</h4>
+                <p class="theory-desc">
+                  Harmonisasi antara Pengetahuan Konten Kebugaran Aerobik (CK), Pedagogi Berbasis Pengalaman Langsung (PK), dan Teknologi Media Visual Interaktif (TK) menghasilkan perangkat ajar yang relevan dengan ekosistem Kurikulum Merdeka.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =================================================================
+       5. CTA BANNER (Diskusi Pembelajaran & Kolaborasi)
+       ================================================================= -->
+  <section id="diskusi" class="section-cta-studio">
+    <div class="container">
+      <div class="cta-studio-container">
+        
+        <!-- Left Angled Yellow Sticky Note -->
+        <div class="cta-sticky-note-wrapper">
+          <div class="cta-yellow-sticky-note">
+            <div class="sticky-note-text">
+              Mendidik<br>
+              dengan hati,<br>
+              menginspirasi!
+            </div>
+            <div class="sticky-note-icons">
+              <i class="fa-solid fa-sun" style="color:#D97706; font-size:1.1rem;"></i>
+              <i class="fa-solid fa-heart" style="color:#2563EB; font-size:1.05rem;"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form Area -->
+        <div class="cta-form-area">
+          <h2>ADA PERTANYAAN ATAU DISKUSI PEMBELAJARAN?</h2>
+          <p>Saya siap berdiskusi terkait implementasi Kurikulum Merdeka, diferensiasi gerak PJOK, maupun program kepelatihan siswa!</p>
+
+          <form id="cta-project-form" class="cta-inline-form">
+            <input type="text" id="cta-name" class="cta-input-studio" placeholder="Nama Lengkap" required>
+            <input type="email" id="cta-email" class="cta-input-studio" placeholder="Email / No. WhatsApp" required>
+            <input type="text" id="cta-message" class="cta-input-studio" placeholder="Pesan / Topik Diskusi" required>
+            <button type="submit" class="btn-cta-submit">
+              <span>Kirim Pesan</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       6. MIDNIGHT NAVY FOOTER
+       ================================================================= -->
+    <footer class="footer-midnight-studio">
+    <div class="container">
+      <div class="footer-studio-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="../index.html" class="footer-brand-logo">
+            Marfika Sayekti
+            <svg class="sun-logo-doodle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="6" fill="#FBBF24" stroke="#F59E0B" stroke-width="2"/>
+              <line x1="16" y1="4" x2="16" y2="7" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="16" y1="25" x2="16" y2="28" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="4" y1="16" x2="7" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              <line x1="25" y1="16" x2="28" y2="16" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <p class="footer-brand-desc">
+            Portofolio resmi PPL Terbimbing Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi PJOK Universitas Negeri Yogyakarta di SMP Negeri 12 Yogyakarta — Mendidik dengan integritas dan bergerak menginspirasi.
+          </p>
+          <div class="footer-social-circles">
+            <a href="javascript:void(0)" onclick="showStudioToast('Facebook')" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="javascript:void(0)" onclick="showStudioToast('Instagram @marfikasayekti')" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="showStudioToast('YouTube Pembelajaran PJOK')" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="javascript:void(0)" onclick="showStudioToast('LinkedIn Marfika Sayekti')" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: NAVIGASI -->
+        <div>
+          <h4 class="footer-col-title">NAVIGASI</h4>
+          <ul class="footer-links-list">
+            <li><a href="../index.html" class="footer-link-item">Beranda Utama</a></li>
+            <li><a href="../profil.html" class="footer-link-item">Profil Mahasiswa</a></li>
+            <li><a href="../UTS/rancangan.html" class="footer-link-item">Siklus 1 (UTS PPL)</a></li>
+            <li><a href="../UAS/rancangan.html" class="footer-link-item">Siklus 2, 3 &amp; 4 (UAS PPL)</a></li>
+            <li><a href="../non-mengajar.html" class="footer-link-item">Kegiatan Non-Mengajar</a></li>
+            <li><a href="../dokumentasi.html" class="footer-link-item">Galeri Dokumentasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: PERANGKAT AJAR -->
+        <div>
+          <h4 class="footer-col-title">PERANGKAT AJAR</h4>
+          <ul class="footer-links-list">
+            <li><a href="../UTS/rancangan.html" class="footer-link-item">Modul Kebugaran (UTS)</a></li>
+            <li><a href="../UAS/rancangan.html" class="footer-link-item">Modul Voli, Basket, Bulutangkis (UAS)</a></li>
+            <li><a href="../UTS/media.html" class="footer-link-item">Media Ajar TPACK &amp; QR Code</a></li>
+            <li><a href="../UAS/materi.html" class="footer-link-item">Buku Saku Olahraga Siswa</a></li>
+            <li><a href="../UTS/instrumen.html" class="footer-link-item">Instrumen Asesmen 3 Ranah</a></li>
+            <li><a href="../UTS/video.html" class="footer-link-item">Video Praktik UKin / PPL</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: KONTAK RESMI & LPTK -->
+        <div>
+          <h4 class="footer-col-title">KONTAK &amp; LPTK</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-entry">
+              <i class="fa-regular fa-envelope"></i>
+              <span>marfika.ppg@uny.ac.id<br><small style="color:#64748B;">Surel Resmi Mahasiswa PPG</small></span>
+            </li>
+            <li class="footer-contact-entry">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>SMP Negeri 12 Yogyakarta<br><small style="color:#64748B;">Jl. Tentara Pelajar No. 9, Bumijo, Jetis, Yogyakarta</small></span>
+            </li>
+            <li class="footer-contact-entry">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>FIKK Universitas Negeri Yogyakarta<br><small style="color:#64748B;">Jl. Colombo No. 1, Sleman, DIY</small></span>
+            </li>
+            <li class="footer-contact-entry">
+              <i class="fa-solid fa-phone"></i>
+              <span>+62 859-1953-74310<br><small style="color:#64748B;">Kontak WhatsApp Aktif</small></span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 <strong>Marfika Sayekti, S.Pd.</strong> All Rights Reserved &bull; PPG Calon Guru PJOK Universitas Negeri Yogyakarta di SMP Negeri 12 Yogyakarta
+        </div>
+        <div class="footer-bottom-links">
+          <a href="../profil.html">Profil Mahasiswa</a>
+          <a href="../dokumentasi.html">Galeri PPL</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/studio.js"></script>
+</body>
+</html>
